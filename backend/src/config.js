@@ -54,7 +54,7 @@ const CONTRACT_NAME = 'testElonMusk Collection';
 const CONTRACT_SYMBOL = 'TEM';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0xd32Ca2af8c52a06C61Dfd2C7c09bF10CC2CceF1F';
-const TREASURY_ADDRESS = 'YOUR WALLET ADDRESS HERE';
+const TREASURY_ADDRESS = '0xd32Ca2af8c52a06C61Dfd2C7c09bF10CC2CceF1F';
 const MAX_SUPPLY = 10; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.07; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 5; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
