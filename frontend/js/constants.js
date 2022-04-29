@@ -1,4 +1,4 @@
-const contractAddress = "0x04265C23c298b5eaEA022969E93D0E30EEC15187"; //Replace with your own contract address
+const contractAddress = "0xabB91E09170952BF734372734f48EB6F4fEe9a9E"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Mint Bored Elon Musk";
