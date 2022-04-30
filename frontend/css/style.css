@@ -113,31 +113,30 @@ header .container {
   position: relative;
   text-decoration: none;
   outline: none;
+  
 }
 .btn:hover {
   box-shadow: none;
+  background-color: #000000; /* Green */
+  color: white;
+
 }
 .btn:disabled {
   cursor: default;
 }
 
 .wallet-btn {
-  border-radius: 3rem;
+  border-radius: 2rem;
   margin-left: 2rem;
   border-color: transparent;
 }
 
-.wallet-btn-not-connected {
-  border-radius: 3rem;
+.wallet-connected {
+  border-radius: 2rem;
+  margin-left: 2rem;
   border-color: transparent;
-  transition-duration: 0.4s;
+}
 
-  
-}
-.wallet-btn-not-connected:hover {
-  background-color: #000000; /* Green */
-  color: white;
-}
 
 .hero-btn {
   border-radius: 4px;
@@ -251,14 +250,14 @@ section {
   justify-content: space-between;
   width: 100%;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
 .mint-qty {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   background-color: var(--accent-color);
   border-radius: 5px;
 }
@@ -380,6 +379,13 @@ section {
     padding: 0.5rem 1rem;
     max-width: 8rem;
   }
+
+  .wallet-connected {
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+    max-width: 8rem;
+  }
+
   .not-connected {
     border-radius: 5px;
     padding: 2rem;

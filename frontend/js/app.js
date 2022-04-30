@@ -49,6 +49,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 const updateConnectStatus = async () => {
   const onboarding = new MetaMaskOnboarding();
   const onboardButton = document.getElementById("connectWallet");
+  const onboardButtonConnected = document.getElementById("WalletConnected");
   const notConnected = document.querySelector('.not-connected');
   const spinner = document.getElementById("spinner");
   if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
@@ -63,9 +64,10 @@ const updateConnectStatus = async () => {
       notConnected.classList.add('show-not-connected');
     };
   } else if (accounts && accounts.length > 0) {
-    onboardButton.innerText = `✅ 0x...${accounts[0].slice(-4)}`;
+    onboardButtonConnected.classList.remove('hidden');
+    onboardButtonConnected.innerText = `✅ 0x..${accounts[0].slice(-2)}`;
     window.address = accounts[0];
-    onboardButton.disabled = true;
+    onboardButtonConnected.disabled = true;
     onboarding.stopOnboarding();
     notConnected.classList.remove('show-not-connected');
     notConnected.classList.add('hidden');
@@ -74,7 +76,10 @@ const updateConnectStatus = async () => {
     window.contract = new web3.eth.Contract(abi, contractAddress);
     loadInfo();
   } else {
+    onboardButtonConnected.classList.add('hidden');
+
     onboardButton.innerText = "Connect Wallet 🦊";
+    
     // HIDE SPINNER
     spinner.classList.add('hidden');
     notConnected.classList.remove('hidden');
@@ -85,12 +90,13 @@ const updateConnectStatus = async () => {
           method: "eth_requestAccounts",
         })
         .then(function (accts) {
-          onboardButton.innerText = `✅ 0x...${accts[0].slice(-4)}`;
+          onboardButtonConnected.classList.remove('hidden');
+          onboardButtonConnected.innerText = `✅ 0x..${accts[0].slice(-2)}`;
           notConnected.classList.remove('show-not-connected');
           notConnected.classList.add('hidden');
           // SHOW SPINNER
           spinner.classList.remove('hidden');
-          onboardButton.disabled = true;
+          onboardButtonConnected.disabled = true;
           window.address = accts[0];
           accounts = accts;
           window.contract = new web3.eth.Contract(abi, contractAddress);
