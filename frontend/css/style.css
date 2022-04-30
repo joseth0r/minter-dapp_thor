@@ -38,7 +38,7 @@ body {
   flex-direction: column;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0rem 7rem;
+  padding: 0rem 6rem;
   justify-content: center;
   overflow: hidden;
 }
@@ -362,6 +362,15 @@ section {
     height: 100vh;
     color: var(--font-color);
     font-family: var(--font-primary);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0rem 1rem;
+    justify-content: center;
+    overflow: hidden;
   }
   .menu {
     gap: 1rem;
