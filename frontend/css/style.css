@@ -376,7 +376,7 @@ section {
     min-height: 100vh;
     display: flex;
     flex-flow: column;
-    height: 170vh; /*ALTURA PANTALLA MÓVIL */
+    height: 150vh; /*ALTURA PANTALLA MÓVIL */
     color: var(--font-color);
     font-family: var(--font-primary);
   }
@@ -410,14 +410,11 @@ section {
 
   .not-connected {
     border-radius: 5px;
-    padding: 14rem 0;
+    padding: 13rem 0;
     margin: 0 auto;
   }
 
 
-
-
-  
   .countdown ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
