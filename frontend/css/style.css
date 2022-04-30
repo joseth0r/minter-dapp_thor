@@ -376,7 +376,7 @@ section {
     min-height: 100vh;
     display: flex;
     flex-flow: column;
-    height: 115vh; /*ALTURA PANTALLA MÓVIL */
+    height: 130vh; /*ALTURA PANTALLA MÓVIL */
     color: var(--font-color);
     font-family: var(--font-primary);
   }
