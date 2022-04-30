@@ -2,7 +2,7 @@ const contractAddress = "0xabB91E09170952BF734372734f48EB6F4fEe9a9E"; //Replace 
 const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Mint Bored Elon Musk";
-const welcome_h2 = "Connect your Wallet";
+const welcome_h2 = "";
 const welcome_p = '';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";

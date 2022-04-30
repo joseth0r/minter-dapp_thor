@@ -127,6 +127,12 @@ header .container {
   border-color: transparent;
 }
 
+.wallet-btn-not-connected {
+  border-radius: 5rem;
+  border-color: transparent;
+}
+
+
 .hero-btn {
   border-radius: 4px;
   font-size: 1.2rem;
