@@ -113,6 +113,38 @@ header .container {
   font-weight: bold;
 }
 
+.row {
+  display: flex;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 1000px; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: 1000px; /* Should be removed. Only for demonstration */
+}
+.mintnumber {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  margin: 0 0;
+  font-size: 3.5rem;
+}
+
+/*GIF*/
+.slider {
+  max-width: 400px;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+
 /* BUTTONS */
 
 .btn {
