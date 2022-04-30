@@ -38,7 +38,7 @@ body {
   flex-direction: column;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0rem 7rem;
   justify-content: center;
   overflow: hidden;
 }
@@ -122,16 +122,22 @@ header .container {
 }
 
 .wallet-btn {
-  border-radius: 5rem;
+  border-radius: 3rem;
   margin-left: 2rem;
   border-color: transparent;
 }
 
 .wallet-btn-not-connected {
-  border-radius: 5rem;
+  border-radius: 3rem;
   border-color: transparent;
-}
+  transition-duration: 0.4s;
 
+  
+}
+.wallet-btn-not-connected:hover {
+  background-color: #000000; /* Green */
+  color: white;
+}
 
 .hero-btn {
   border-radius: 4px;
