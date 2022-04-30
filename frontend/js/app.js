@@ -63,7 +63,7 @@ const updateConnectStatus = async () => {
       notConnected.classList.add('show-not-connected');
     };
   } else if (accounts && accounts.length > 0) {
-    onboardButton.innerText = `✔ ...${accounts[0].slice(-4)}`;
+    onboardButton.innerText = `✅ 0x...${accounts[0].slice(-4)}`;
     window.address = accounts[0];
     onboardButton.disabled = true;
     onboarding.stopOnboarding();
@@ -74,7 +74,7 @@ const updateConnectStatus = async () => {
     window.contract = new web3.eth.Contract(abi, contractAddress);
     loadInfo();
   } else {
-    onboardButton.innerText = "Connect MetaMask!";
+    onboardButton.innerText = "Connect Wallet 🦊";
     // HIDE SPINNER
     spinner.classList.add('hidden');
     notConnected.classList.remove('hidden');
@@ -85,7 +85,7 @@ const updateConnectStatus = async () => {
           method: "eth_requestAccounts",
         })
         .then(function (accts) {
-          onboardButton.innerText = `✔ ...${accts[0].slice(-4)}`;
+          onboardButton.innerText = `✅ 0x...${accts[0].slice(-4)}`;
           notConnected.classList.remove('show-not-connected');
           notConnected.classList.add('hidden');
           // SHOW SPINNER
