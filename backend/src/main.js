@@ -354,6 +354,7 @@ const startCreating = async () => {
     ) {
       let newDna = createDna(layers);
       if (isDnaUnique(dnaList, newDna)) {
+        
         let results = constructLayerToDna(newDna, layers);
         let loadedElements = [];
 
