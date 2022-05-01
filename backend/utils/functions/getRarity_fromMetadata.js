@@ -57,7 +57,8 @@ function processRarity(nfts) {
   })
 
   // sort nfts by edition again
-  nfts.sort((a, b) => a.custom_fields.edition - b.custom_fields.edition)
+  //nfts.sort((a, b) => a.custom_fields.edition - b.custom_fields.edition)
+  //no funciona
 
   fs.writeFileSync(`${basePath}/build/json/_metadata_with_rarity.json`, JSON.stringify(nfts, null, 2));
 }
