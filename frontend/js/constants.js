@@ -1,12 +1,12 @@
 const contractAddress = "0xabB91E09170952BF734372734f48EB6F4fEe9a9E"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
-const welcome_h1 = "";
-const welcome_h2 = "";
+const welcome_h1 = "0/3500";
+const welcome_h2 = "MINTED";
 const welcome_p = '';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "PRE-SALE MINTING";
-const h1_public_mint = "Public Minting";
+const h1_public_mint = "PUBLIC MINTING";
 const h2_presale_coming_soon = "Pre-Sale Minting Countdown";
 const h2_presale_mint = "Public Minting Countdown";
 const p_presale_coming_soon = "We are working hard to launch the NFT Collection. Stay tuned for updates!";

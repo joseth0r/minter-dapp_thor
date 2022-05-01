@@ -137,6 +137,7 @@ header .container {
 .mintnumber {
   text-shadow: 2px 2px 0 var(--accent-color);
   font-size: 3.5rem;
+
 }
 .mintedword {
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -155,6 +156,8 @@ header .container {
 
 .numberdisplay{
   text-align: center;
+  margin-top: 20rem;
+  margin-bottom:1rem;
 }
 
 
@@ -191,6 +194,7 @@ header .container {
 .wallet-btn {
   border-radius: 2rem;
   border-color: transparent;
+
 }
 
 .wallet-connected {
@@ -304,7 +308,8 @@ section {
 .countdown > p {
   font-size: 1.1rem;
   font-family: var(--font-secondary);
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -386,15 +391,16 @@ section {
 .minted-container h1 {
   font-size: 5rem;
   margin-bottom: 2rem;
+
 }
 
 .minted-container h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .minted-container p {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 /* SLIDDER */
