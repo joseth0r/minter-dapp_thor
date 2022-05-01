@@ -13,20 +13,9 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 
 
-/* Primera configuracion
 const layerConfigurations = [
   {
-    growEditionSizeTo: 150,
-
-    
-  }
-];
-*/
-
-/* Example of configuration settings*/
-const layerConfigurations = [
-  {
-    growEditionSizeTo: 10,
+    growEditionSizeTo: 100,
     layersOrder: [
       { name: "1-Background" },
       { name: "3-Skin" },
@@ -34,29 +23,8 @@ const layerConfigurations = [
       { name:"5-Mouth"},
       { name: "6-Head Accesories"},
       { name: "7-Eyes" },
-      { name: "8-Clothes" },
-    ],
-    /*
-    layerItemsMaxRepeatedTraits: [
-      { name: "6-Head Accesories", layerItemMaxRepeatedTrait: 4 }
-    ],
-    
-    incompatibleTraits: {
-      "Eye color/Cyan": [
-        "Eyeball/Red",
-      ],
-      "Iris/Large": [
-        "Bottom lid/High",
-        "Top lid/High"
-      ],
-    },
-    */
-    dependentTraits: {
-      "6-Head Accesories/Pink Doge Bandanna": [
-        "4-Hair/Brown HeadAccesories"
-      ],
-    }
-  },
+      { name: "8-Clothes" }]
+  }
 ];
 
 
