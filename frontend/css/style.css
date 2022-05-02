@@ -89,7 +89,8 @@ header .container {
 /* NOT CONNECTED */
 .not-connected {
   align-items: center;
-  padding: 14rem 0rem;
+  /*padding: 14rem 0rem;*/
+  margin-top:20rem;
   height: 100%;
   text-align: center;
   opacity: 0;
@@ -194,7 +195,7 @@ header .container {
 .wallet-btn {
   border-radius: 2rem;
   border-color: transparent;
-
+ 
 }
 
 .wallet-connected {
