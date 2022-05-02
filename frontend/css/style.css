@@ -376,7 +376,16 @@ section {
 }
 
 
+.projectname {
+  display: flex;
+  position: absolute;
+  top: 12%;
+  left: 19%;
+  font-size: 4rem;
+  margin-top: 10rem;
+  margin-bottom:-10rem;
 
+}
 
 /* MINTED CONTAINER */
 
