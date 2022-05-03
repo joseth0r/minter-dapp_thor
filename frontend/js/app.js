@@ -65,7 +65,7 @@ const updateConnectStatus = async () => {
     };
   } else if (accounts && accounts.length > 0) {
     onboardButtonConnected.classList.remove('hidden');
-    onboardButtonConnected.innerText = `Connected as 0x..${accounts[0].slice(-4)}`;
+    onboardButtonConnected.innerText = `🟢 Connected as 0x..${accounts[0].slice(-4)}`;
     window.address = accounts[0];
     onboardButtonConnected.disabled = true;
     onboarding.stopOnboarding();
@@ -91,7 +91,7 @@ const updateConnectStatus = async () => {
         })
         .then(function (accts) {
           onboardButtonConnected.classList.remove('hidden');
-          onboardButtonConnected.innerText = `Connected as 0x..${accts[0].slice(-4)}`;
+          onboardButtonConnected.innerText = `🟢 Connected as 0x..${accts[0].slice(-4)}`;
           notConnected.classList.remove('show-not-connected');
           notConnected.classList.add('hidden');
           // SHOW SPINNER
