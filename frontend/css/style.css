@@ -11,12 +11,14 @@
   src: url("FatFrank-Regular.15cbcb57.woff"); /*URL to font*/
   font-family: "flex"; /*a name to be used later*/
   src: url("R-FLEX-BOLD.otf"); /*URL to font*/
+  font-family: "blender"; /*a name to be used later*/
+  src: url("BlenderPro-Medium.ttf"); /*URL to font*/
 }
 
 :root {
-  --font-primary: 'flex', sans-serif;
-  --font-secondary: "flex", sans-serif;
-  --font-code: "flex", sans-serif;
+  --font-primary: 'blender', sans-serif;
+  --font-secondary: "fatfrank", sans-serif;
+  --font-code: "fatfrank", sans-serif;
   --bg-color: #0b0b08cc;
   --bg-color-transparent: #00163f80;
   --font-color: #ffffff;
@@ -60,6 +62,7 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  margin-top:-73px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -226,7 +229,7 @@ header .container {
   -webkit-box-shadow:0 0 10px 2px #fff;
   border-radius: 4px;
   font-size: 1.2rem;
-  padding: 0.7rem 0.8rem;
+  padding: 0.7rem 1.5rem;
 }
 .max-btn {
   -webkit-box-shadow:0 0 10px 2px #fff;
