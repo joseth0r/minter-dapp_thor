@@ -541,7 +541,7 @@ svg:hover path#plus_hover{opacity:1}
     min-height: 100vh;
     display: flex;
     flex-flow: column;
-    height: 100vh; /*ALTURA PANTALLA MÓVIL */
+    height: 190vh; /*ALTURA PANTALLA MÓVIL */
     color: var(--font-color);
     font-family: var(--font-primary);
   }
@@ -549,12 +549,14 @@ svg:hover path#plus_hover{opacity:1}
   .main-flex {
     flex-direction: column-reverse;
     height: auto;
-
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
   }
   .header-cont {
     /*width: 100%;*/
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 
   }
    /* NOT CONNECTED */
@@ -566,6 +568,12 @@ svg:hover path#plus_hover{opacity:1}
     opacity: 0;
     transform: translateY(10vh);
     transition: all 0.5s ease-in-out;
+    /*padding: 14rem 0rem;*/
+
+  }
+  .show-not-connected {
+    opacity: 1;
+    transform: translateY(0);
   }
   /* SPINNER */
   .dot-spin {
@@ -603,8 +611,6 @@ svg:hover path#plus_hover{opacity:1}
     margin-top:90px;
   }
   .container {
-    display: flex;
-    flex-direction: column;
     max-width: 700px;
     margin: 0 auto;
     padding: 2rem 1rem;
