@@ -15,32 +15,98 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 2,
+    growEditionSizeTo: 30, //NFTs sin head accesorios, solo con pelo.
     layersOrder: [
-      { name: "1-Background" },
-      { name: "3-Skin" },
-      {name:"4-Hair"},
-      { name:"5-Mouth"},
-      { name: "7-Eyes" },
-      { name: "8-Clothes" }
+      { 
+        name: "1-Background",
+        options:{
+          displayName:'Background'
+        } 
+    },
+      { 
+      name: "3-Skin",
+      options:{
+        displayName:'Skin'
+      } 
+    
+    },
+      {
+        name:"4-Hair",
+      options:{
+        displayName:'Hair'
+      } 
+    
+    },
+      { name:"5-Mouth",
+      options:{
+        displayName:'Mouth'
+      } 
+    },
+
+      { name: "7-Eyes",
+      options:{
+        displayName:'Eyes'
+      } 
+
+     },
+      { name: "8-Clothes",
+      options:{
+        displayName:'Clothes'
+      } 
+     }
     ],
   },
+  
   {
-     growEditionSizeTo: 2,
-     layersOrder: [
-      { name: "1-Background" },
-      { name: "3-Skin" },
-      {name:"4.1-RecortedHair"},
-      { name:"5-Mouth"},
-      { name: "6-Head Accesories"},
-      { name: "7-Eyes" },
-      { name: "8-Clothes" }
-     ],
-   },
+growEditionSizeTo: 40, //NFTs con head accesories, y pelo con patillas solo
+    layersOrder: [
+      { 
+        name: "1-Background",
+        options:{
+          displayName:'Background'
+        } 
+    },
+      { 
+      name: "3-Skin",
+      options:{
+        displayName:'Skin'
+      } 
+    
+    },
+      {
+        name:"4.1-Hair_SoloPatillas",
+      options:{
+        displayName:'Hair'
+      } 
+    
+    },
+      { name:"5-Mouth",
+      options:{
+        displayName:'Mouth'
+      } 
+    },
+    { name:"6-Head Accesories",
+    options:{
+      displayName:'Head Accesories'
+    } 
+  },
+
+      { name: "7-Eyes",
+      options:{
+        displayName:'Eyes'
+      } 
+     },
+      { name: "8-Clothes",
+      options:{
+        displayName:'Clothes'
+      } 
+     }
+    ],
+  },
 ];
 
 
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true; // IF true, groups will be mixed in final NFT mint
 
 const debugLogs = false;
 
