@@ -2,7 +2,7 @@ let accounts;
 
 // METAMASK CONNECTION
 window.addEventListener("DOMContentLoaded", async () => {
-  const MINT_LINK = "https://darling-donut-189c45.netlify.app/";
+  const MINT_LINK = "darling-donut-189c45.netlify.app/";
   const welcomeH1 = document.getElementById("welcomeH1");
   const welcomeH2 = document.getElementById("welcomeH2");
   const welcomeP = document.getElementById("welcomeP");
