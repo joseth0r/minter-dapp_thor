@@ -6,23 +6,24 @@ window.addEventListener("DOMContentLoaded", async () => {
   const welcomeH1 = document.getElementById("welcomeH1");
   const welcomeH2 = document.getElementById("welcomeH2");
   const welcomeP = document.getElementById("welcomeP");
-
+  
   welcomeH1.innerText = welcome_h1;
   welcomeH2.innerText = welcome_h2;
   welcomeP.innerHTML = welcome_p;
 
   if (window.ethereum) {
     window.web3 = new Web3(window.ethereum);
+    console.log("connected");
+
     checkChain();
   } else if (window.web3) {
     window.web3 = new Web3(window.web3.currentProvider);
+    console.log("gg");
+
   }
 
-  if (!window.ethereum) {
-    console.log("pas de metamask");
-    window.location.assign("https://metamask.app.link/dapp/" + MINT_LINK)
-    return
-  }
+
+  
   if (window.web3) {
     // Check if User is already connected by retrieving the accounts
     await window.web3.eth.getAccounts().then(async (addr) => {
@@ -59,18 +60,23 @@ const updateConnectStatus = async () => {
   const onboardButtonConnected = document.getElementById("WalletConnected");
   const notConnected = document.querySelector('.not-connected');
   const spinner = document.getElementById("spinner");
-  if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
-    onboardButton.innerText = "Install MetaMask!";
+  if (!window.ethereum) {
+    console.log("pas de metamask");
+          // HIDE SPINNER
+
+    spinner.classList.add('hidden');
+    notConnected.classList.remove('hidden');
+    notConnected.classList.add('show-not-connected');
+
+    onboardButton.innerText = "Go to Metamask 🦊";
     onboardButton.onclick = () => {
-      onboardButton.innerText = "Connecting...";
-      onboardButton.disabled = true;
-      onboarding.startOnboarding();
-      // HIDE SPINNER
-      spinner.classList.add('hidden');
-      notConnected.classList.remove('hidden');
-      notConnected.classList.add('show-not-connected');
+    onboardButton.innerText = "Connecting...";
+    onboardButton.disabled = true;
+    onboarding.startOnboarding();
     };
   }
+
+
    else if (accounts && accounts.length > 0) {
     onboardButtonConnected.classList.remove('hidden');
     onboardButtonConnected.innerText = `🟢 Connected as 0x..${accounts[0].slice(-4)}`;
