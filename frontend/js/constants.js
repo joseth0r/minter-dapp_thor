@@ -1,6 +1,6 @@
 const contractAddress = "0xB9fDB6708A545232b03353A3dBF2E2A177d0C084"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
-
+const MINT_LINK = "https://darling-donut-189c45.netlify.app/";
 const welcome_h1 = "0/3500";
 const welcome_h2 = "MINTED";
 const welcome_p = '';
