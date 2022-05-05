@@ -22,7 +22,10 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   }
 
+  else{
+    updateConnectStatus()
 
+  }
   
   if (window.web3) {
     // Check if User is already connected by retrieving the accounts
