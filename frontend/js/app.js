@@ -2,7 +2,7 @@ let accounts;
 
 // METAMASK CONNECTION
 window.addEventListener("DOMContentLoaded", async () => {
-  const MINT_LINK = "darling-donut-189c45.netlify.app/";
+  const MINT_LINK = "https://darling-donut-189c45.netlify.app/";
   const welcomeH1 = document.getElementById("welcomeH1");
   const welcomeH2 = document.getElementById("welcomeH2");
   const welcomeP = document.getElementById("welcomeP");
@@ -17,18 +17,17 @@ window.addEventListener("DOMContentLoaded", async () => {
   } else if (window.web3) {
     window.web3 = new Web3(window.web3.currentProvider);
   }
-  else if (!window.web3) {
-    window.web3.assign("https://metamask.app.link/dapp/" + MINT_LINK)
+  else if (!window.ethereum) {
+    window.location.assign("https://metamask.app.link/dapp/" + MINT_LINK)
     return
-}
-  
-
+  }
   if (window.web3) {
     // Check if User is already connected by retrieving the accounts
     await window.web3.eth.getAccounts().then(async (addr) => {
       accounts = addr;
     });
   }
+
 
   const splide = new Splide(".splide", {
     type: "loop",
