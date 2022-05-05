@@ -17,10 +17,10 @@ window.addEventListener("DOMContentLoaded", async () => {
   } else if (window.web3) {
     window.web3 = new Web3(window.web3.currentProvider);
   }
-  //else if (!window.web3) {
-  //  window.location.assign("https://metamask.app.link/dapp/" + MINT_LINK)
-  //  return
-//}
+  else if (!window.web3) {
+    window.location.assign("https://metamask.app.link/dapp/" + MINT_LINK)
+    return
+}
   
 
   if (window.web3) {
@@ -59,18 +59,6 @@ const updateConnectStatus = async () => {
   const notConnected = document.querySelector('.not-connected');
   const spinner = document.getElementById("spinner");
   if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
-    onboardButton.innerText = "Install MetaMask!";
-    onboardButton.onclick = () => {
-      onboardButton.innerText = "Connecting...";
-      onboardButton.disabled = true;
-      onboarding.startOnboarding();
-      // HIDE SPINNER
-      spinner.classList.add('hidden');
-      notConnected.classList.remove('hidden');
-      notConnected.classList.add('show-not-connected');
-    };
-  }
-  else if (!window.web3) {
     onboardButton.innerText = "Install MetaMask!";
     onboardButton.onclick = () => {
       onboardButton.innerText = "Connecting...";
