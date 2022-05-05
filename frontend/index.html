@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style2.scss" />
+
     <style>
       #img_slidder {
         display: block;
@@ -48,8 +49,11 @@
     height: auto;
   }
       </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
+
   <body>
+   
 
     <header>
       <div class="container">
@@ -271,12 +275,12 @@
       
       
       </div>
-              
-      <div class="footer">
-        <a href="https://bitcoin.org/bitcoin.pdf">
-          <p>How to Mint</p>
-        </a>
-      </div>
+      <t class="p-footer text-center">
+        CHANGE THIS<br>
+        © 2022 THE BORING ELON. ALL RIGHTS RESERVED.
+    </p>
+
+
    
     <script src="js/selector.js"></script>
     <script src="js/metamask-onboarding.bundle.js"></script>
@@ -285,5 +289,13 @@
     <script src="js/constants.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/app.js"></script>
+    <script  src="js/preloader.js"></script>
+<script>
+  var loading=document.getElementById('loading');
+   
+  function myFunction(){
+    loading.style.display='none';
+  }
+</script>
   </body>
 </html>

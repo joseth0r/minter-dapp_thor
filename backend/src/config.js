@@ -15,7 +15,7 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 30, //NFTs sin head accesorios, solo con pelo.
+    growEditionSizeTo: 10, //NFTs sin head accesorios, solo con pelo.
     layersOrder: [
       { 
         name: "1-Background",
@@ -58,7 +58,7 @@ const layerConfigurations = [
   },
   
   {
-growEditionSizeTo: 40, //NFTs con head accesories, y pelo con patillas solo
+growEditionSizeTo: 20, //NFTs con head accesories, y pelo con patillas solo
     layersOrder: [
       { 
         name: "1-Background",
@@ -74,7 +74,7 @@ growEditionSizeTo: 40, //NFTs con head accesories, y pelo con patillas solo
     
     },
       {
-        name:"4.1-Hair_SoloPatillas",
+        name:"4-Hair",
       options:{
         displayName:'Hair'
       } 
@@ -103,6 +103,7 @@ growEditionSizeTo: 40, //NFTs con head accesories, y pelo con patillas solo
      }
     ],
   },
+  
 ];
 
 

@@ -1,4 +1,5 @@
 let accounts;
+const MINT_LINK = "https://darling-donut-189c45.netlify.app/";
 
 // METAMASK CONNECTION
 window.addEventListener("DOMContentLoaded", async () => {
@@ -16,6 +17,11 @@ window.addEventListener("DOMContentLoaded", async () => {
   } else if (window.web3) {
     window.web3 = new Web3(window.web3.currentProvider);
   }
+  //else if (!window.web3) {
+  //  window.location.assign("https://metamask.app.link/dapp/" + MINT_LINK)
+  //  return
+//}
+  
 
   if (window.web3) {
     // Check if User is already connected by retrieving the accounts
@@ -63,7 +69,20 @@ const updateConnectStatus = async () => {
       notConnected.classList.remove('hidden');
       notConnected.classList.add('show-not-connected');
     };
-  } else if (accounts && accounts.length > 0) {
+  }
+  else if (!window.web3) {
+    onboardButton.innerText = "Install MetaMask!";
+    onboardButton.onclick = () => {
+      onboardButton.innerText = "Connecting...";
+      onboardButton.disabled = true;
+      onboarding.startOnboarding();
+      // HIDE SPINNER
+      spinner.classList.add('hidden');
+      notConnected.classList.remove('hidden');
+      notConnected.classList.add('show-not-connected');
+    };
+  }
+   else if (accounts && accounts.length > 0) {
     onboardButtonConnected.classList.remove('hidden');
     onboardButtonConnected.innerText = `🟢 Connected as 0x..${accounts[0].slice(-4)}`;
     window.address = accounts[0];

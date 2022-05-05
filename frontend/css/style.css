@@ -159,7 +159,9 @@ header .container {
   height: 100%;
   pointer-events: none;
   user-select: none;
+  animation: reveal linear 1s;
 }
+
 
 .numberdisplay{
   text-align: center;
@@ -524,10 +526,41 @@ svg:hover path#plus_hover{opacity:1}
   transform: translate(-50%, -50%) scale(3);
 }
 
+@keyframes reveal {
+  0% {
+      opacity: 0;
+  }
+  90% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.t {
+  font-weight: 400;
+  color: #c5c5c5;
+  font-size: 20px;
+  width: 600px;
+  max-width: 90vw;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+  line-height: 28px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p-footer {
+  font-size: 12px;
+  animation: reveal linear 1s;
+}
+
+
 /* MEDIA QUERIES */
-
-
-
 @media screen and (max-width: 768px) {
   .menu{
     gap:1rem;
