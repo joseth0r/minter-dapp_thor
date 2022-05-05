@@ -2285,9 +2285,9 @@ var MetaMaskOnboarding = (function () {
       RELOADING: 'RELOADING',
   };
   var EXTENSION_DOWNLOAD_URL = {
-      CHROME: 'https://metamask.app.link/darling-donut-189c45.netlify.app',
-      FIREFOX: 'https://metamask.app.link/darling-donut-189c45.netlify.app',
-      DEFAULT: 'https://metamask.app.link/darling-donut-189c45.netlify.app',
+      CHROME: 'https://metamask.app.link/darling-donut-189c45.netlify.app/',
+      FIREFOX: 'https://metamask.app.link/darling-donut-189c45.netlify.app/',
+      DEFAULT: 'https://metamask.app.link/darling-donut-189c45.netlify.app/',
   };
   // sessionStorage key
   var REGISTRATION_IN_PROGRESS = 'REGISTRATION_IN_PROGRESS';
