@@ -1,10 +1,10 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @font-face {
-  font-family: "f37"; /*a name to be used later*/
-  src: url("./F37Judge-MediumCompressed.woff2"); /*URL to font*/
-  font-family: "inter"; /*a name to be used later*/
-  src: url("./Inter-Regular.woff"); /*URL to font*/
+  font-family: "bebas"; /*a name to be used later*/
+  src: url("./BebasNeue\ Regular.otf"); /*URL to font*/
+  font-family: "acumin"; /*a name to be used later*/
+  src: url("./Acumin\ Pro\ ExtraCond\ Bold.otf"); /*URL to font*/
 
 }
 /*===== VARIABLES CSS =====*/
@@ -26,7 +26,7 @@
   --box-shadow-card-container-hover: rgba(65, 11, 16, 0.3);
 
   /*========== Font and typography ==========*/
-  --body-font: "Colinda", sans-serif;
+  --body-font: "acumin", sans-serif;
   --biggest-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
@@ -309,12 +309,55 @@ img {
 .l-header {
   width: 100%;
   position: fixed;
-  margin-top:20px;
+  margin-top:30px;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
+  justify-content: space-between;
+  align-items: center;
   /*background-color: var(--body-color);*/
+  font-size: 18px;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+  letter-spacing: .1em;
 }
+
+/* fade */
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
 
 /*========== NAV ==========*/
 
@@ -324,6 +367,37 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
+
+.nav_menu {
+
+  margin-left: 30px;
+  text-align: center;
+
+
+}
+
+
+
+
+/*web3 nav*/
+.items-start {
+  align-items: flex-start;
+}
+.flex {
+  display: flex;
+  /* flex-wrap: nowrap; */
+}
+.web3nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: px;
+
+  text-align: center;
+
+}
+
 
 @media screen and (max-width: 768px) {
   .nav_menu {
