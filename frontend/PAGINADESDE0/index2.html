@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Boring Elon</title>
+    <title>The Boring Elon 2</title>
     <!--========== FAVICON ==========-->
     <link rel="icon" href="assets/img/home.png" />
     <!--========== BOX ICONS ==========-->
@@ -12,18 +12,14 @@
       rel="stylesheet"
     />
 
-
-    <!--========== SCRIPTS ==========-->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
+    
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/particles.css">
+    <!--========== SCRIPTS ==========-->
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--================== LINK THUMBNAIL META TAGS ===================-->
     <!-- MS Tile - for Microsoft apps-->
     <meta
@@ -48,34 +44,32 @@
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
     <meta property="og:url" content="https://presentedenatal.netlify.app/" />
-
   </head>
-
-<style>
-  .logo {
-  height: 200px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-}
+  <style>
+    .logo {
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
 </style>
+
   <body>
-
-
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrollTop" id="scrollTop">
       <i class="bx bx-up-arrow-alt scrollTop_icon"></i>
     </a>
 
     <!--========== HEADER ==========-->
-
     <header class="l-header" id="header">
+      <nav class="nav uppercase w-full flex-1 justify-between">
+
 
         <div class="nav_menu" id="nav-menu">
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="#home" class="nav_link active-link">HOME</a>
+              <a href="#home" class="nav_link active-link">Home</a>
             </li>
             <li class="nav_item">
               <a href="#share" class="nav_link">Compartilhar</a>
@@ -86,28 +80,37 @@
             <li class="nav_item">
               <a href="#accessories" class="nav_link">Enfeites</a>
             </li>
+
+            <li>
+              <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+            </li>
           </ul>
+
+          <div class="flex items-start h-3">
+            <ul class="m-0 flex space-x-6">
+              <span class="text-white/70 hidden lg:block">OTHERDEED:</span>
+              <li><a href="https://opensea.io/collection/otherdeed" target="_blank" rel="noopener noreferrer" class="no-underline desktop-nav-highlight text-white/70">Buy</a></li>
+              <li><a class="no-underline desktop-nav-highlight text-white/70" href="/claim">Claim</a></li></ul>
+              <div class="connect-dropdown relative w-full md:w-auto mt-14 mb-8 md:mb-0 text-white md:-mt-3 flex flex-col justify-start text-center border-white border rounded-sm">
+                <button class="relative z-10 text-center uppercase header-button w-full py-[10px] h-12 md:h-9 px-3 lg:px-5 cursor-pointer">Connect Wallet</button>
+                <nav class="relative max-h-0 h-full overflow-hidden z-30" style="height: 0px; max-height: 0px;">
+                  <div class="connect-dropdown-list pt-0 md:pt-0 pb-1 md:pb-2 px-3 flex flex-col flex-shrink-0 justify-start md:justify-start text-[12px] leading-[1] font-cta uppercase text-left">
+                    <button type="button" class="cta duration-200" style="opacity: 0;"><span class="flex w-full items-center justify-center text-center">Metamask</span></button>
+                    <a href="https://www.coinbase.com/wallet/getting-started-extension" target="_blank" rel="noopener noreferrer" class="cta duration-200" style="opacity: 0;">
+                      <span class="flex w-full items-center justify-center text-center">Coinbase</span></a><button type="button" class="cta duration-200" style="opacity: 0;">
+                        <span class="flex w-full items-center justify-center text-center">WalletConnect</span></button></div></nav></div></div>
+
+
+
         </div>
             <!--========== web3 ==========-->
 
-        <div class="flex items-start h-3">
-          <ul class="m-0 flex space-x-6">
-            <span class="text-white/70 hidden lg:block">OTHERDEED:</span>
-            <li><a href="https://opensea.io/collection/otherdeed" target="_blank" rel="noopener noreferrer" class="no-underline desktop-nav-highlight text-white/70">Buy</a></li>
-            <li><a class="no-underline desktop-nav-highlight text-white/70" href="/claim">Claim</a></li></ul>
-            <div class="connect-dropdown relative w-full md:w-auto mt-14 mb-8 md:mb-0 text-white md:-mt-3 flex flex-col justify-start text-center border-white border rounded-sm">
-              <button class="relative z-10 text-center uppercase header-button w-full py-[10px] h-12 md:h-9 px-3 lg:px-5 cursor-pointer">Connect Wallet</button>
-              <nav class="relative max-h-0 h-full overflow-hidden z-30" style="height: 0px; max-height: 0px;">
-                <div class="connect-dropdown-list pt-0 md:pt-0 pb-1 md:pb-2 px-3 flex flex-col flex-shrink-0 justify-start md:justify-start text-[12px] leading-[1] font-cta uppercase text-left">
-                  <button type="button" class="cta duration-200" style="opacity: 0;"><span class="flex w-full items-center justify-center text-center">Metamask</span></button>
-                  <a href="https://www.coinbase.com/wallet/getting-started-extension" target="_blank" rel="noopener noreferrer" class="cta duration-200" style="opacity: 0;">
-                    <span class="flex w-full items-center justify-center text-center">Coinbase</span></a><button type="button" class="cta duration-200" style="opacity: 0;">
-                      <span class="flex w-full items-center justify-center text-center">WalletConnect</span></button></div></nav></div></div>
 
-
+    
         <div class="nav_toggle" id="nav-toggle">
           <i class="bx bx-grid-alt"></i>
         </div>
+      </nav>
     </header>
 
     <main class="l-main">
@@ -121,9 +124,6 @@
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0);">
-
-
-       
 
       </section>
 
@@ -345,15 +345,12 @@
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
 
-    <!--========== PARTICLES ==========-->
+        <!--========== PARTICLES ==========-->
 		<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 		<script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
     <script  src="assets/js/particles.js"></script>
     <!--========== logo in nav ==========-->
     <script  src="assets/js/logoinnav.js"></script>
-
-    
-
 
   </body>
 </html>
