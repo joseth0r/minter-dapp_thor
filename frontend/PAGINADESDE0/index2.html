@@ -59,19 +59,34 @@
 </style>
 
   <body>
-    <!--========== SCROLL TOP ==========-->
-    <a href="#" class="scrollTop" id="scrollTop">
-      <i class="bx bx-up-arrow-alt scrollTop_icon"></i>
-    </a>
+    <!--========== SCROLL TOP ==========-->    
+    <div class="circlef">
+    <svg height="40" width="40" class="scroll-top-button">
+      <defs>
+        <linearGradient id="gradient" gradientTransform="rotate(0)">
+          <stop offset="0%" stop-color="rgba(255,255,255,1)" />
+          <stop offset="100%" stop-color="#ffffff" />
+        </linearGradient>
+      </defs>
+      <g class="outline">
+        <circle cx="20" cy="20" r="15" stroke="#6D6D6D" stroke-width="1" fill="none"></circle>
+        <path d="m 20 5 a 1 1 0 0 0 0 30 a 1 1 0 0 0 0 -30" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="rgba(0,0,0,0.2)" transition="0.3s;"/>
+      </g>
+      <g class="go">
+        <circle id="bar" r="15" cx="20" cy="20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="url(#gradient)" stroke-dasharray="94" stroke-dashoffset="94" style="transform: rotate(-90deg); transform-origin: 50% 50%;"></circle>
+      
+      </g>
+
+    </svg>
+  </div>
         <!--========== PROGRESS CIRCLE ==========-->
 
 
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
       <nav class="nav uppercase w-full flex-1 justify-between">
-
-
-        <div class="nav_menu" id="nav-menu">
+                  
+        <div class="nav_menu header-font" id="nav-menu">
           <ul class="nav_list">
             <li class="nav_item">
               <a href="#home" class="nav_link active-link">Home</a>
@@ -106,7 +121,7 @@
       <section id="home">
       </section>
 
-      <div class='heroEffects'>
+      <div class='heroEffects mb-32'>
         <div id="particles-js"></div>        
         <div class="bg">  
                 <div class="scroll-down-wrap no-border ">
@@ -129,39 +144,14 @@
         <div class="shade"></div>
     </div>
 
-      <!--========== HOME ==========-->
-      <!--
-      <section class="home" id="home">
-        <div class="scroll-down-wrap no-border">
-          <span data-text="scroll to explore" class="effect-shine" style="left:50%;"></span>
-          <a href="#" class="section-down-arrow ">
-            <svg class="nectar-scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
-              <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
-              </path>
-            </svg>
-          </a>
-        </div>
-      -->
-
-        
-        <!--========== particles ==========-->
-        <!-- 
-        <div id="particles-js"></div>        
-        <img class="logo" src="./assets/img/logo.png" style="  height: 500px;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0);">
-              </section>
-        -->
 
 
 
       <!--========== FAQ ==========-->
       <section class="share section bd-container" id="faq">
-        <div class="container">
-          <h2>Frequently Asked Questions</h2>
-          <div class="accordion">
+        <div class="headline-2 text-center">
+          <h2>FAQ</h2>
+          <div class="accordion mt-32">
             <div class="accordion-item">
               <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
               <div class="accordion-content">
@@ -201,38 +191,7 @@
 
       <!--========== GALLERY ==========-->
       <section class="" id="gallery">
-<div class="h-full relative z-20 flex flex-col justify-center items-center">
-  <div class="flex flex-col items-center text-left px-5 z-50 relative animate-fade-up">
-    <div class="text-justify text-left text-gray-medium" style="max-width: 500px; opacity: 1; animation-delay: 0ms;">
-      <div class="markdown"><p>The Otherside is part galaxy and part archipelago, with islands extending from the Biogenic Swamp at the center and roiling outwards to the Infinite Expanse. There are five sediments that lands are built upon: Biogenic Swamp, Chemical Goo, Rainbow Atmos, Cosmic Dream, and Infinite Expanse. Your Otherdeed is the key to a unique blend of environment, sediment, and treasures — some with resources, some home to powerful artifacts. And on a very few, a Koda roams.</p></div></div></div>
-      <div class="block rarability-gradient-bg absolute left-[-10vw] bg-top-fade right-[-10vw] z-0 top-0 lg:-top-32 -bottom-0 before:h-[40vh] bg-bottom-fade animate-scale-down" style="opacity: 1;"></div>
-      <div class="relative w-screen z-0  pb-48 mt-32  ">
-        <div class="relative w-full max-w-[1400px] mx-auto pb-12">
-          <div class="flex w-[965px] md:w-[1295px] lg:w-full justify-start lg:grid lg:grid-cols-5 lg:gap-x-3 z-30 px-5 lg:px-0 animate-fade-up">
-            <div class="relative shrink-0 w-[176px] md:w-[242px] lg:w-full overflow-hidden mr-3" style="opacity: 1; animation-delay: 0ms;">
-              <div class="relative w-full overflow-hidden after:block after:pt-[140%] after:w-full">
-                <div class="lazyload-wrapper absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0">
-                  <img class="duration-500 opacity-1 absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0" src="./assets/img/4_Rarability_001.jpeg" aria-hidden="false"></div></div>
-                  <div class="cta-small text-center flex flex-col space-y-2 mt-8"><span>INFINITE EXPANSE</span><span>SLUDGE - TIER 1</span></div></div>
-                  <div class="relative shrink-0 w-[176px] md:w-[242px] lg:w-full overflow-hidden mr-3" style="opacity: 1; animation-delay: 175ms;">
-                    <div class="relative w-full overflow-hidden after:block after:pt-[140%] after:w-full"><div class="lazyload-wrapper absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0">
-                      <img class="duration-500 opacity-1 absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0" src="./assets/img/4_Rarability_001.jpeg" aria-hidden="false"></div></div>
-                      <div class="cta-small text-center flex flex-col space-y-2 mt-8"><span>COSMIC DREAM</span><span>BOG - TIER 2</span></div></div>
-                      <div class="relative shrink-0 w-[176px] md:w-[242px] lg:w-full overflow-hidden mr-3" style="opacity: 1; animation-delay: 350ms;">
-                        <div class="relative w-full overflow-hidden after:block after:pt-[140%] after:w-full"><div class="lazyload-wrapper absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0">
-                          <img class="duration-500 opacity-1 absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0" src="/assets/world/tiers/4_Rarability_003.jpg" aria-hidden="false"></div></div>
-                          <div class="cta-small text-center flex flex-col space-y-2 mt-8"><span>RAINBOW ATMOS</span><span>OBSIDIAN - TIER 3</span></div></div>
-                          <div class="relative shrink-0 w-[176px] md:w-[242px] lg:w-full overflow-hidden mr-3" style="opacity: 0; animation-delay: 525ms;">
-                            <div class="relative w-full overflow-hidden after:block after:pt-[140%] after:w-full"><div class="lazyload-wrapper absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0">
-                              <img class="duration-500 opacity-1 absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0" src="/assets/world/tiers/4_Rarability_004.jpg" aria-hidden="false"></div></div>
-                              <div class="cta-small text-center flex flex-col space-y-2 mt-8"><span>CHEMICAL GOO</span><span>LUSTER - TIER 4</span></div></div>
-                              <div class="relative shrink-0 w-[176px] md:w-[242px] lg:w-full overflow-hidden mr-3" style="opacity: 0; animation-delay: 700ms;">
-                                <div class="relative w-full overflow-hidden after:block after:pt-[140%] after:w-full"><div class="lazyload-wrapper absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0">
-                                  <img class="duration-500 opacity-1 absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0" src="/assets/world/tiers/4_Rarability_005.jpg" aria-hidden="false"></div></div>
-                                  <div class="cta-small text-center flex flex-col space-y-2 mt-8"><span>BIOGENIC SWAMP</span><span>CRIMSON - TIER 5</span></div></div></div>
-                                  <div class="absolute bottom-1 lg:bottom-0 left-5 lg:left-0 lg:right-0 animate-scale-down">
-                                    <div class="block w-[925px] md:w-[1255px] lg:w-full h-[1px] rainbow-gradient" style="opacity: 0; animation-delay: 0ms;"></div></div></div></div>
-                                    <span class="block font-cta text-[14px] tracking-[0.3em] mt-7 lg:mt-8 absolute bottom-32 animate-fade-up"><span class="block" style="opacity: 0; animation-delay: 0ms;">OTHERDEED TIERS</span></span></div>
+
       </section>
 
 
@@ -240,7 +199,7 @@
       <section class="roadmap" id="roadmap">
         <div class="ag-timeline-block">
           <div class="ag-timeline_title-box">
-            <div class="ag-timeline_title">ROADMAP</div>
+            <div class="headline-2 text-center mb-32"><h2>ROADMAP</h2></div>
           </div>
           <section class="ag-section">
             <div class="ag-format-container">
@@ -670,8 +629,7 @@
         </div>
       </section>
     </main>
-
-    <!--========== FOOTER ==========-->
+<!--========== FOOTER ==========-->
     <footer class="footer section">
       <div class="footer_container bd-container bd-grid">
         <div class="footer_content">
@@ -730,7 +688,30 @@
         Todos los derechos reservados.
       </p>
     </footer>
-
+<!--========== FOOTER2 ========== 
+<footer class="relative z-30 h-auto w-screen pt-12 md:pt-8 font-cta text-gray-light md:bg-transparent md:w-full px-0">
+  <div class="max-w-screen-xl relative z-20 mx-auto flex w-full flex-col items-center text-[8px] md:w-[600px] lg:w-[50%]">
+    <div class="flex text-white items-center justify-center w-full space-x-6 md:space-x-12 md:mb-10 max-w-[400px]">
+      <a href="https://yuga.com" target="_blank" rel="noreferrer noopener"></a><a href="https://www.improbable.io/" target="_blank" rel="noreferrer noopener"></a>
+      <a href="https://www.animocabrands.com/" target="_blank" rel="noreferrer noopener"></a></div><div class="flex w-full md:space-x-12 justify-center items-center">
+        <span class="footer-text mt-8 mb-0 md:mt-0 md:mb-0 block whitespace-nowrap text-center md:text-left uppercase">© 2022 Yuga Labs Inc.</span>
+        <ul class="mt-8 text-center w-full space-y-2 sm:flex sm:space-y-0 sm:space-x-6 sm:justify-center md:my-0 md:w-auto md:justify-start md:space-x-4"><li>
+          <a class="inline-block footer-text whitespace-nowrap border-b-[1px] border-gray-light pb-1 uppercase" href="/terms">Terms &amp; conditions</a></li>
+          <li><a href="https://yuga.com/privacy/" target="_blank" rel="noopener noreferrer" class="inline-block footer-text whitespace-nowrap border-b-[1px] border-gray-light pb-1 uppercase">Privacy</a></li>
+          <li><a class="inline-block footer-text whitespace-nowrap border-b-[1px] border-gray-light pb-1 uppercase" href="/license">License</a></li>
+          <li><a class="inline-block footer-text whitespace-nowrap border-b-[1px] border-gray-light pb-1 uppercase" href="/nft-purchase-agreement">NFt Purchase Agreement</a></li></ul>
+          <div class="flex items-center justify-end"><ul class="mt-14 flex items-center md:justify-end space-x-5 pt-[2px] md:mt-0">
+            <li>
+<a href="https://twitter.com/OthersideMeta" target="_blank" rel="noreferrer" class="inline-block h-5 md:h-3 text-gray-light">
+              <svg class="h-full w-auto" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.0268 2.17225C20.2532 2.51569 19.4217 2.74698 18.5491 2.85124C19.4401 2.31769 20.1244 1.47223 20.4459 0.464701C19.6127 0.958831 18.6893 1.31804 17.7063 1.51166C16.9204 0.673217 15.7981 0.1493 14.5575 0.1493C11.7724 0.1493 9.72576 2.74786 10.3548 5.44542C6.77062 5.26582 3.59207 3.54863 1.46399 0.93868C0.3338 2.87752 0.877868 5.41388 2.79831 6.69827C2.09216 6.67549 1.42632 6.48187 0.845452 6.15858C0.798142 8.157 2.23059 10.0266 4.30523 10.4428C3.69809 10.6075 3.03311 10.646 2.35675 10.5164C2.9052 12.2301 4.49798 13.4768 6.38688 13.5118C4.57332 14.9338 2.28841 15.5689 0 15.2991C1.90906 16.523 4.17732 17.2371 6.61292 17.2371C14.6224 17.2371 19.1475 10.4726 18.8742 4.40547C19.717 3.79657 20.4485 3.03698 21.0268 2.17225Z" fill="currentColor"></path></svg></a></li>
+                <li><a href="https://discord.gg/the-otherside" target="_blank" rel="noreferrer" class="inline-block h-5 md:h-3 text-gray-light">
+                  <svg class="h-full w-auto" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_0_6)">
+                      <path d="M20.1616 2.47123C18.7156 1.80777 17.1651 1.31896 15.5439 1.039C15.5143 1.0336 15.4849 1.0471 15.4696 1.07411C15.2702 1.42878 15.0493 1.89149 14.8947 2.25517C13.151 1.99412 11.4162 1.99412 9.70823 2.25517C9.55352 1.8834 9.32461 1.42878 9.1243 1.07411C9.10909 1.048 9.0796 1.0345 9.05008 1.039C7.42977 1.31807 5.87921 1.80688 4.43237 2.47123C4.41985 2.47663 4.40911 2.48564 4.40198 2.49734C1.4609 6.89125 0.655219 11.1772 1.05046 15.4099C1.05225 15.4306 1.06387 15.4505 1.07997 15.463C3.02041 16.8881 4.90006 17.7532 6.7448 18.3266C6.77433 18.3356 6.80561 18.3248 6.8244 18.3005C7.26077 17.7046 7.64976 17.0762 7.98328 16.4154C8.00296 16.3768 7.98417 16.3308 7.94395 16.3155C7.32694 16.0815 6.73943 15.7961 6.17429 15.4721C6.12959 15.4459 6.12601 15.382 6.16713 15.3514C6.28606 15.2623 6.40502 15.1696 6.51858 15.0759C6.53912 15.0588 6.56775 15.0552 6.59191 15.066C10.3047 16.7611 14.3242 16.7611 17.9931 15.066C18.0172 15.0543 18.0459 15.0579 18.0673 15.075C18.1809 15.1687 18.2998 15.2623 18.4197 15.3514C18.4608 15.382 18.4581 15.4459 18.4134 15.4721C17.8483 15.8024 17.2607 16.0815 16.6428 16.3146C16.6026 16.3299 16.5847 16.3768 16.6044 16.4154C16.9451 17.0753 17.3341 17.7036 17.7624 18.2996C17.7803 18.3248 17.8125 18.3356 17.842 18.3266C19.6957 17.7532 21.5753 16.8881 23.5158 15.463C23.5328 15.4505 23.5435 15.4315 23.5453 15.4108C24.0183 10.5173 22.753 6.26651 20.1911 2.49823C20.1848 2.48564 20.1741 2.47663 20.1616 2.47123ZM8.53772 12.8326C7.41993 12.8326 6.4989 11.8064 6.4989 10.5461C6.4989 9.2858 7.40206 8.25958 8.53772 8.25958C9.68229 8.25958 10.5944 9.29481 10.5765 10.5461C10.5765 11.8064 9.67334 12.8326 8.53772 12.8326ZM16.0759 12.8326C14.9582 12.8326 14.0371 11.8064 14.0371 10.5461C14.0371 9.2858 14.9403 8.25958 16.0759 8.25958C17.2205 8.25958 18.1326 9.29481 18.1147 10.5461C18.1147 11.8064 17.2205 12.8326 16.0759 12.8326Z" fill="currentColor">
+                        
+                      </path></g><defs><clipPath id="clip0_0_6"><rect width="22.6862" height="17.5739" fill="white" transform="translate(0.958481 0.906255)"></rect></clipPath></defs></svg></a></li><li><a href="https://www.youtube.com/channel/UCB6R9NAjkgxQi_QEkc4O25Q" target="_blank" rel="noreferrer" class="inline-block h-5 md:h-3 text-gray-light"><svg class="h-full w-auto" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_0_9)"><path d="M30.3145 3.33903C30.1429 2.69325 29.8047 2.10387 29.3337 1.62987C28.8628 1.15588 28.2756 0.81389 27.6309 0.638142C25.2577 0 15.7718 0 15.7718 0C15.7718 0 6.28593 0 3.91273 0.638142C3.26807 0.81389 2.68086 1.15588 2.20989 1.62987C1.73892 2.10387 1.40071 2.69325 1.22909 3.33903C0.594398 5.72258 0.594398 10.6932 0.594398 10.6932C0.594398 10.6932 0.594398 15.6638 1.22909 18.0473C1.40071 18.6931 1.73892 19.2825 2.20989 19.7565C2.68086 20.2305 3.26807 20.5725 3.91273 20.7482C6.28593 21.3864 15.7718 21.3864 15.7718 21.3864C15.7718 21.3864 25.2577 21.3864 27.6309 20.7482C28.2756 20.5725 28.8628 20.2305 29.3337 19.7565C29.8047 19.2825 30.1429 18.6931 30.3145 18.0473C30.9492 15.6638 30.9492 10.6932 30.9492 10.6932C30.9492 10.6932 30.9492 5.72258 30.3145 3.33903Z" fill="currentColor"></path><path d="M12.6671 15.2067L20.6007 10.6932L12.6671 6.17962V15.2067Z" fill="black"></path></g><defs><clipPath id="clip0_0_9"><rect width="30.3548" height="21.3864" fill="currentColor" transform="translate(0.597183)"></rect></clipPath></defs></svg></a></li></ul></div></div></div><div class="w-full h-[15vw] overflow-hidden mt-6 sm:mt-12"></div></footer>-->
+    
     <!--========== SCROLL REVEAL ==========-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -750,7 +731,7 @@
     <script  src="assets/js/faq.js"></script>
         <!--========== scroll progess ==========-->
 
-    <script src="assets/js/scrollprogress.js" async=""></script>
+    <script src="assets/js/scrollprogressnew.js" ></script>
 
         <!--========== header ==========-->
 

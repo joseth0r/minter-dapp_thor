@@ -3,9 +3,12 @@
 @font-face {
   font-family: "bebas"; /*a name to be used later*/
   src: url("./BebasNeue\ Regular.otf"); /*URL to font*/
-  font-family: "acumin"; /*a name to be used later*/
-  src: url("./Acumin\ Pro\ ExtraCond\ Bold.otf"); /*URL to font*/
-
+  font-family: "coanda"; /*a name to be used later*/
+  src: url("./Coanda-Regular.woff"); /*URL to font*/
+  font-family: "F37"; /*a name to be used later*/
+  src: url("./F37Judge-MediumCompressed.woff2"); /*URL to font*/
+  font-family: "inter"; /*a name to be used later*/
+  src: url("./Inter-Regular.woff"); /*URL to font*/
 }
 /*===== VARIABLES CSS =====*/
 :root {
@@ -26,8 +29,9 @@
   --box-shadow-card-container-hover: rgba(65, 11, 16, 0.3);
 
   /*========== Font and typography ==========*/
-  --body-font: "acumin", sans-serif;
-  --header-font: "bebas", sans-serif;
+  --body-font: "coanda", sans-serif;
+  --header-font: "inter", sans-serif;
+  --headline-font:"f37", sans-serif;
   --biggest-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
@@ -51,6 +55,22 @@
   --z-fixed: 100;
 }
 
+
+/* scroll bar*/
+body::-webkit-scrollbar {
+	width: 8px !important;
+	-webkit-overflow-scrolling: auto !important;
+}
+body::-webkit-scrollbar-thumb {
+	background: rgb(53, 52, 52) !important;
+	background: linear-gradient(25deg, rgb(129, 126, 128) 0%, rgb(100, 100, 99) 100%) !important;
+	border-radius: 4px !important;
+}
+body::-webkit-scrollbar-track {
+	background: #222 !important;
+}
+
+
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 3rem;
@@ -69,9 +89,302 @@
 
 }
 
+/* headline font*/
+.headline-2 {
+  font-family: var(--headline-font);
+  font-size: 120px;
+  text-transform: uppercase;
+  line-height: .9;
+  letter-spacing: .01em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+
+/* header font*/
+.header-font {
+  font-family: Inter;
+  font-size: 12px;
+  letter-spacing: .1em;
+}
+
+/* header logo*/
+.left-1\/2 {
+  left: 50%;
+}
+.absolute {
+  position: absolute;
+}
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+}
+.z-50 {
+  z-index: 50;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.duration-500 {
+  transition-duration: .5s;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.translate-y-0 {
+  --tw-translate-y: 0px;
+}
+/* new footer*/
+.h-auto {
+  height: auto;
+}
+.relative {
+  position: relative;
+}
+.text-\[8px\] {
+  font-size: 8px;
+}
+.items-center {
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.w-full {
+  width: 100%;
+}
+
+@media (min-width: 768px){
+.md\:space-x-12>:not([hidden])~:not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.md\:justify-start {
+    justify-content: flex-start;
+}
+.md\:w-auto {
+    width: auto;
+}
+.md\:my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+}
+@media (min-width: 640px){
+.sm\:justify-center {
+    justify-content: center;
+}
+.sm\:flex {
+    display: flex;
+}
+}
+.text-center {
+    text-align: center;
+}
+.w-full {
+    width: 100%;
+}
+.mt-8 {
+    margin-top: 2rem;
+}
+menu, ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+.border-gray-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(142 142 142/var(--tw-border-opacity));
+}
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+.truncate, .whitespace-nowrap {
+  white-space: nowrap;
+}
+.inline-block {
+  display: inline-block;
+}
+.footer-text {
+  font-family: Inter;
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: .1em;
+}
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+a, a:focus, button, button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+a, button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
 
 
 
+@media (min-width: 768px)
+{
+.md\:w-full {
+    width: 100%;
+}
+}
+.text-gray-light {
+    --tw-text-opacity: 1;
+    color: rgb(142 142 142/var(--tw-text-opacity));
+}
+.font-cta {
+    font-family: Inter;
+}
+.pt-12 {
+    padding-top: 3rem;
+}
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.w-screen {
+    width: 100vw;
+}
+.flex {
+  display: flex;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+z-20 {
+  z-index: 20;
+}
+
+.relative {
+  position: relative;
+}
+*, :after, :before {
+  /* box-sizing: border-box; */
+  border: 0 solid;
+}
+.font-cta {
+  font-family: var(--header-font);
+}
+
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.w-full {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+@media (min-width: 768px)
+{
+.md\:text-left {
+    text-align: left;
+}
+
+.md\:mt-0 {
+    margin-top: 0;
+}
+.md\:mb-0 {
+    margin-bottom: 0;
+}
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
+}
+.truncate, .whitespace-nowrap {
+    white-space: nowrap;
+}
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+
+  .md\:my-0 {
+    margin-top: 0;
+    /* margin-bottom: 0; */
+}
+
+
+@media (min-width: 768px){
+.md\:justify-end {
+    justify-content: flex-end;
+}
+.md\:mt-0 {
+    margin-top: 0;
+}
+}
+.pt-\[2px\] {
+    padding-top: 2px;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mt-8 {
+    margin-top: 2rem;
+}
+.footer-text {
+    font-family: Inter;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: .1em;
+}
 /* Faz com que a rolagem da landing page até o id
 seja suave: */
 html {
@@ -138,6 +451,26 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+
+/* scroll progress icon*/
+
+
+.scroll-top-button {
+	position: fixed;
+	right: 20px;
+	bottom: 40px;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.5s;
+}
+@media screen and (min-width: 992px)
+{
+  .circlef svg {
+     width: 40px;
+}
 }
 
 /*========== CLASS CSS ==========*/
@@ -730,11 +1063,6 @@ img {
 /* faq*/
 
 
-.container {
-  margin: 0 auto;
-  padding: 4rem;
-  width: 48rem;
-}
 
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
@@ -990,6 +1318,11 @@ html, body {
 .mt-32 {
     margin-top: 8rem;
 }
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+
 .z-0 {
     z-index: 0;
 }
