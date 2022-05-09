@@ -72,40 +72,36 @@
               <a href="#home" class="nav_link active-link">Home</a>
             </li>
             <li class="nav_item">
-              <a href="#share" class="nav_link">Compartilhar</a>
+              <a href="#faq" class="nav_link">FAQ</a>
             </li>
             <li class="nav_item">
-              <a href="#decorations" class="nav_link">Decorações</a>
+              <a href="#roadmap" class="nav_link">Roadmap</a>
             </li>
             <li class="nav_item">
-              <a href="#accessories" class="nav_link">Enfeites</a>
+              <a href="#team" class="nav_link">Team</a>
             </li>
-
+            <li class="nav_item">
+              <a href="#gallery" class="nav_link">Gallery</a>
+            </li>
             <li>
               <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
             </li>
           </ul>
 
-          <div class="flex items-start h-3">
-            <ul class="m-0 flex space-x-6">
-              <span class="text-white/70 hidden lg:block">OTHERDEED:</span>
-              <li><a href="https://opensea.io/collection/otherdeed" target="_blank" rel="noopener noreferrer" class="no-underline desktop-nav-highlight text-white/70">Buy</a></li>
-              <li><a class="no-underline desktop-nav-highlight text-white/70" href="/claim">Claim</a></li></ul>
-              <div class="connect-dropdown relative w-full md:w-auto mt-14 mb-8 md:mb-0 text-white md:-mt-3 flex flex-col justify-start text-center border-white border rounded-sm">
-                <button class="relative z-10 text-center uppercase header-button w-full py-[10px] h-12 md:h-9 px-3 lg:px-5 cursor-pointer">Connect Wallet</button>
-                <nav class="relative max-h-0 h-full overflow-hidden z-30" style="height: 0px; max-height: 0px;">
-                  <div class="connect-dropdown-list pt-0 md:pt-0 pb-1 md:pb-2 px-3 flex flex-col flex-shrink-0 justify-start md:justify-start text-[12px] leading-[1] font-cta uppercase text-left">
-                    <button type="button" class="cta duration-200" style="opacity: 0;"><span class="flex w-full items-center justify-center text-center">Metamask</span></button>
-                    <a href="https://www.coinbase.com/wallet/getting-started-extension" target="_blank" rel="noopener noreferrer" class="cta duration-200" style="opacity: 0;">
-                      <span class="flex w-full items-center justify-center text-center">Coinbase</span></a><button type="button" class="cta duration-200" style="opacity: 0;">
-                        <span class="flex w-full items-center justify-center text-center">WalletConnect</span></button></div></nav></div></div>
-
-
-
         </div>
-            <!--========== web3 ==========-->
 
-
+        <div class="flex items-start space-x-4 lg:space-x-5 h-3">
+          <ul class="m-0 flex space-x-6"><span class="text-white/70 hidden lg:block">OTHERDEED:</span>
+            <li><a href="https://opensea.io/collection/otherdeed" target="_blank" rel="noopener noreferrer" class="no-underline desktop-nav-highlight text-white/70">Buy</a></li>
+            <li><a class="no-underline desktop-nav-highlight text-white/70" href="/claim">Claim</a></li></ul>
+            <div class="connect-dropdown relative w-full md:w-auto mt-14 mb-8 md:mb-0 text-white md:-mt-3 flex flex-col justify-start text-center border-white border rounded-sm">
+              <button class="relative z-10 text-center uppercase header-button w-full py-[10px] h-12 md:h-9 px-3 lg:px-5 cursor-pointer">Connect Wallet</button>
+              <nav class="relative max-h-0 h-full overflow-hidden z-30" style="height: 0px; max-height: 0px;">
+                <div class="connect-dropdown-list pt-0 md:pt-0 pb-1 md:pb-2 px-3 flex flex-col flex-shrink-0 justify-start md:justify-start text-[12px] leading-[1] font-cta uppercase text-left">
+                  <button type="button" class="cta duration-200" style="opacity: 0;"><span class="flex w-full items-center justify-center text-center">Metamask</span></button>
+                  <a href="https://www.coinbase.com/wallet/getting-started-extension" target="_blank" rel="noopener noreferrer" class="cta duration-200" style="opacity: 0;">
+                    <span class="flex w-full items-center justify-center text-center">Coinbase</span></a><button type="button" class="cta duration-200" style="opacity: 0;">
+                      <span class="flex w-full items-center justify-center text-center">WalletConnect</span></button></div></nav></div></div>
     
         <div class="nav_toggle" id="nav-toggle">
           <i class="bx bx-grid-alt"></i>
@@ -116,6 +112,15 @@
     <main class="l-main">
       <!--========== HOME ==========-->
       <section class="home" id="home">
+        <div class="scroll-down-wrap no-border">
+          <span data-text="scroll to explore" class="effect-shine" style="left:50%;"></span>
+          <a href="#" class="section-down-arrow ">
+            <svg class="nectar-scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
+              <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
+              </path>
+            </svg>
+          </a>
+        </div>
         <!--========== particles ==========-->
         <div id="particles-js"></div>
         <!--========== logo image ==========-->
@@ -127,125 +132,487 @@
 
       </section>
 
-      <!--========== SHARE ==========-->
-      <section class="share section bd-container" id="share">
-        <div class="share_container bd-grid">
-          <div class="share_data">
-            <h2 class="section-title-center">
-              <b>🤗</b><br />
-              Compartilhar é o melhor presente que você pode dar!
-            </h2>
-            <p class="share_description">
-              Compartilhar essas férias é o melhor presente que você pode dar,
-              presentear, ou compartilhar o seu amor! Com as pessoas que você
-              mais ama, comemorando com muita alegria.
-            </p>
-            <a href="" class="button">Envie um presente!</a>
-          </div>
-
-          <div class="share_img">
-            <img src="assets/img/shared.png" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <!--========== DECORATION ==========-->
-      <section class="share section bd-container" id="decorations">
-        <h2 class="section-title">
-          Compre decorações de Natal <br />
-          para sua casa
-        </h2>
-
-        <div class="decoration_container bd-grid">
-          <div class="decoration_cards">
-            <img
-              src="assets/img/decoration1.png"
-              alt=""
-              class="decoration_img"
-            />
-            <h3 class="decoration-title">Sinos de Natal</h3>
-            <a href="" class="button button-link">Ás compras!</a>
-          </div>
-
-          <div class="decoration_cards">
-            <img
-              src="assets/img/decoration2.png"
-              alt=""
-              class="decoration_img"
-            />
-            <h3 class="decoration-title">Doces de Natal</h3>
-            <a href="" class="button button-link">Ás compras!</a>
-          </div>
-
-          <div class="decoration_cards">
-            <img
-              src="assets/img/decoration3.png"
-              alt=""
-              class="decoration_img"
-            />
-            <h3 class="decoration-title">Árvores de Natal</h3>
-            <a href="" class="button button-link">Ás compras!</a>
+      <!--========== FAQ ==========-->
+      <section class="share section bd-container" id="faq">
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!--========== ACCESSORIES ==========-->
-      <section class="share section bd-container" id="accessories">
-        <h2 class="section-title">
-          Novos Enfeites <br />
-          de Natal
-        </h2>
 
-        <div class="accessories_container bd-grid">
-          <div class="accessory_content">
-            <img src="assets/img/accessory1.png" alt="" class="accessory_img" />
-            <h3 class="accessory_title">Globo de Neve</h3>
-            <span class="accessory_category">Enfeite</span>
-            <span class="accessory_price">R$10,95</span>
-            <a href="" class="button accessory_button">
-              <i class="bx bx-heart"></i>
-            </a>
-          </div>
 
-          <div class="accessory_content">
-            <img src="assets/img/accessory2.png" alt="" class="accessory_img" />
-            <h3 class="accessory_title">Bengala Doce</h3>
-            <span class="accessory_category">Enfeite</span>
-            <span class="accessory_price">R$2,50</span>
-            <a href="" class="button accessory_button">
-              <i class="bx bx-heart"></i>
-            </a>
-          </div>
 
-          <div class="accessory_content">
-            <img src="assets/img/accessory3.png" alt="" class="accessory_img" />
-            <h3 class="accessory_title">Anjo</h3>
-            <span class="accessory_category">Enfeite</span>
-            <span class="accessory_price">R$12,00</span>
-            <a href="" class="button accessory_button">
-              <i class="bx bx-heart"></i>
-            </a>
-          </div>
+      <!--========== GALLERY ==========-->
+      <section class="" id="gallery">
+<div class="h-full relative z-20 flex flex-col justify-center items-center">
+  <div class="flex flex-col items-center text-left px-5 z-50 relative animate-fade-up">
+    <div class="text-justify text-left text-gray-medium" style="max-width: 500px; opacity: 1; animation-delay: 0ms;">
+      <div class="markdown"><p>The Otherside is part galaxy and part archipelago, with islands extending from the Biogenic Swamp at the center and roiling outwards to the Infinite Expanse. There are five sediments that lands are built upon: Biogenic Swamp, Chemical Goo, Rainbow Atmos, Cosmic Dream, and Infinite Expanse. Your Otherdeed is the key to a unique blend of environment, sediment, and treasures — some with resources, some home to powerful artifacts. And on a very few, a Koda roams.</p></div></div></div>
+      <div class="block rarability-gradient-bg absolute left-[-10vw] bg-top-fade right-[-10vw] z-0 top-0 lg:-top-32 -bottom-0 before:h-[40vh] bg-bottom-fade animate-scale-down" style="opacity: 1;"></div>
+      <div class="relative w-screen z-0  pb-48 mt-32  ">
+        <div class="relative w-full max-w-[1400px] mx-auto pb-12">
+          <div class="flex w-[965px] md:w-[1295px] lg:w-full justify-start lg:grid lg:grid-cols-5 lg:gap-x-3 z-30 px-5 lg:px-0 animate-fade-up">
+            <div class="relative shrink-0 w-[176px] md:w-[242px] lg:w-full overflow-hidden mr-3" style="opacity: 1; animation-delay: 0ms;">
+              <div class="relative w-full overflow-hidden after:block after:pt-[140%] after:w-full">
+                <div class="lazyload-wrapper absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0">
+                  <img class="duration-500 opacity-1 absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0" src="./assets/img/4_Rarability_001.jpeg" aria-hidden="false"></div></div>
+                  <div class="cta-small text-center flex flex-col space-y-2 mt-8"><span>INFINITE EXPANSE</span><span>SLUDGE - TIER 1</span></div></div>
+                  <div class="relative shrink-0 w-[176px] md:w-[242px] lg:w-full overflow-hidden mr-3" style="opacity: 1; animation-delay: 175ms;">
+                    <div class="relative w-full overflow-hidden after:block after:pt-[140%] after:w-full"><div class="lazyload-wrapper absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0">
+                      <img class="duration-500 opacity-1 absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0" src="./assets/img/4_Rarability_001.jpeg" aria-hidden="false"></div></div>
+                      <div class="cta-small text-center flex flex-col space-y-2 mt-8"><span>COSMIC DREAM</span><span>BOG - TIER 2</span></div></div>
+                      <div class="relative shrink-0 w-[176px] md:w-[242px] lg:w-full overflow-hidden mr-3" style="opacity: 1; animation-delay: 350ms;">
+                        <div class="relative w-full overflow-hidden after:block after:pt-[140%] after:w-full"><div class="lazyload-wrapper absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0">
+                          <img class="duration-500 opacity-1 absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0" src="/assets/world/tiers/4_Rarability_003.jpg" aria-hidden="false"></div></div>
+                          <div class="cta-small text-center flex flex-col space-y-2 mt-8"><span>RAINBOW ATMOS</span><span>OBSIDIAN - TIER 3</span></div></div>
+                          <div class="relative shrink-0 w-[176px] md:w-[242px] lg:w-full overflow-hidden mr-3" style="opacity: 0; animation-delay: 525ms;">
+                            <div class="relative w-full overflow-hidden after:block after:pt-[140%] after:w-full"><div class="lazyload-wrapper absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0">
+                              <img class="duration-500 opacity-1 absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0" src="/assets/world/tiers/4_Rarability_004.jpg" aria-hidden="false"></div></div>
+                              <div class="cta-small text-center flex flex-col space-y-2 mt-8"><span>CHEMICAL GOO</span><span>LUSTER - TIER 4</span></div></div>
+                              <div class="relative shrink-0 w-[176px] md:w-[242px] lg:w-full overflow-hidden mr-3" style="opacity: 0; animation-delay: 700ms;">
+                                <div class="relative w-full overflow-hidden after:block after:pt-[140%] after:w-full"><div class="lazyload-wrapper absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0">
+                                  <img class="duration-500 opacity-1 absolute left-0 top-0 w-full object-cover align-bottom flex-shrink-0" src="/assets/world/tiers/4_Rarability_005.jpg" aria-hidden="false"></div></div>
+                                  <div class="cta-small text-center flex flex-col space-y-2 mt-8"><span>BIOGENIC SWAMP</span><span>CRIMSON - TIER 5</span></div></div></div>
+                                  <div class="absolute bottom-1 lg:bottom-0 left-5 lg:left-0 lg:right-0 animate-scale-down">
+                                    <div class="block w-[925px] md:w-[1255px] lg:w-full h-[1px] rainbow-gradient" style="opacity: 0; animation-delay: 0ms;"></div></div></div></div>
+                                    <span class="block font-cta text-[14px] tracking-[0.3em] mt-7 lg:mt-8 absolute bottom-32 animate-fade-up"><span class="block" style="opacity: 0; animation-delay: 0ms;">OTHERDEED TIERS</span></span></div>
+      </section>
 
-          <div class="accessory_content">
-            <img src="assets/img/accessory4.png" alt="" class="accessory_img" />
-            <h3 class="accessory_title">Bolinha Vermelha</h3>
-            <span class="accessory_category">Enfeite</span>
-            <span class="accessory_price">R$1,95</span>
-            <a href="" class="button accessory_button">
-              <i class="bx bx-heart"></i>
-            </a>
-          </div>
 
-          <div class="accessory_content">
-            <img src="assets/img/accessory5.png" alt="" class="accessory_img" />
-            <h3 class="accessory_title">Caixa de Presente</h3>
-            <span class="accessory_category">Enfeite</span>
-            <span class="accessory_price">R$14,50</span>
-            <a href="" class="button accessory_button">
-              <i class="bx bx-heart"></i>
-            </a>
+      <!--========== ROADMAP ==========-->
+      <section class="roadmap" id="roadmap">
+        <div class="ag-timeline-block">
+          <div class="ag-timeline_title-box">
+            <div class="ag-timeline_title">ROADMAP</div>
           </div>
+          <section class="ag-section">
+            <div class="ag-format-container">
+              <div class="js-timeline ag-timeline">
+                <div class="js-timeline_line ag-timeline_line">
+                  <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+                </div>
+                <div class="ag-timeline_list">
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">0 %</div>
+                      </div>
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 13</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png" class="ag-timeline-card_img" width="640" height="360" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">SECTION 1</div>
+                          <div class="ag-timeline-card_desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                            pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                            vel, aliquet nec, vulputate eget, arcu.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 12</div>
+                      </div>
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2020</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-12.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 12</div>
+                          <div class="ag-timeline-card_desc">
+                            Donec pede justo, fringilla
+                            vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                            nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2020</div>
+                      </div>
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 11</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-11.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 11</div>
+                          <div class="ag-timeline-card_desc">
+                            Aenean imperdiet. Etiam ultricies
+                            nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                            Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+                            hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                            sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+                            eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 10</div>
+                      </div>
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2019</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-10.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 10</div>
+                          <div class="ag-timeline-card_desc">
+                            Cum sociis natoque penatibus et magnis dis parturient
+                            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                            pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                            vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2019</div>
+                      </div>
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 9</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-9.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 9</div>
+                          <div class="ag-timeline-card_desc">
+                            Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                            nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+                            nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 8</div>
+                      </div>
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2018</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-8.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 8</div>
+                          <div class="ag-timeline-card_desc">
+                            Donec quam felis, ultricies nec, pellentesque eu,
+                            pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                            vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2018</div>
+                      </div>
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 7</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-7.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 7</div>
+                          <div class="ag-timeline-card_desc">
+                            Quisque rutrum. Aenean imperdiet. Etiam ultricies
+                            nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                            Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+                            hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 6</div>
+                      </div>
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2017</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-6.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 6</div>
+                          <div class="ag-timeline-card_desc">
+                            Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                            nulla ut metus varius laoreet. Quisque rutrum.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2017</div>
+                      </div>
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 5</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-5.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 5</div>
+                          <div class="ag-timeline-card_desc">
+                            Donec pede justo, fringilla
+                            vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                            nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+                            nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 4</div>
+                      </div>
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2016</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-4.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 4</div>
+                          <div class="ag-timeline-card_desc">
+                            Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                            nulla ut metus varius laoreet.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2016</div>
+                      </div>
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 3</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-3.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 3</div>
+                          <div class="ag-timeline-card_desc">
+                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                            Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+                            hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                            sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+                            eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 2</div>
+                      </div>
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2015</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-2.png" class="ag-timeline-card_img" width="640" height="360" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 2</div>
+                          <div class="ag-timeline-card_desc">
+                            Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                            nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+                            nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2015</div>
+                      </div>
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Season 1</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-1.png" class="ag-timeline-card_img" width="640" height="360" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Season 1</div>
+                          <div class="ag-timeline-card_desc">
+                            Donec pede justo, fringilla
+                            vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
 
@@ -335,7 +702,7 @@
         <a href="https://github.com/Thiagoow" class="footer_link"
           >The Boring Elon.</a
         >
-        Todos os direitos reservados
+        Todos los derechos reservados.
       </p>
     </footer>
 
@@ -351,6 +718,10 @@
     <script  src="assets/js/particles.js"></script>
     <!--========== logo in nav ==========-->
     <script  src="assets/js/logoinnav.js"></script>
-
+    <!--========== ROADMAP ==========-->
+    <script  src="assets/js/roadmap.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <!--========== faq ==========-->
+    <script  src="assets/js/faq.js"></script>
   </body>
 </html>
