@@ -732,6 +732,9 @@ a {
 .h-\[40px\] {
     height: 40px;
 }
+.h-\[80px\] {
+  height: 80px;
+}
 .justify-between {
   justify-content: space-between;
 }
