@@ -87,14 +87,14 @@ function createTweenScrubber(tween, seekSpeed) {
 }
 
 function createTextAnimation() {
-  var geometry = generateTextGeometry('TEST JAMA', {
-    size:14,
+  var geometry = generateTextGeometry('THE BORING ELON', {
+    size:15,
     height:0,
     font:'droid sans',
     weight:'bold',
     style:'normal',
-    bevelSize:0.75,
-    bevelThickness:0.50,
+    bevelSize:0.6,
+    bevelThickness:0.4,
     bevelEnabled:true,
     anchor:{x:0.5, y:0.5, z:0.5}
   });
