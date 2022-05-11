@@ -33,7 +33,7 @@
   --first-color-alt: #c42130;
   --first-color-send: #de3b49;
   --title-color: #ffffff;
-  --text-color: #5b5757;
+  --text-color: #ffffff;
   --text-color-light: #8f8a8a;
   --body-color: #000000;
   --nav-menu-color: #f7f7f7;
@@ -163,6 +163,63 @@ h1, h2, h3, h4, h5, h6 {
   --tw-translate-y: 0px;
 }
 /* new footer*/
+
+
+@media (min-width: 768px){
+.md\:space-x-12>:not([hidden])~:not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.md\:justify-start {
+    justify-content: flex-start;
+}
+.md\:w-auto {
+    width: auto;
+}
+.md\:my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+}
+@media (min-width: 640px){
+.sm\:justify-center {
+    justify-content: center;
+}
+.sm\:flex {
+    display: flex;
+}
+}
+.text-center {
+    text-align: center;
+}
+.w-full {
+    width: 100%;
+}
+.mt-8 {
+    margin-top: 2rem;
+}
+menu, ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.md\:text-left{text-align:left}.md\:text-\[40px\]{font-size:40px}.md\:text-\[16px\]{font-size:16px}.md\:text-\[18px\]{font-size:18px}.md\:text-\[80px\]{font-size:80px}.md\:text-\[11px\]{font-size:11px}
+@media (min-width: 768px){
+.md\:text-left {
+    text-align: left;
+}
+
+.md\:mt-0 {
+    margin-top: 0;
+}
+.md\:mb-0 {
+    margin-bottom: 0;
+}
+}
 .h-auto {
   height: auto;
 }
@@ -292,11 +349,8 @@ a {
 .flex {
   display: flex;
 }
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-z-20 {
+
+.z-20 {
   z-index: 20;
 }
 
@@ -580,7 +634,7 @@ img {
 .l-header-new {
   width: 100%;
   position: fixed;
-  height: 4.5rem;
+  height: 6.3rem;
   right:0;
   left: 0;
   display:flex;
@@ -598,6 +652,23 @@ img {
   -o-animation: fadein 2s; /* Opera */
   letter-spacing: .1em;
 }
+
+.l-header-new #background
+{
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:100%;
+}
+
+
+
+
+.l-header-new #background{
+  background-color:rgb(0, 0, 0);
+  display:none;
+}
+
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
 }

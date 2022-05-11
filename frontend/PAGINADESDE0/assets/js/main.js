@@ -114,6 +114,10 @@ sr.reveal(
   `.home_data, .home_img, 
            .decoration_cards,
            .accessory_content,
+           .about1st,
+           .about_traits,
+           .roadmaptitle,
+           .faq,
            .footer_content`,
   {
     //Vem do:
