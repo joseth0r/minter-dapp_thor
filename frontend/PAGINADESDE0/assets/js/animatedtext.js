@@ -1,13 +1,15 @@
 const white = new THREE.Color( 0xffffff );
 
-window.onload = init;
+//window.onload = init;
 
 function init() {
   var root = new THREERoot({
     createCameraControls:false,
     fov:10,
     alpha: true
-  });
+  })
+  
+  ;
   root.renderer.setClearColor(0xffffff,0);
 
 	root.renderer.setPixelRatio(window.devicePixelRatio || 1);
@@ -17,7 +19,7 @@ function init() {
   root.scene.add(textAnimation);
   var tween = TweenMax.fromTo(textAnimation, 4,
     {animationProgress:0},
-    {animationProgress:1, ease:Power1.easeInOut, repeat:-1, yoyo:true}
+    //{animationProgress:1, ease:Power1.easeInOut, yoyo:true}
   );
   createTweenScrubber(tween);
 }
@@ -43,6 +45,16 @@ function createTweenScrubber(tween, seekSpeed) {
   var _cx = 0;
 
   // desktop
+
+//scroll
+
+window.onscroll =function(e) {
+  console.log("scrolled")
+  // code to increment object.position.z 
+  resume();
+};
+
+  //
   var mouseDown = false;
   document.body.style.cursor = 'pointer';
 
