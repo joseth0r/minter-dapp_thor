@@ -15,9 +15,13 @@
     
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/gallery.css" />
     <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     <link rel="stylesheet" href="assets/css/particles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link href="https://nivenranchhod.github.io/portfolio/tesla-range-calculator/tesla-range-calc-styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/teslagiveaway.css" />
@@ -739,55 +743,44 @@
       </section>
 
       <!--========== GALLERY ==========-->
-      <section class=""  id="gallery">
-        <div class="container" id="mobile_control">
-          <div class="menu">
-            <span class="close"><i class="material-icons">close</i></span>
-          </div>
+      <section  id="gallerysection">
 
-          <div class="content">
-            <h1 class="title">Earth</h1>
-            <div class="helmet">
-              <img ondragstart="return false;" src="https://i.imgur.com/9oGlAz2.png"/>
-              <div class="planet_position">
-                <div class="planet_shadow"></div>
-                <div class="planet_photo"></div>
+        <div class="headline-2 md:headline-1 text-center" style="opacity: 1; animation-delay: 175ms;"><div class="markdown mb-8"><h2>The Darker, the rarer.</h2></div></div>
+        <div class="body-text text-justify text-left text-gray-medium" style="max-width: 900px; opacity: 1; animation-delay: 350ms;"><div class="markdown">
+          <p>XX  X X X X  X X X X X  X X X X  X X X</p></div></div>
+    
+          <div class="containergallery">
+            <div class="prev">
+              <i class="fas fa-chevron-circle-left"></i>
+            </div>
+          
+            <div class="gallery">
+              <div class="card position1">
+                <img src="https://i.pinimg.com/originals/74/7b/65/747b658ec4ce3c9e7e6eaf9088c982a3.jpg" alt="image">
+              </div>
+              <div class="card position2">
+                <img src="https://th.bing.com/th/id/OIP.0MTLRn5Hx7S0ALF8dABRgQHaHa?pid=Api&rs=1" alt="image">
+              </div>
+              <div class="card position3">
+                <img src="https://th.bing.com/th/id/OIP.Cqln60J_AkI-3hhCFlvQxAHaHa?pid=Api&rs=1" alt="image">
+              </div>
+              <div class="card position4">
+                <img src="https://i.pinimg.com/originals/2a/d3/26/2ad32645c4a1971498fcd08276ee8e34.jpg" alt="image">
+              </div>
+              <div class="card position5">
+                <img src="https://66.media.tumblr.com/99287015d5ce743b84da4c5c3c28305f/tumblr_pg4s9qQcmX1w2ad4p_540.jpg" alt="image">
               </div>
             </div>
-          </div>
-          <div class="bottom">
-            <div class="nav">
-              <span id="next" class="action"><i class="material-icons">keyboard_arrow_left</i></span>
-              <span id="prev" class="action"><i class="material-icons">keyboard_arrow_right</i></span>
+          
+            <div class="next">
+              <i class="fas fa-chevron-circle-right"></i>
             </div>
-            <div class="orbit hide50">
-              <div class="planet_container">
-                <div class="planet pt earth" id="pl0">
-                  <div class="moon">
-                    <span></span>
-                  </div>
-                </div>
-                <div class="planet mars" id="pl1">
-                  <div class="moon">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="planet jupiter" id="pl2"></div>
-                <div class="planet saturn" id="pl3">
-                  <div class="ring"></div>
-                </div>
-                <div class="planet uranus" id="pl4"></div>
-                <div class="planet neptune" id="pl5"></div>
-                <div class="planet mercury" id="pl6"></div>
-                <div class="planet venus" id="pl7"></div>
-              </div>
-              <div class="name_container">
-                <p class="pn">Earth</p>
-              </div>
-            </div>
-          </div>
-        </div>
+          </div>          
+          
+          
+
+       
+        
         </section>
 
 
@@ -844,15 +837,13 @@
                       </td>
                     </tr>
                   </table>
-            
-                  <!--[if !mso]><!-- -->
+  
                   <form action="#" style="margin:0 !important">
                   <input class="tech-check" name="tech-check" type="radio" style="display:none!important" checked />
                   <!--<![endif]-->
       
                     <!-- CAROUSEL -->
                     <div class="tech" style="display:none; max-height:0; overflow:hidden;">
-                    <!--[if !mso]><!-- -->
                       <!-- ANGLES -->
                       <input name="angle" type="radio" id="front" style="display:none;" checked />
                       <input name="angle" type="radio" id="side" style="display:none;" />
@@ -1378,6 +1369,56 @@
 
 
 
+                   
+                    
+            
+            
+                  
+      <!--========== TEAM ==========-->
+      <section class="share section" id="team">
+        <div class="about relative z-10 px-5 pt-32 pb-8 md:pt-44 w-full">
+            <div class="team relative z-10 px-5 pt-32 pb-8 md:pt-44 w-full">
+
+              <div class="standard-wrapper"><div class="flex flex-col items-center text-left">
+    
+        <div class="headline-2 md:headline-1 text-center" style="opacity: 1; animation-delay: 175ms;"><div class="markdown mb-8"><h2>TEAM</h2></div></div>
+        <div class="body-text text-justify text-left text-gray-medium" style="max-width: 900px; opacity: 1; animation-delay: 350ms;"><div class="markdown">
+          <p>XXXXXXXDXXX</p></div></div>
+<div class="jsx-1e2e482abb548d12 members_container"><div class="jsx-1337698342 svg_container">
+  <svg viewBox="0 0 214 360" fill="black" xmlns="http://www.w3.org/2000/svg" overflow="visible" class="jsx-1337698342">
+    <a href="https://twitter.com/reicannon" target="_blank" rel="noreferrer" class="jsx-1337698342">
+      <path d="M111.958 288.17C108.885 289.924 105.115 289.924 102.042 288.17L5.04232 232.797C1.92447 231.017 -2.49839e-05 227.702 -2.46701e-05 224.112L-1.08376e-05 65.8877C-1.05238e-05 62.2976 1.92449 58.983 5.04235 57.2032L102.042 1.83013C105.115 0.0762234 108.885 0.0762237 111.958 1.83013L208.958 57.2032C212.076 58.983 214 62.2977 214 65.8878L214 224.112C214 227.702 212.076 231.017 208.958 232.797L111.958 288.17Z" fill="#0b0b0c" fill-opacity="1" fill-rule="evenodd" class="jsx-1337698342"></path></a>
+      <foreignObject y="25" width="100%" height="100%" style="pointer-events:none" class="jsx-1337698342">
+        <div style="color:#6E39E0;margin-bottom:10px;font-size:14px">CEO</div>
+        <div style="color:white;font-size:28px;margin-bottom:10px">REI</div>
+        <div style="color:#5F6368;font-size:14px;font-family:Space Mono">@reicannon</div>
+        <div style="transform:rotate(120deg);overflow:hidden;width:214px;height:250px;margin-top:5px;margin-bottom:null;position:null;display:null">
+          <div style="transform:rotate(-60deg);overflow:hidden;width:100%;height:100%"><a href="https://twitter.com/reicannon" target="_blank" rel="noreferrer" style="pointer-events:auto">
+</a></div></div></foreignObject></svg></div>
+            <div class="jsx-1337698342 svg_container"><svg viewBox="0 0 214 360" fill="black" xmlns="http://www.w3.org/2000/svg" overflow="visible" class="jsx-1337698342">
+              <a href="https://twitter.com/pants_shh" target="_blank" rel="noreferrer" class="jsx-1337698342">
+                <path d="M111.958 288.17C108.885 289.924 105.115 289.924 102.042 288.17L5.04232 232.797C1.92447 231.017 -2.49839e-05 227.702 -2.46701e-05 224.112L-1.08376e-05 65.8877C-1.05238e-05 62.2976 1.92449 58.983 5.04235 57.2032L102.042 1.83013C105.115 0.0762234 108.885 0.0762237 111.958 1.83013L208.958 57.2032C212.076 58.983 214 62.2977 214 65.8878L214 224.112C214 227.702 212.076 231.017 208.958 232.797L111.958 288.17Z" fill="#0b0b0c" fill-opacity="1" fill-rule="evenodd" class="jsx-1337698342"></path></a><foreignObject y="25" width="100%" height="100%" style="pointer-events:none" class="jsx-1337698342"><div style="color:#6E39E0;margin-bottom:10px;font-size:14px">COO</div>
+                  <div style="color:white;font-size:28px;margin-bottom:10px">PANTS</div><div style="color:#5F6368;font-size:14px;font-family:Space Mono">@pants_shh</div><div style="transform:rotate(120deg);overflow:hidden;width:214px;height:250px;margin-top:5px;margin-bottom:null;position:null;display:null"><div style="transform:rotate(-60deg);overflow:hidden;width:100%;height:100%"><a href="https://twitter.com/pants_shh" target="_blank" rel="noreferrer" style="pointer-events:auto"><div style="background-image:url('/images/team/pants.gif');background-size:cover;background-position:center;background-repeat:no-repeat;transform:rotate(-60deg);width:100%;height:100%;overflow:hidden"></div></a></div></div></foreignObject></svg></div>
+                  <div class="jsx-1337698342 svg_container"><svg viewBox="0 0 214 360" fill="black" xmlns="http://www.w3.org/2000/svg" overflow="visible" class="jsx-1337698342">
+                    <a href="https://twitter.com/x4aes" target="_blank" rel="noreferrer" class="jsx-1337698342">
+                      <path d="M111.958 288.17C108.885 289.924 105.115 289.924 102.042 288.17L5.04232 232.797C1.92447 231.017 -2.49839e-05 227.702 -2.46701e-05 224.112L-1.08376e-05 65.8877C-1.05238e-05 62.2976 1.92449 58.983 5.04235 57.2032L102.042 1.83013C105.115 0.0762234 108.885 0.0762237 111.958 1.83013L208.958 57.2032C212.076 58.983 214 62.2977 214 65.8878L214 224.112C214 227.702 212.076 231.017 208.958 232.797L111.958 288.17Z" fill="#0b0b0c" fill-opacity="1" fill-rule="evenodd" class="jsx-1337698342"></path></a><foreignObject y="25" width="100%" height="100%" style="pointer-events:none" class="jsx-1337698342"><div style="color:#6E39E0;margin-bottom:10px;font-size:14px">CTO</div><div style="color:white;font-size:28px;margin-bottom:10px">X4</div><div style="color:#5F6368;font-size:14px;font-family:Space Mono">@x4aes</div>
+                        <div style="transform:rotate(120deg);overflow:hidden;width:214px;height:250px;margin-top:5px;margin-bottom:null;position:null;display:null"><div style="transform:rotate(-60deg);overflow:hidden;width:100%;height:100%"><a href="https://twitter.com/x4aes" target="_blank" rel="noreferrer" style="pointer-events:auto"><div style="background-image:url('/images/team/x4.gif');background-size:cover;background-position:center;background-repeat:no-repeat;transform:rotate(-60deg);width:100%;height:100%;overflow:hidden"></div></a></div></div></foreignObject></svg></div><div class="jsx-1337698342 svg_container">
+                          <svg viewBox="0 0 214 360" fill="black" xmlns="http://www.w3.org/2000/svg" overflow="visible" class="jsx-1337698342"><a href="https://twitter.com/dexd0x" target="_blank" rel="noreferrer" class="jsx-1337698342"><path d="M111.958 288.17C108.885 289.924 105.115 289.924 102.042 288.17L5.04232 232.797C1.92447 231.017 -2.49839e-05 227.702 -2.46701e-05 224.112L-1.08376e-05 65.8877C-1.05238e-05 62.2976 1.92449 58.983 5.04235 57.2032L102.042 1.83013C105.115 0.0762234 108.885 0.0762237 111.958 1.83013L208.958 57.2032C212.076 58.983 214 62.2977 214 65.8878L214 224.112C214 227.702 212.076 231.017 208.958 232.797L111.958 288.17Z" fill="#0b0b0c" fill-opacity="1" fill-rule="evenodd" class="jsx-1337698342"></path></a><foreignObject y="25" width="100%" height="100%" style="pointer-events:none" class="jsx-1337698342">
+                            <div style="color:#6E39E0;margin-bottom:10px;font-size:14px">COO</div><div style="color:white;font-size:28px;margin-bottom:10px">DEX</div><div style="color:#5F6368;font-size:14px;font-family:Space Mono">@dexd0x</div><div style="transform:rotate(120deg);overflow:hidden;width:214px;height:250px;margin-top:5px;margin-bottom:null;position:null;display:null"><div style="transform:rotate(-60deg);overflow:hidden;width:100%;height:100%"><a href="https://twitter.com/dexd0x" target="_blank" rel="noreferrer" style="pointer-events:auto"><div style="background-image:url('/images/team/dex.gif');background-size:cover;background-position:center;background-repeat:no-repeat;transform:rotate(-60deg);width:100%;height:100%;overflow:hidden"></div></a></div></div></foreignObject>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+    
+        </div>
+              </div>
+          
+          
+          
+          </div>
+
+       
+      </section>
 
       <!--========== FAQ ==========-->
       <section class="share section bd-container" id="faq">
@@ -1420,7 +1461,6 @@
       </div>
       </section>
 
-
     </main>
 
 <!--========== FOOTER2 ==========-->
@@ -1457,22 +1497,18 @@
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-        <script src="assets/js/animatedtext.js" async=""></script>
+        <script src="assets/js/animatedtext.js" ></script>
 
         <!--========== header animation ==========-->
 
-        <script src="assets/js/header.js" async=""></script>
-
-
-        <!--==========gallery ==========-->
-
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js'></script>
-        <script  src="assets/js/gallery.js"></script>
+        <script src="assets/js/header.js" ></script>
 
         <!--==========preloader ==========-->
       <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      </script><script  src="assets/js/preloader.js"></script>
+      <script  src="assets/js/preloader.js"></script>
+
+                      <!--==========gallery ==========-->
+                      <script src="assets/js/gallery.js"></script>
+
   </body>
 </html>
