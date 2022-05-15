@@ -549,29 +549,10 @@ img {
 /* slide gallery*/
 
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
 
-body {
-  font-family: "Audiowide", cursive;
-  background-color: black;
-}
 
-.heading {
-  height: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-h1 {
-  text-align: center;
-  color: white;
-  font-size: 5em;
-  text-shadow: 3px 3px 0 red, 6px 6px 0 green, 9px 9px 0 blue;
-}
+
 
 .containergallery {
   height: 50vh;
@@ -681,11 +662,6 @@ img {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
 
 
 
@@ -2058,7 +2034,11 @@ img {
 }
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
-  font-family:var(--body-font);
+  font-family:var(--headline-font);
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: .9;
+  letter-spacing: .01em;
 
 }
 .accordion button .icon {
