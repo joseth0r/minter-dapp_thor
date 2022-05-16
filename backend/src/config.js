@@ -14,6 +14,7 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 
 const layerConfigurations = [
+  /*
   {
     growEditionSizeTo: 10, //NFTs sin head accesorios, solo con pelo.
     layersOrder: [
@@ -56,7 +57,7 @@ const layerConfigurations = [
      }
     ],
   },
-  
+  */
   {
 growEditionSizeTo: 20, //NFTs con head accesories, y pelo con patillas solo
     layersOrder: [
