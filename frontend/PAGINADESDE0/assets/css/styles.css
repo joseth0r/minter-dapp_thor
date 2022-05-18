@@ -1271,6 +1271,8 @@ a, button {
 .heroEffects .logotext {
   z-index: 1;
   width: 100%;
+  position: fixed;
+
 
 }
 
@@ -1403,7 +1405,6 @@ html, body {
 .scroll-down-wrap,.scroll-down-wrap.no-border{
   z-index:1;
   position: fixed;
-  left: 50%;
   align-items: center;
   bottom: 0;
   margin-bottom: 40px;
@@ -1412,12 +1413,12 @@ html, body {
   opacity: 1;
 }
 .scroll-down-wrap.no-border,.scroll-down-wrap.no-border{
-  bottom:12px;
+  bottom:4px;
 }
 .scroll-down-wrap.no-border .section-down-arrow{
   display:inline-block;
-  width:49px;
-  height:49px;
+  width:40px;
+  height:40px;
   color:#fff!important;
   border:2px solid #fff;
   text-align:center;
