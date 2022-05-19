@@ -391,24 +391,7 @@ img {
 .uppercase {
   text-transform: uppercase;
 }
-.l-header {
-  width: 100%;
-  position: fixed;
-  margin-top:30px;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  justify-content: space-between;
-  align-items: center;
-  /*background-color: var(--body-color);*/
-  font-size: 18px;
-  font-family:var(--header-font);
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
-  letter-spacing: .1em;
-}
+
 
 /* new header */
 *, :after, :before {

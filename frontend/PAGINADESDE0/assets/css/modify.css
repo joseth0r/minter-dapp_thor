@@ -1,4 +1,14 @@
 
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --ease: ease-in-out; /* eeee esto es nuevo*/
+ 
+}
+
+
+
 .animate-fade-up>* {
     -webkit-animation: fade-up .75s var(--ease) forwards;
     animation: fade-up .75s var(--ease) forwards;
@@ -36,7 +46,10 @@
         opacity: 1;
     }
   }
-
+  @keyframes fadein {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+  }
 
 .l-header-new {
     width: 100%;
@@ -45,7 +58,7 @@
     right:0;
     left: 0;
     display:flex;
-    z-index: 60;
+    z-index: 50;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -58,7 +71,12 @@
     -o-animation: fadein 2s; /* Opera */
     letter-spacing: .1em;
   }
+
   
+  .l-header-new #logoheader{
+    opacity: 1;
+    display:none;
+  }
 
 
 .l-header-new #background
@@ -117,8 +135,6 @@
     z-index: 1;
     width: 100%;
     position: fixed;
-  
-  
   }
   
   
@@ -208,10 +224,7 @@
   *, *::before, *::after {
     box-sizing: border-box;
   }
-  
-  html, body {
-    height: 100%;
-  }
+
   
   
   
