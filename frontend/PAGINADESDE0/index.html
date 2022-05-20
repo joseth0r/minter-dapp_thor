@@ -34,7 +34,7 @@ data-wf-site="61a8ac3236206e592ee28933">
     <link rel="stylesheet" href="assets/css/sliderbutton.css" />
     <link rel="stylesheet" href="assets/css/faqv2.css" />
     <link rel="stylesheet" href="assets/css/logov2.css" />
-    <link rel="stylesheet" href="assets/css/modify.css" />
+    <link rel="stylesheet" href="assets/css/otherside.css" />
 
 
 
@@ -51,7 +51,8 @@ data-wf-site="61a8ac3236206e592ee28933">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
-<style type="text/css">.marquee-container {
+<style type="text/css">
+.marquee-container {
   overflow-x: hidden !important;
   display: flex !important;
   flex-direction: row !important;
@@ -108,31 +109,6 @@ data-wf-site="61a8ac3236206e592ee28933">
     transform: translateX(-100%);
   }
 }</style>
-    <!--================== LINK THUMBNAIL META TAGS ===================-->
-    <!-- MS Tile - for Microsoft apps-->
-    <meta
-      name="msapplication-TileImage"
-      content="https://raw.githubusercontent.com/Thiagoow/ChristmasGift-Responsive-LandingPage/master/assets/img/ThumbnailLinkImg.jpg"
-    />
-    <!-- fb & Whatsapp -->
-    <meta property="og:site_name" content="Presente de Natal" />
-    <meta property="og:title" content="Envie um 🎁 de Natal!🎄" />
-    <meta
-      property="og:description"
-      content="Nessas festas de fim de ano mande um presente para sua pessoa amada!"
-    />
-    <!-- IMG URL: -->
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/Thiagoow/ChristmasGift-Responsive-LandingPage/master/assets/img/ThumbnailLinkImg.jpg"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <!--  size up to 300px. Anything above this will not work in WhatsApp -->
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:url" content="https://presentedenatal.netlify.app/" />
-
   </head>
   <style>
     .logo {
@@ -376,16 +352,44 @@ overflow: visible;
               fill="white"></path>
           </svg></a>
           <!--mobile button-->
+         
+
           <button class="absolute right-4 z-50 p-2 text-white duration-500 opacity-1 translate-y-0"><svg width="15" height="15"
               viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-full w-[22px]">
               <path
                 d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"
                 fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
             </svg></button>
+            <!--mobile menu test-->
+            <!--
+            <div class="container">
+              <div class="phone">
+                <div class="content">
+                  
+                  <nav role="navigation">
+                    <div id="menuToggle" class="absolute right-4 z-50 p-2 text-white duration-500 opacity-1 translate-y-0" >
+                      <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    <ul id="menu">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Info</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                    
+                   </div>
+                  </nav>
+                </div>
+               </div>
+            </div>
+-->
+
+
             <!--mobile menu-->
             <div
-              class="fixed left-0 top-0 z-40 m-0 flex h-screen w-full flex-col translate-x-full justify-between overflow-x-hidden overflow-y-auto bg-black px-5 opacity-1"
-              style="transform: translate(100%, 0px);">
+              class="fixed left-0 top-0 z-40 m-0 flex h-screen w-full flex-col translate-x-full justify-between overflow-x-hidden overflow-y-auto bg-black px-5 opacity-1">
               <ul class="mt-20 flex flex-wrap border-y-2 border-y-gray-dark">
                 <li
                   class="relative flex items-center justify-center text-center text-white after:content-[''] after:block after:w-full  shrink-0 w-1/2 after:pt-[84%] md:after:pt-[48.3%] border-r-2 border-r-gray-dark">
@@ -684,14 +688,14 @@ overflow: visible;
   
 <!-- -->
         <nav
-          class="nav header-button flex w-full flex-1 items-center justify-between uppercase duration-500 opacity-1 translate-y-0">
+          class=" header-button flex w-full flex-1 items-center justify-between uppercase duration-500 opacity-1 translate-y-0">
           <div class="nav_menu header-font" id="nav-menu">
           <ul class="nav_list m-0 flex space-x-4 lg:space-x-5">
             <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#home">Home</a></li>
             <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#about">About</a></li>
             <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#roadmap">Roadmap</a></li>
             <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#team">Team</a></li>
-            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#team">Faq</a></li>
+            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#faq">Faq</a></li>
 
           </ul>
         </div>
@@ -712,7 +716,7 @@ overflow: visible;
       </div>
     </header>
 
-      <main class="relative l-main">
+      <main class="relative l-main flex min-h-screen flex-col">
       
             <!--========== home ==========-->
 
@@ -747,7 +751,33 @@ overflow: visible;
       <div class="flex w-full shrink-0 flex-col items-center pb-[2px] md:pb-1" style="height: 210.32px;">
       
        <!--logo v2-->
+       <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" viewBox="-300 -300 940.11 920.22">
+        <defs>
+          <style> 
+      
+          </style>
+        </defs>
+        <g id="Layer_2" data-name="Layer 2">
+          <g id="Layer_1-2" data-name="Layer 1">   
+            <g id="left-d">
+              <path class="cls-1" d="m165.33 197.84-21.45 18.07-13.14 11.08-6.39-11.08-16.26-28.19v-.02L44.31 77.11 0 .25V0h51.1l91.83 159.04 22.4 38.8z"/>
+              <path class="cls-2" d="m73.82 215.91-10.69 8.79-42.62 35.06-.56.46H0v-44.31h73.82z"/>
+              <path class="cls-3" d="M44.31 77.11v138.8H0V.25l44.31 76.86z"/>
+              <path class="cls-4" d="m130.74 226.99-39.43 33.23H19.95l.56-.46 42.62-35.06 10.69-8.79 34.27-28.19 16.26 28.19 6.39 11.08z"/>
+            </g>
+            <g id="right-d">
+              <path class="cls-1" d="m179.79 62.39 21.44-18.08 13.14-11.07 6.39 11.07 16.26 28.2.01.01 63.77 110.6 44.31 76.85v.25h-51.1l-91.82-159.04-22.4-38.79z"/>
+              <path class="cls-2" d="m271.3 44.31 10.69-8.79L324.61.46l.56-.46h19.94v44.31H271.3z"/>
+              <path class="cls-3" d="M300.8 183.12V44.31h44.31v215.66l-44.31-76.85z"/>
+              <path class="cls-4" d="M214.37 33.24 253.81 0h71.36l-.56.46-42.62 35.06-10.69 8.79-34.28 28.2-16.26-28.2-6.39-11.07z"/>
+            </g>
+            <path id="middle-i" class="cls-1" d="m205.2 232.61 35-30-101-175-34.28 29.76L205.2 232.61z"/>
+          </g>
+        </g>
+      </svg>
+       <!---->
        <!--<div id="smooth-logo" class="header-logo">-->
+         <!--2 logo-->
         <svg  data-name="big-s" class="h-full w-full" xmlns="http://www.w3.org/2000/svg" width="275px" height="85px" viewBox="0 0 2036.7197 612">
         
         <!-- Blur Animation -->
@@ -1754,49 +1784,45 @@ overflow: visible;
       </section>
     
       <!--========== FAQ v2==========-->
-      <section class="share section bd-container" id="faq">
-        <div id="faq" class="faq ">
-          <div class="faqcontainer">
-            <div class="headline-2 text-center" style="opacity: 1; animation-delay: 175ms;">
-              <div class="markdown mb-8">
-                <h2>FAQ</h2>
-              </div>
-            </div>  
-                      <div class="accordion">
-              <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<section class="standard-wrapper mb-16 md:mb-28" id="faq">
+<div class="max-w-[620px] mx-auto pt-32 md:pt-48">
+  <h1 class="headline-4 md:headline-3 text-center leading-[0.9] mb-20">Frequently Asked Questions</h1>
+  <div class="accordion">
+    <div class="accordion-item">
+      <button id="accordion-button-1" aria-expanded="false"><h6 class="headline-6 text-[40px] mobile:pr-2 text-left flex-1 leading-[1.1]">Wen mint?</h6><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button id="accordion-button-2" aria-expanded="false"><h6 class="headline-6 text-[40px] mobile:pr-2 text-left flex-1 leading-[1.1]">Wen mint?</h6><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button id="accordion-button-3" aria-expanded="false"><h6 class="headline-6 text-[40px] mobile:pr-2 text-left flex-1 leading-[1.1]">Wen mint?</h6><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button id="accordion-button-4" aria-expanded="false"><h6 class="headline-6 text-[40px] mobile:pr-2 text-left flex-1 leading-[1.1]">Wen mint?</h6><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button id="accordion-button-5" aria-expanded="false"><h6 class="headline-6 text-[40px] mobile:pr-2 text-left flex-1 leading-[1.1]">Wen mint?</h6><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
     </main>
 
 <!--========== FOOTER2 otherside ==========-->
@@ -2014,6 +2040,9 @@ overflow: visible;
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js"></script>
+
+        <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js'></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
         <script src="assets/js/animatedtext.js" ></script>
 

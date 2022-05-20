@@ -1,4 +1,13 @@
-const white = new THREE.Color( 0xffffff );
+
+
+function init() {
+  const tl = gsap.timeline()
+  tl.add("middle_added")
+  tl.from("#middle-i", 0.75, {y: -150, x: -150, opacity: 0, ease: "Bounce.easeOut"})
+  tl.from("#left-d", 1, {y: -150, x: -150, opacity: 0, ease: "Bounce.easeOut"}, "-=0.5")
+  tl.from("#right-d", 1, {y: 150, x: 150, opacity: 0, ease: "Bounce.easeOut"}, "middle_added+=.2")};
+
+/*const white = new THREE.Color( 0xffffff );
 
 //window.onload = init;
 
@@ -310,3 +319,4 @@ var utils = {
     return dst;
   }
 };
+*/
