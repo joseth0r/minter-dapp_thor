@@ -967,3 +967,34 @@ or-1827 .elementor-element.elementor-element-bd4d37a > .elementor-container {
     left: 0;
     position: absolute;
 }
+
+
+/*traits */
+
+.obelisk-page {
+    background-image: url(/assets/img/square-grid.png);
+    background-position: top;
+    background-size: 100px;
+}
+
+
+
+/*active link nav */
+
+/* Active menu link */
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255/var(--tw-text-opacity))
+}
