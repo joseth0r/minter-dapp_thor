@@ -5,11 +5,18 @@
     var mobileNav = $('.mobile-nav');
     mobileNav.toggleClass('hide show');
     var body = document.body;
-    body.classList.toggle("no-scroll");
+    body.classList.toggle("none no-scroll");
 	})
 })();
+/*==================== close menu mobile when click ====================*/
 
-
+(function () {
+	$('.mobile-nav-link').on('click', function() {
+    $('.bar').toggleClass('animate');
+    var mobileNav = $('.mobile-nav');
+    mobileNav.toggleClass('hide show');
+	})
+})();
 
 
 
