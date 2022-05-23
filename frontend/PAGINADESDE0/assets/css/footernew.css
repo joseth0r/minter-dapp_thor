@@ -2335,17 +2335,7 @@
      text-align: center;
      letter-spacing: 1px;
    }
-   
-   .footer {
-     position: relative;
-     height: auto;
-     margin-top: 100px;
-     margin-bottom: 0px;
-     padding-top: 280px;
-     padding-bottom: 10px;
-     background-color: transparent;
-   }
-   
+
    .grid-10 {
      margin-top: 0px;
      -ms-grid-rows: auto;
@@ -2780,9 +2770,7 @@
      align-items: center;
    }
    
-   .footer-credit-text {
-     font-size: 0.875rem;
-   }
+ 
    
    .text-span {
      font-weight: 200;
@@ -3403,25 +3391,7 @@
        background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(18, 18, 18, 0.7));
      }
    
-     .mobile-nav {
-       z-index: 100;
-       display: block;
-       overflow: visible;
-       width: 100%;
-       max-width: none;
-       padding: 70px 0px 0px;
-       -webkit-box-flex: 0;
-       -webkit-flex: 0 auto;
-       -ms-flex: 0 auto;
-       flex: 0 auto;
-       border-style: solid none none;
-       border-width: 1px;
-       border-color: rgba(0, 0, 0, 0.1);
-       border-bottom-left-radius: 0px;
-       border-bottom-right-radius: 0px;
-       background-color: #000;
-       box-shadow: 42px 42px 55px 0 rgba(32, 53, 90, 0.09);
-     }
+  
    
      .text-block-22 {
        padding-top: 10px;
@@ -3520,26 +3490,7 @@
        right: 0%;
        bottom: auto;
      }
-   
-     .mobile-nav-2 {
-       z-index: 100;
-       display: block;
-       overflow: visible;
-       width: 100%;
-       max-width: none;
-       padding: 70px 0px 0px;
-       -webkit-box-flex: 0;
-       -webkit-flex: 0 auto;
-       -ms-flex: 0 auto;
-       flex: 0 auto;
-       border-style: solid none none;
-       border-width: 1px;
-       border-color: rgba(0, 0, 0, 0.1);
-       border-bottom-left-radius: 0px;
-       border-bottom-right-radius: 0px;
-       background-color: #000;
-       box-shadow: 42px 42px 55px 0 rgba(32, 53, 90, 0.09);
-     }
+
    
      .overlay-fade-top-2 {
        background-image: none;
@@ -4239,9 +4190,6 @@
        align-items: center;
      }
    
-     .footer-credit-text {
-       margin-top: 1.5rem;
-     }
 
    
      .text-block-24 {

@@ -4,8 +4,7 @@
 		$('.bar').toggleClass('animate');
     var mobileNav = $('.mobile-nav');
     mobileNav.toggleClass('hide show');
-    var body = document.body;
-    body.classList.toggle("none no-scroll");
+    document.body.classList.toggle('no-scroll')
 	})
 })();
 /*==================== close menu mobile when click ====================*/
