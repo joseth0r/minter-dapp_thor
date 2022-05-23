@@ -12,7 +12,7 @@ $(function() {
 				d = $(document).height(),
 				win = $(window).height();
 		var scrollPercent = (s / (d - win)) * 100;
-		console.log('scroll perc: ', scrollPercent);
+		//console.log('scroll perc: ', scrollPercent);
 		var val = parseInt(scrollPercent);
 		var $circle = $('.go circle');
 		if (isNaN(val)) {

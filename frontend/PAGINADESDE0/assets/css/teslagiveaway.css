@@ -266,7 +266,6 @@
     
     .border-dark { border-color:#000!important; }
     .settings-box { box-shadow:0 10px 30px 0 rgba(255,255,255,0.25); }
-    .button { border-color:#fff!important; background:#1e1e1e!important; color:#fff!important; }
-    .button:hover { color:#1e1e1e!important; background:#fff!important; }
+
     .settings-box { box-shadow: 0 3px 30px 0 rgba(255,255,255,0.15)!important; }
 }

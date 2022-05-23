@@ -767,7 +767,7 @@
   }
   .accordion button[aria-expanded=true] + .accordion-content {
     opacity: 1;
-    max-height: 9em;
+    max-height: 100%;
     transition: all 200ms linear;
     will-change: opacity, max-height;
   }
@@ -778,12 +778,12 @@
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
   }
-  .accordion .accordion-content p {
+  /*.accordion .accordion-content p {
     font-size: 1rem;
     font-family: Inter;
     font-weight: 300;
     margin: 2em 0;
-  }
+  }*/
 
 
 
@@ -1118,3 +1118,81 @@ or-1827 .elementor-element.elementor-element-bd4d37a > .elementor-container {
 [aria-hidden="true"] { display: none; }
 [aria-hidden="false"] { display: block; }
 
+/*welcome to the boring elon */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+@media (min-width: 992px){
+.col-lg-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+}}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.common-p {
+  text-align: justify;
+  font-size: 1em;
+}
+@media (min-width: 992px){
+.mb-lg-auto, .my-lg-auto {
+    margin-bottom: auto !important;
+}
+.mt-lg-auto, .my-lg-auto {
+    margin-top: auto !important;
+}
+.offset-lg-1 {
+    margin-left: 8.3333333333%;
+}
+.col-lg-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+}
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.pt-2, .py-2 {
+  padding-top: 0.5rem !important;
+}
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.pr-2, .px-2 {
+  padding-right: 0.5rem !important;
+}
+.pb-2, .py-2 {
+  padding-bottom: 0.5rem !important;
+}
+.pl-2, .px-2 {
+  padding-left: 0.5rem !important;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+}
+
+.img-welcome{
+  height: 400px;
+  width: 400px;
+}

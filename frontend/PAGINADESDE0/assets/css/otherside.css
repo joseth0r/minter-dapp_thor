@@ -997,7 +997,8 @@ input[type=number] {
 
 .markdown.faq-item p,
 .markdown.faq-item p:last-of-type {
-    margin-bottom: 1rem
+    margin-bottom: 2rem;
+    margin-top: 2rem
 }
 
 .faq-item ul {
