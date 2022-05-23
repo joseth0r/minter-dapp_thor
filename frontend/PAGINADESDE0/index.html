@@ -322,7 +322,7 @@ overflow: visible;
         class="px-5 xl:px-24 wrapper fixed top-0 left-0 right-0 flex h-20 w-full items-center justify-between text-white lg:relative lg:top-auto lg:left-auto lg:right-auto" >
         <a class="absolute left-1/2 top-4 z-50 -translate-x-1/2 justify-center duration-500 opacity-1 translate-y-0" id="logoheader" 
           href="/">
-          <svg class="h-[40px] scale-y-[-1] xl:h-[50px]" viewBox="0 0 1439 294" fill="none">
+          <!--<svg class="h-[40px] scale-y-[-1] xl:h-[50px]" viewBox="0 0 1439 294" fill="none">
             <path
               d="M342.725 63.9557L188.434 231.54C155.558 268.095 137.346 294.127 43.0436 294.127C-10.0881 293.969 -13.6091 267.7 31.175 231.224L232.941 64.0744C277.765 27.5983 303.432 1.25 354.633 1.25C403.451 1.25 375.562 27.4005 342.725 63.9557ZM297.902 54.5004C290.127 54.5004 286.706 58.4566 280.494 64.0348L99.3403 231.342C93.1686 237.039 93.1686 240.877 99.6172 240.877C109.813 240.877 115.064 236.428 120.11 231.382C178.425 175.599 236.726 119.804 295.014 63.9952C300.987 58.2588 302.514 54.5004 297.902 54.5004Z"
               fill="white"></path>
@@ -350,7 +350,9 @@ overflow: visible;
             <path
               d="M1376.74 239.632C1378.06 239.631 1379.32 240.099 1380.32 240.95L1435.29 287.866C1436.71 289.068 1435.85 291.392 1433.99 291.387H1304.88C1303.62 291.387 1302.42 290.873 1301.55 289.964L1032.27 7.32111C1031.05 6.05379 1031.95 3.9375 1033.71 3.9375H1100.06C1101.4 3.9375 1102.69 4.42525 1103.7 5.30949L1159.18 54.1243C1160.6 55.3253 1159.75 57.6455 1157.89 57.6455H1129.89C1129.47 57.6455 1128.26 57.6455 1127.12 57.6455C1126.28 57.6455 1125.88 58.6737 1126.5 59.2394C1127.32 59.9959 1128.2 60.8011 1128.53 61.1101L1186.23 114.266C1187.25 115.202 1188.58 115.722 1189.96 115.722H1219.37C1220.69 115.722 1221.96 116.197 1222.96 117.059L1280.22 166.454C1281.62 167.662 1280.77 169.962 1278.92 169.962H1249.06C1248.22 169.962 1247.82 170.987 1248.43 171.554L1320.65 238.208C1321.67 239.147 1323 239.669 1324.39 239.668L1376.74 239.632Z"
               fill="white"></path>
-          </svg></a>
+          </svg>-->
+          <img class="h-[60px] xl:h-[50px]" src="./assets/img/whiteface.png">
+        </a>
           <!--mobile button-->
          
 <!--
@@ -741,13 +743,13 @@ overflow: visible;
       </div>
       <!---->
 <div class="absolute top-[100%] flex h-[50vh] w-screen flex-col items-center justify-start"
-  style="transform: translate(0px, 0px); top: calc(40%);">
+  style="transform: translate(0px, 0px); top: calc(20%);">
   <div class="origin-top" style="transform: translate(0px, 0px);">
     <div class="flex w-full flex-col items-center justify-end">
-      <div class="flex w-full shrink-0 flex-col items-center pb-[2px] md:pb-1" style="height: 210.32px;">
-      
-       <!--logo v2-->
-       <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" viewBox="-300 -300 940.11 920.22">
+      <div class="flex w-full shrink-0 flex-col items-center pb-[2px] md:pb-1" style="height: 600.32px;">
+      <img class="h-full w-full" src="./assets/img/logo.png">
+       <!--logo v2 con transicion-->
+       <!--<svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" viewBox="-300 -300 940.11 920.22">
         <defs>
           <style> 
       
@@ -770,72 +772,11 @@ overflow: visible;
             <path id="middle-i" class="cls-1" d="m205.2 232.61 35-30-101-175-34.28 29.76L205.2 232.61z"/>
           </g>
         </g>
-      </svg>
+      </svg>-->
        <!---->
-       <!--<div id="smooth-logo" class="header-logo">-->
+       <!--<div id="smooth-logo" class="header-logo">este no es el bueno-->
          <!--2 logo-->
-        <svg  data-name="big-s" class="h-full w-full" xmlns="http://www.w3.org/2000/svg" width="275px" height="85px" viewBox="0 0 2036.7197 612">
-        
-        <!-- Blur Animation -->
-        <defs>
-          <!-- BLUR IN -->
-            <filter id="filt-blur-out" x="-50%" y="-50%" width="200%" height="200%">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="0" result="blurpart">
-                <animate id="animOut"
-                         attributeName="stdDeviation" from="0" to="50" dur="0.5s" fill="freeze" begin="indefinite"
-                         calcMode="spline" keyTimes="0; 1" keySplines="0.550 0.085 0.680 0.530"/>
-              </feGaussianBlur>
-              <feFlood flood-color="white" flood-opacity="1" result="alphapart">
-                <animate attributeName="flood-opacity" from="1" to="0" dur="0.5s" fill="freeze" begin="animOut.begin"
-                         calcMode="spline" keyTimes="0; 1" keySplines="0.550 0.085 0.680 0.530"/>
-              </feFlood>
-              <feComposite in="blurpart" in2="alphapart" operator="in"/>
-            </filter>
-            
-            <!-- BLUR OUT -->
-            <filter id="filt-blur-in" x="-50%" y="-50%" width="200%" height="200%">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="50" result="blurpart">
-                <animate id="animIn"
-                         attributeName="stdDeviation" from="50" to="0" dur="1.2s" fill="freeze" begin="indefinite"
-                         calcMode="spline" keyTimes="0; 1" keySplines="0.550 0.085 0.680 0.530" />
-              </feGaussianBlur>
-              <feFlood flood-color="white" flood-opacity="0" result="alphapart">
-                <animate attributeName="flood-opacity" from="0" to="1" fill="freeze" dur="1.2s" begin="animIn.begin"
-                         calcMode="spline" keyTimes="0; 1" keySplines="0.550 0.085 0.680 0.530"/>
-              </feFlood>
-              <feComposite in="blurpart" in2="alphapart" operator="in"/>
-            </filter>
-          </defs>
-        
-        <!-- small the -->
-        <polygon id="dropIn1" class="dropIn1 dropInAll" fill="white" points="150.137 367.127 137.813 367.127 137.813 443.443 150.137 443.443 150.137 411.917 234.251 411.917 234.251 398.656 150.137 398.656 150.137 367.127"/>
-    
-        <polygon id="dropIn2" class="dropIn2 dropInAll" fill="white" points="137.813 282.344 179.534 282.344 179.534 334.01 137.813 334.01 137.813 347.139 234.251 347.139 234.251 334.01 191.992 334.01 191.992 282.344 234.251 282.344 234.251 269.212 137.813 269.212 137.813 282.344"/>
-    
-        <polygon id="dropIn3" class="dropIn3 dropInAll" fill="white" points="222.066 172.104 222.066 229.389 191.725 229.389 191.725 181.212 179.534 181.212 179.534 229.389 150.004 229.389 150.004 172.104 137.813 172.104 137.813 242.518 234.251 242.518 234.251 172.104 222.066 172.104"/>
-    
-    
-        <!-- BIG S -->
-        <path id="bigS" class="fadeMe bigS slideAll" fill="white" d="M362.2168,367.2317c23.8106,16.6907,51.0516,32.82,83.83,32.82,32.1888,0,56.8072-10.392,56.8072-33.4934,0-22.7209-10.6044-34.0863-70.4407-43.93-59.8364-10.6044-89.757-33.7058-89.757-78.3966,0-46.9588,39.96-79.6635,99.4161-79.6635,36.6579,0,63.8458,7.9425,97.4489,28.7153l-18.0235,37.88c-33.9085-17.7179-47.9607-24.0272-78.4851-24.0272-30.6717,0-49.227,14.75-49.227,35.9591,0,19.3162,10.6044,28.7841,67.4117,38.6325,65.1385,10.98,93.5422,35.2179,93.5422,81.8012,0,49.6124-39.7691,83.9606-109.8293,83.9606-38.3944,0-79.8883-17.5373-102.94-38.04Z"/>
-    
-        <!-- BIG T -->
-        <polygon id="bigS1" class="fadeMe bigS1 slideAll" fill="white" points="682.881 444.996 682.881 215.385 581.132 215.385 602.355 171.38 842.615 171.38 821.253 215.385 731.83 215.385 731.83 444.996 682.881 444.996"/>
-    
-        <!-- ICON UPPER -->
-        <polygon id="bigS2" class="bigS2 slideAll" fill="white" points="1022.924 362.747 964.44 234.65 909.723 362.747 859.133 362.747 940.211 171.373 989.104 171.373 1070.894 362.747 1022.924 362.747"/>
-    
-        <!-- ICON LOWER -->
-        <polygon id="bigS3" class="bigS3 slideAll" fill="white" points="819.226 444.996 839.223 403.871 1090.947 403.871 1110.751 444.996 819.226 444.996"/>
-    
-        <!-- BIG B -->
-        <path id="bigS4" class="fadeMe bigS4 slideAll" fill="white" d="M1162.8,444.9959V171.38h126.5218c30.6233,0,54.9008,8.0925,70.2054,23.3971,11.8676,11.8747,17.6358,26.2214,17.6358,43.8714,0,52.9109-39.4831,64.1835-39.4831,64.1835s55.5343,7.9083,55.5343,69.55c0,63.2891-63.0285,72.6141-100.6033,72.6141Zm47.3013-41.1245h82.51c45.3081,0,52.07-24.1155,52.07-38.49,0-15.1989-7.029-39.3074-54.1261-39.3074h-80.453Zm0-117.0149h65.6415c46.0124,0,52.8864-23.6014,52.8864-37.6664,0-23.89-18.2345-36.686-48.7733-36.686h-69.7546Z"/>
-    
-        <!-- BIG L -->
-        <polygon id="bigS5" class="fadeMe bigS5 slideAll" fill="white" points="1454.812 444.996 1454.812 171.38 1503.761 171.38 1503.761 401.808 1650.476 401.808 1629.693 444.996 1454.812 444.996"/>
-    
-        <!-- BIG E -->
-        <polygon id="bigS6" class="fadeMe bigS6 slideAll" fill="white" points="1694.008 444.996 1694.008 171.38 1898.906 171.38 1878.604 213.328 1742.542 213.328 1742.542 281.122 1856.181 281.122 1835.818 323.07 1742.542 323.07 1742.542 403.04 1898.482 403.04 1878.199 444.996 1694.008 444.996"/>
-      </svg>
+       
       <!--</div>-->
 
       <!--hasta aqui-->
@@ -942,7 +883,7 @@ overflow: visible;
         <p>BAYC is a collection of 10,000 Bored Ape NFTs—unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation.</p>
         </div>
       </div>
-      <div class="mb-5 row justify-center">
+      <div class="mt-5 mb-5 row justify-center">
         <div class="col">
           <div class="mb-4 row">
 
