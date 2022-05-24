@@ -1203,3 +1203,247 @@ padding-left: 15px;
   -webkit-transform: scale(1.1) rotate(0.01deg);
   transform: scale(1.1) rotate(0.01deg);
 }
+
+
+
+/* how to mint pop up*/
+
+@media only screen and (min-width: 1024px){
+.popup-modal {
+    left: 50%;
+    top: 50%;
+    width: 80vw;
+}
+}
+.popup-modal.is--visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%,-50%) scale(1);
+  visibility: visible;
+}
+
+.popup-modal {
+    background-color: #000000;
+    border: 1px solid #fff;
+    height: auto;
+    left: 50%;
+    opacity: 0;
+    padding: 3% 45px;
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%,70%) scale(0);
+    transition: all .5s ease-in-out;
+    visibility: hidden;
+    width: 90vw;
+    z-index: 1011;
+}
+
+@media only screen and (min-width: 1024px){
+.wallet-top-row button {
+    right: 2vw;
+    top: 3vh;
+}
+}
+.wallet-top-row button {
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    right: 6vw;
+}
+.popup-modal__close {
+    cursor: pointer;
+}
+.wallet-col h2 {
+  font-family:F37Judge;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 1024px){
+  .wallet-col h2 {
+      font-size: 90px;
+  }
+  }
+.wallet-top-row h2 {
+  font-family:F37Judge;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1024px){
+.wallet-top-row h2 {
+    font-size: 100px;
+}
+}
+.wallet-top-row button {
+  font-size: 20px;
+  font-family: F37Judge;
+  font-weight: 500;
+  position: absolute;
+  right: 6vw;
+  top:4vw;
+}
+@media only screen and (min-width: 1024px){
+.wallet-top-row button {
+    right: 6vw;
+    top: 7.5vh;
+    font-size: 60px;
+
+}
+}
+
+.popup-modal__close {
+    cursor: pointer;
+}
+
+
+.wallet-row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px){
+.wallet-row {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8vh;
+}
+}
+
+
+.first-wallet-col {
+  border-top: 1px solid #fff;
+  margin-top: 3vh;
+  padding-left: 0;
+}
+@media only screen and (min-width: 1024px){
+.first-wallet-col {
+    border-top: none;
+    margin-top: 0;
+}
+}
+.wallet-col {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+@media only screen and (min-width: 1024px){
+.wallet-col {
+    border-right: 1px solid #fff;
+    padding: 20px 50px;
+}
+}
+.wallet-bottom-row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3vh;
+}
+@media only screen and (min-width: 1024px){
+.wallet-bottom-row {
+    margin-top: 8vh;
+}
+}
+.wallet-col p {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1024px){
+.wallet-col p {
+    font-size: 14px;
+    line-height: 154.2%;
+}
+}
+
+
+.wallet-bottom-row h2 {
+  font-family:F37Judge;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1024px){
+.wallet-bottom-row h2 {
+    font-size: 100px;
+}
+}
+.wallet-bottom-row button {
+  background:none;
+  font-family: Inter;
+  color: #ffffff;
+  font-size: 12px;
+    letter-spacing: .1em;
+    padding: 10px 12px;
+}
+
+@media only screen and (min-width: 1024px){
+.wallet-bottom-row button {
+
+    padding: 20px 70px;
+}
+}
+
+
+/*perks section */
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+:root {
+  --card-height: 600px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.cardperk:hover {
+  transition: color 1s;
+}
+ .cardperk:hover:after {
+  animation: spin 2.5s linear infinite;
+
+  opacity: 1;
+}
+
+
+
+.cardperk::after {
+  position: relative;
+  justify-content: center;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+.cardperk::after{
+  animation: none;
+  opacity: 1;
+
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}

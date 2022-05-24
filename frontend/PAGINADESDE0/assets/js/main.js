@@ -20,6 +20,45 @@
 })();
 
 
+/*==================== pop up how to mint ====================*/
+
+
+$(".howtomint").on('click', function() {
+  $(".popup-modal").addClass('is--visible');
+  document.body.classList.add('no-scroll')
+}); 
+
+$(".popup-modal__close").click(function(){
+  $(".popup-modal").removeClass('is--visible');
+  document.body.classList.remove('no-scroll')
+});
+/*
+$("body").click(function(){
+  var target = $(".popup-modal");
+  if(!target.is(".is--visible")){
+    $(".popup-modal").removeClass('is--visible');
+    document.body.classList.remove('no-scroll')
+  }
+
+});*/
+
+
+
+/*
+$("body").click(function(){ 
+  //console.log('hola');
+  //var popuptest = $('.popup-modal');
+  var popuptest = document.getElementById('popuphowtomint');
+  console.log(popuptest.classList.contains('is--visible')); // output: true
+  if(popuptest.classList.contains('is--visible')  ){
+    console.log('nahhhh');
+    $(".popup-modal").removeClass('is--visible');
+    document.body.classList.remove('no-scroll')}
+
+});*/
+
+
+
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 /*const sections = document.querySelectorAll("section[id]");
