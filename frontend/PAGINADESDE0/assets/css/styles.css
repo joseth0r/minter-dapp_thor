@@ -1447,3 +1447,46 @@ padding-left: 15px;
     --rotate: 360deg;
   }
 }
+
+
+
+/* slider tesla*/
+
+.slider {
+  overflow-y: hidden;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+}
+
+.slider.opened {
+  max-height: 1500px;
+}
+
+.slider {
+  padding: 0 1em;
+  margin: 1em 0;
+  border-radius: .2em;
+  max-height: 0;
+}
+
+
+
+
+
+.tesla-bottom button {
+  background: none;
+  font-family: Inter;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: .1em;
+  padding: 10px 12px;
+}
+
+@media only screen and (min-width: 1024px){
+.tesla-bottom button {
+    padding: 20px 70px;
+}
+}
+

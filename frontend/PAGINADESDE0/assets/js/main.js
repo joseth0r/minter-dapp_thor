@@ -86,6 +86,27 @@ function scrollActive() {
 window.addEventListener("scroll", scrollActive);*/
 
 
+/*==================== TESLA SLIDER ====================*/
+
+
+$( document ).ready( function() {
+  var button = $('.tesla-bottom button');
+  var slider = $('.slider');
+  
+  button.on('click', function(e) {
+    
+    if ( slider.hasClass('opened') ) {
+      button.text('Configure your Tesla');
+      slider.toggleClass('opened');
+    } else {
+      button.text('Close');
+      slider.toggleClass('opened');
+    }
+    
+  });
+  
+});
+
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
