@@ -319,7 +319,7 @@ overflow: visible;
       <div id="background"></div>
       <div
         class="px-5 xl:px-24 wrapper fixed top-0 left-0 right-0 flex h-20 w-full items-center justify-between text-white lg:relative lg:top-auto lg:left-auto lg:right-auto" >
-        <a class="absolute left-1/2 top-4 z-50 -translate-x-1/2 justify-center duration-500 opacity-1 translate-y-0" id="logoheader" 
+        <a class="logoheader absolute left-1/2 top-4 z-50 -translate-x-1/2 justify-center duration-500 opacity-1 translate-y-0" 
           href="/">
           <!--<svg class="h-[40px] scale-y-[-1] xl:h-[50px]" viewBox="0 0 1439 294" fill="none">
             <path
@@ -350,7 +350,7 @@ overflow: visible;
               d="M1376.74 239.632C1378.06 239.631 1379.32 240.099 1380.32 240.95L1435.29 287.866C1436.71 289.068 1435.85 291.392 1433.99 291.387H1304.88C1303.62 291.387 1302.42 290.873 1301.55 289.964L1032.27 7.32111C1031.05 6.05379 1031.95 3.9375 1033.71 3.9375H1100.06C1101.4 3.9375 1102.69 4.42525 1103.7 5.30949L1159.18 54.1243C1160.6 55.3253 1159.75 57.6455 1157.89 57.6455H1129.89C1129.47 57.6455 1128.26 57.6455 1127.12 57.6455C1126.28 57.6455 1125.88 58.6737 1126.5 59.2394C1127.32 59.9959 1128.2 60.8011 1128.53 61.1101L1186.23 114.266C1187.25 115.202 1188.58 115.722 1189.96 115.722H1219.37C1220.69 115.722 1221.96 116.197 1222.96 117.059L1280.22 166.454C1281.62 167.662 1280.77 169.962 1278.92 169.962H1249.06C1248.22 169.962 1247.82 170.987 1248.43 171.554L1320.65 238.208C1321.67 239.147 1323 239.669 1324.39 239.668L1376.74 239.632Z"
               fill="white"></path>
           </svg>-->
-          <img class="img-fluid h-[60px] xl:h-[50px]" src="./assets/img/whiteface.png">
+          <img class="img-fluid h-[60px] " src="./assets/img/whiteface.png">
         </a>
           <!--mobile button-->
          
@@ -681,11 +681,11 @@ overflow: visible;
           <div id="main_nav">
           <div class="nav_menu header-font" id="nav-menu ">
           <ul class="nav_list m-0 flex space-x-4 lg:space-x-5">
-            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#home">Home</a></li>
-            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#about">About</a></li>
-            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#roadmap">Roadmap</a></li>
-            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#team">Team</a></li>
-            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white/70" href="#faq">Faq</a></li>
+            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="#home">Home</a></li>
+            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="#about">About</a></li>
+            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="#roadmap">Roadmap</a></li>
+            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="#team">Team</a></li>
+            <li class="nav_item"><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="#faq">Faq</a></li>
 
           </ul>
         </div>
@@ -693,9 +693,8 @@ overflow: visible;
           <div class="flex items-start space-x-4 lg:space-x-5 h-3" id="main_nav">
             <ul class="m-0 flex space-x-6">
               <li class="text-white/70 hidden lg:block">TBE:</li>
-              <li><a href="#timeline" target="_blank" 
-                  class="no-underline desktop-nav-highlight text-white/70">Timeline</a></li>
-              <li><a class="howtomint no-underline desktop-nav-highlight text-white/70" href="#howtomint" >How to Mint</a></li>
+              <li><a href="#timeline" class="no-underline desktop-nav-highlight text-white text-white/70">Timeline</a></li>
+              <li><a class="howtomint no-underline desktop-nav-highlight text-white text-white/70" href="#howtomint" >How to Mint</a></li>
             </ul>
             <div
               class="relative w-full lg:w-auto mt-14 mb-8 lg:mb-0 text-white lg:-mt-3 flex flex-col justify-start text-center border-white border rounded-sm">
@@ -716,7 +715,6 @@ overflow: visible;
 
     <!--pop up how to mint-->
     <div class="popup-modal shadow rounded-md " id="popuphowtomint">
-      <div class="blocker" onclick="hidePopup()"></div>
       <div class="wallet-top-row">
         <h2 class="uppercase">How To MINT</h2>
         <button class="popup-modal__close">X</button>
@@ -759,9 +757,7 @@ overflow: visible;
 
 
         <div class="bg">  
-          <div class="elementor-background-video-container">
-            <video class="elementor-background-video-hosted elementor-html5-video w-full " autoplay="" muted="" playsinline="" loop="" src="https://digitalapeclub.io/wp-content/uploads/2022/03/iStock-1313840431-1.mp4" ></video>
-        </div>
+            <video class="mainvideo" autoplay="" muted="" playsinline="" loop="" src="https://digitalapeclub.io/wp-content/uploads/2022/03/iStock-1313840431-1.mp4" ></video>
 
 
     <div class="left-0 z-20 h-screen w-full duration-500 fixed top-0 pointer-events-none">
@@ -786,7 +782,7 @@ overflow: visible;
   <div class="origin-top" style="transform: translate(0px, 0px);">
     <div class="flex w-full flex-col items-center justify-end">
       <div class="flex w-full shrink-0 flex-col items-center pb-[2px] md:pb-1" style="height: 600.32px;">
-      <img class="h-full w-full" src="./assets/img/logo.png">
+      <img class="w-full" src="./assets/img/logo.png">
        <!--logo v2 con transicion-->
        <!--<svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" viewBox="-300 -300 940.11 920.22">
         <defs>
@@ -907,7 +903,7 @@ overflow: visible;
 
 <!-- welcome to the boring elon-->
 
-  <div class="relative z-10 standard-wrapper mt-20 md:mt-32">
+  <div class="reveal relative z-10 standard-wrapper mt-20 md:mt-32">
     <div class="flex flex-col items-center text-left animate-fade-up">
       <div class="eyebrows block font-cta text-[13px] tracking-[0.15em] mb-8 uppercase"
         style="opacity: 0; animation-delay: 0ms;">Own a piece</div>
@@ -1907,7 +1903,7 @@ overflow: visible;
                 </div>
               </div>
 
-              <div class="lazyload-wrapper relative"><img class="duration-500 opacity-1 relative" alt="Description of dynamic aspects of NFT" src="./assets/img/elements.jpeg" aria-hidden="false"></div>
+              <div class="lazyload-wrapper relative"><img class="duration-500 opacity-1 relative" alt="Description of dynamic aspects of NFT" src="./assets/img/elements2.png" aria-hidden="false"></div>
             </div>
            
           </div>

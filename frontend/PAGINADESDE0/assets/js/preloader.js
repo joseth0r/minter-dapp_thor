@@ -1,7 +1,7 @@
 $(window).load(function() {
 	
     setTimeout(function() {
-        document.body.classList.add('no-scroll')
+        document.body.classList.add('no-scroll');
       $('.spinner').fadeOut("slow");
       
     
@@ -11,7 +11,7 @@ $(window).load(function() {
             setTimeout(function() {
                 $('.content-block').addClass('animated fadeInDown').fadeIn("slow");
                  //$('.l-header-new').fadeIn('slow');
-                 document.body.classList.remove('no-scroll')
+                 document.body.classList.remove('no-scroll');
                  init();
                  
             }, 700);

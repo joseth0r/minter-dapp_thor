@@ -4,6 +4,8 @@
 		$('.bar').toggleClass('animate');
     var mobileNav = $('.mobile-nav');
     mobileNav.toggleClass('hide show');
+
+    
     document.body.classList.toggle('no-scroll')
 	})
 })();
@@ -14,6 +16,7 @@
     $('.bar').toggleClass('animate');
     var mobileNav = $('.mobile-nav');
     mobileNav.toggleClass('hide show');
+
     document.body.classList.remove('no-scroll')
 
 	})
@@ -25,13 +28,15 @@
 
 $(".howtomint").on('click', function() {
   $(".popup-modal").addClass('is--visible');
-  document.body.classList.add('no-scroll')
+  document.body.classList.add('no-scroll');
 }); 
 
 $(".popup-modal__close").click(function(){
   $(".popup-modal").removeClass('is--visible');
-  document.body.classList.remove('no-scroll')
+  document.body.classList.remove('no-scroll');
 });
+
+/*falta meter clickar en body, salirse del popup */
 /*
 $("body").click(function(){
   var target = $(".popup-modal");
@@ -61,7 +66,7 @@ $("body").click(function(){
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-/*const sections = document.querySelectorAll("section[id]");
+const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
   const scrollY = window.pageYOffset;
@@ -73,19 +78,16 @@ function scrollActive() {
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
-        .querySelector(".nav_menu a[href*=" + sectionId + "]")
-        .classList.remove("text-white/70")
-        .classList.add("text-white");
-    } else {
+        .querySelector(".nav_list a[href*=" + sectionId + "]")
+        .classList.remove("text-white/70");
+          } else {
       document
-        .querySelector(".nav_menu a[href*=" + sectionId + "]")
-        //.classList.toggle("text-white/70");
+        .querySelector(".nav_list a[href*=" + sectionId + "]")
+        .classList.add("text-white/70");
     }
   });
 }
-window.addEventListener("scroll", scrollActive);*/
-
-
+window.addEventListener("scroll", scrollActive);
 /*==================== TESLA SLIDER ====================*/
 
 
@@ -110,7 +112,7 @@ $( document ).ready( function() {
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
-  distance: "30px",
+  distance: "20px",
   duration: 1800,
   reset: true
 });
@@ -118,18 +120,117 @@ const sr = ScrollReveal({
 sr.reveal(
   `.reveal`,
   {
-    //Vem do:
+    //desde arriba
     origin: "top",
     interval: 100
   }
 );
 
-sr.reveal(`.share_img, .send_content`, {
-  //Vem da:
+sr.reveal(`.revealleft`, {
+  //desde izq
   origin: "left"
 });
 
-sr.reveal(`.share_data, .send_img`, {
-  //Vem da:
+sr.reveal(`.revealright`, {
+  //desde derecha
   origin: "right"
+});
+
+
+
+
+/*==================== FAQ ====================*/
+const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+
+
+/*==================== SCROLL CIRCLE PROGRESS ====================*/
+
+
+
+$(function() {
+	
+	$(window).scroll(function() {
+		var scroll = ($(window).scrollTop() / $(window).innerHeight()) * 100;
+		if ( scroll >= 10 ) {
+			$('.scroll-top-button, .header-scroll').css({'opacity': '1', 'pointer-events': 'auto'});
+		} else {
+			$('.scroll-top-button, .header-scroll').stop(true,true).css({'opacity': '0', 'pointer-events': 'none'});
+		}
+		// scroll percentage
+		var s = $(window).scrollTop(),
+				d = $(document).height(),
+				win = $(window).height();
+		var scrollPercent = (s / (d - win)) * 100;
+		//console.log('scroll perc: ', scrollPercent);
+		var val = parseInt(scrollPercent);
+		var $circle = $('.go circle');
+		if (isNaN(val)) {
+			val = 100;
+		} else {
+			var r = $circle.attr('r');
+			var win = Math.PI*(r*2);
+			if (val < 0) { val = 0; }
+			if (val > 100) { val = 100; }
+			var pct = ((100-val)/100)*win;
+			$circle.css('stroke-dashoffset', pct);
+			// console.log( pct );
+			$('.header-scroll').css('right', pct + '%');
+		}
+	});
+	$(document).on('click', '.scroll-top-button', function () {
+		$("html, body").animate({scrollTop: 0}, 500);
+	});
+	
+});
+
+
+/*==================== MAIN SCREEN ====================*/
+
+(function () {
+  $(window).scroll(function () { 
+      var Num = $(window).scrollTop() / 500;
+      var Num2 = $(window).scrollTop() * .0004; // higher number for more zoom
+      var Num2mod = Num2 + 1;
+      var Num3 = $(window).scrollTop() * .2; // Title speed
+      var Num3mod = Num3 + 1;
+      return $('.shade').css('opacity', Num),
+      $(".bg").css({"transform":"scale(" + Num2mod + ")"}),
+      $(".text").css({"margin-top":"-" + Num3mod + "px"});
+  });
+}.call(this));
+
+
+
+
+/*==================== HEADER NAV ====================*/
+
+$(window).scroll(function() {
+
+  if ($(this).scrollTop() > 450) {
+      $( ".l-header-new #background" ).fadeIn(500);
+      /*$( ".l-header-new #logoheader" ).fadeIn(500);*/
+      $(".logoheader").addClass('is--visible');
+
+  } else {
+      $( ".l-header-new #background" ).fadeOut(500);
+      /*$( ".l-header-new #logoheader" ).fadeOut(500);*/
+      $(".logoheader").removeClass('is--visible');
+
+  }
 });

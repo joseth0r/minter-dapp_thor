@@ -345,7 +345,7 @@
 
 
 
-
+/*nav */
 
 .animate-fade-up>* {
     -webkit-animation: fade-up .75s var(--ease) forwards;
@@ -411,11 +411,15 @@
   }
 
   
-  .l-header-new #logoheader{
-    opacity: 1;
-    display:none;
+  .logoheader {
+    opacity: 0;
   }
-
+  .logoheader.is--visible {
+    opacity: 1;
+    /*pointer-events: auto;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;*/
+  }
 
 .l-header-new #background
 {
@@ -883,13 +887,14 @@ body::-webkit-scrollbar-track {
 
 
 /*test video stars */
-.elementor .elementor-background-video-container {
-    -webkit-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
-    pointer-events: none;
+.mainvideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
-.elementor .elementor-background, .elementor .elementor-background-holder, .elementor .elementor-background-video-container {
+.elementor .elementor-background-video-container {
     height: 100%;
     width: 100%;
     top: 0;
@@ -902,7 +907,7 @@ body::-webkit-scrollbar-track {
 .elementor .elementor-html5-video {
     object-fit: cover;
 }
-.elementor .elementor-background-video, .elementor .elementor-background-video-embed, .elementor .elementor-background-video-hosted {
+.elementor .elementor-background-video .elementor .elementor-background-video-embed .elementor .elementor-background-video-hosted {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -910,7 +915,7 @@ body::-webkit-scrollbar-track {
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
-.elementor embed, .elementor iframe, .elementor object, .elementor video {
+.elementor embed .elementor iframe .elementor object .elementor video {
     max-width: 100%;
     width: 100%;
     margin: 0;
@@ -933,7 +938,7 @@ body::-webkit-scrollbar-track {
 }
 
 
-or-1827 .elementor-element.elementor-element-bd4d37a > .elementor-container {
+.elementor-element.elementor-element-bd4d37a > .elementor-container {
     max-width: 1280px;
     min-height: 100vh;
 }
@@ -960,7 +965,7 @@ or-1827 .elementor-element.elementor-element-bd4d37a > .elementor-container {
     opacity: 1;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
-.elementor .elementor-background-overlay, .elementor .elementor-background-slideshow {
+.elementor .elementor-background-overlay .elementor .elementor-background-slideshow {
     height: 100%;
     width: 100%;
     top: 0;
@@ -998,6 +1003,9 @@ or-1827 .elementor-element.elementor-element-bd4d37a > .elementor-container {
   --tw-text-opacity: 1;
   color: rgb(255 255 255/var(--tw-text-opacity))
 }
+
+
+
 
 /*mobile nav */
 
