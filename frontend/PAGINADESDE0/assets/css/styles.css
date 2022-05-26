@@ -1526,3 +1526,70 @@ padding-left: 15px;
 }
 }
 
+
+
+
+
+/*svg hover */
+
+svg:hover{
+  transition: 0.5s;
+  --tw-bg-opacity: 1;
+  color: rgb(235 35 35/var(--tw-bg-opacity));
+}
+
+
+/* countdown */
+.countdowncontainer {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.countdowncontainer h1 {
+  font-family:F37Judge;
+  color:#fff;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.countdown li {
+  
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.countdown li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+
+
+@media all and (max-width: 768px) {
+  .countdowncontainer h1 {
+    --smaller: .6;
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  .countdown li {
+    --smaller: .6;
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  .countdown li span {
+    --smaller: .6;
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+
+
+/* card2 animation*/
+.card2:hover{
+  transition: 0.6s;
+  transform:scale(1.1);
+}

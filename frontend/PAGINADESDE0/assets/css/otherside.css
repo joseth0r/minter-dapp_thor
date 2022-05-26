@@ -108,6 +108,16 @@ button {
     background-image: none
 }
 
+
+.header-button button:hover{
+    transition:0.6s;
+    --tw-text-opacity: 1;
+    background-color: rgb(180 35 35/var(--tw-bg-opacity));
+}
+
+
+
+
 :-moz-focusring {
     outline: auto
 }
@@ -637,6 +647,14 @@ a,
 button {
     -webkit-tap-highlight-color: transparent
 }
+
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
 
 body {
     overflow-x: hidden;
@@ -1203,7 +1221,7 @@ input[type=number] {
     display: inline-block;
     position: relative;
     --tw-bg-opacity: 1;
-    background-color: rgb(38 47 247/var(--tw-bg-opacity));
+    background-color: rgb(235 35 35/var(--tw-bg-opacity));
     font-weight: 500
 }
 
@@ -1216,8 +1234,9 @@ input[type=number] {
 }
 
 .button-primary:not(:disabled):hover {
+    transition:0.2s;
     --tw-bg-opacity: 1;
-    background-color: rgb(21 42 155/var(--tw-bg-opacity))
+    background-color: rgb(180 35 35/var(--tw-bg-opacity))
 }
 
 .button-secondary {
@@ -3180,6 +3199,9 @@ input[type=number]::-webkit-outer-spin-button {
     border-width: 1px
 }
 
+
+
+
 .border-2 {
     border-width: 2px
 }
@@ -4183,7 +4205,7 @@ input[type=number]::-webkit-outer-spin-button {
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     --tw-bg-opacity: 1;
-    background-color: rgb(38 47 247/var(--tw-bg-opacity));
+    background-color: rgb(235 35 35/var(--tw-bg-opacity)); /* color linea */
     content: var(--tw-content);
     transition-duration: .5s
 }
@@ -5779,6 +5801,12 @@ input[type=number]::-webkit-outer-spin-button {
     .lg\:w-\[50\%\] {
         width: 50%
     }
+
+
+    .lg\:w-\[80\%\] {
+        width: 80%
+    }
+
 
     .lg\:w-\[320px\] {
         width: 320px

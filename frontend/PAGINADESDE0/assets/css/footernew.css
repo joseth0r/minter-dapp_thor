@@ -1327,15 +1327,7 @@
      color: #000;
    }
    
-   .hero-section {
-     height: 100vh;
-     padding-top: 5rem;
-     padding-bottom: 1rem;
-     background-image: url("https://uploads-ssl.webflow.com/61a8ac3236206e592ee28933/61a8ac3236206e37bee289ab_original%20resolution%20%201%20(1).png");
-     background-position: 50% 100%;
-     background-size: contain;
-     background-repeat: no-repeat;
-   }
+
    
 
    
@@ -1434,16 +1426,7 @@
      margin-bottom: 5rem;
    }
    
-   .roadmap {
-     position: relative;
-     padding-top: 5rem;
-     padding-bottom: 5rem;
-     background-image: url("https://uploads-ssl.webflow.com/61a8ac3236206e592ee28933/61a8ac3236206e2b0de28967_Group%2042563.png"), url("https://uploads-ssl.webflow.com/61a8ac3236206e592ee28933/61a8ac3236206e4741e28966_Group%2042565.png"), url("https://uploads-ssl.webflow.com/61a8ac3236206e592ee28933/61a8ac3236206e2b0de28967_Group%2042563.png");
-     background-position: 100% 100%, 0% 50%, 100% 0%;
-     background-size: 300px, 300px, 300px;
-     background-repeat: no-repeat, no-repeat, no-repeat;
-   }
-   
+
    .centre_block {
      display: -webkit-box;
      display: -webkit-flex;
@@ -4360,12 +4343,7 @@
        padding-bottom: 5rem;
      }
    
-     .roadmap {
-       background-image: url("https://uploads-ssl.webflow.com/61a8ac3236206e592ee28933/61a8ac3236206e2b0de28967_Group%2042563.png"), url("https://uploads-ssl.webflow.com/61a8ac3236206e592ee28933/61a8ac3236206e4741e28966_Group%2042565.png"), url("https://uploads-ssl.webflow.com/61a8ac3236206e592ee28933/61a8ac3236206e2b0de28967_Group%2042563.png");
-       background-position: 100% 100%, 0% 50%, 100% 0%;
-       background-size: 196px, 195px, 196px;
-       background-repeat: no-repeat, no-repeat, no-repeat;
-     }
+
    
      .process_details {
        padding-top: 15px;
