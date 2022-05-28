@@ -1911,7 +1911,9 @@ input[type=number]::-webkit-outer-spin-button {
 .-left-2 {
     left: -.5rem
 }
-
+.-left-3 {
+    left: -0.75rem;
+}
 .right-4 {
     right: 1rem
 }
@@ -3255,6 +3257,11 @@ input[type=number]::-webkit-outer-spin-button {
     border-left-width: 4px
 }
 
+
+
+
+
+
 .border-r-4 {
     border-right-width: 4px
 }
@@ -3991,6 +3998,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .opacity-30 {
     opacity: .3
+}
+
+
+.dark .dark\:ring-black-900 {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(0 0 0/var(--tw-ring-opacity));
+}
+
+.ring-2, .ring-8 {
+    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
 }
 
 .mix-blend-overlay {

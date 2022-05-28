@@ -113,7 +113,7 @@ $( document ).ready( function() {
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
   distance: "20px",
-  duration: 1800,
+  duration: 2000,
   reset: false
 });
 
