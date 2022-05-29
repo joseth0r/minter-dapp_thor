@@ -14,9 +14,9 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 
 const layerConfigurations = [
-  /*
+  
   {
-    growEditionSizeTo: 10, //NFTs sin head accesorios, solo con pelo.
+    growEditionSizeTo: 1000, //NFTs con skin europea, con pelo, sin head accesories.
     layersOrder: [
       { 
         name: "1-Background",
@@ -25,79 +25,32 @@ const layerConfigurations = [
         } 
     },
       { 
-      name: "3-Skin",
+      name: "2.1-Skin",
       options:{
         displayName:'Skin'
       } 
     
     },
       {
-        name:"4-Hair",
+        name:"3-Hair",
       options:{
         displayName:'Hair'
       } 
     
     },
-      { name:"5-Mouth",
+      { name:"4-Mouth",
       options:{
         displayName:'Mouth'
       } 
     },
 
-      { name: "7-Eyes",
+      { name: "6-Eyes",
       options:{
         displayName:'Eyes'
       } 
 
      },
-      { name: "8-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
-     }
-    ],
-  },
-  */
-  {
-growEditionSizeTo: 20, //NFTs con head accesories, y pelo con patillas solo
-    layersOrder: [
-      { 
-        name: "1-Background",
-        options:{
-          displayName:'Background'
-        } 
-    },
-      { 
-      name: "3-Skin",
-      options:{
-        displayName:'Skin'
-      } 
-    
-    },
-      {
-        name:"4-Hair",
-      options:{
-        displayName:'Hair'
-      } 
-    
-    },
-      { name:"5-Mouth",
-      options:{
-        displayName:'Mouth'
-      } 
-    },
-    { name:"6-Head Accesories",
-    options:{
-      displayName:'Head Accesories'
-    } 
-  },
-
-      { name: "7-Eyes",
-      options:{
-        displayName:'Eyes'
-      } 
-     },
-      { name: "8-Clothes",
+      { name: "7-Clothes",
       options:{
         displayName:'Clothes'
       } 
@@ -105,6 +58,102 @@ growEditionSizeTo: 20, //NFTs con head accesories, y pelo con patillas solo
     ],
   },
   
+  {
+growEditionSizeTo: 1000, //NFTs con skin europea, head accesories, y pelo con patillas solo (recortar 3-hair)
+    layersOrder: [
+      { 
+        name: "1-Background",
+        options:{
+          displayName:'Background'
+        } 
+    },
+      { 
+      name: "2.1-Skin",
+      options:{
+        displayName:'Skin'
+      } 
+    
+    },
+      {
+        name:"3-Hair",
+      options:{
+        displayName:'Hair'
+      } 
+    
+    },
+      { name:"4-Mouth",
+      options:{
+        displayName:'Mouth'
+      } 
+    },
+    { name:"5-Head Accesories",
+    options:{
+      displayName:'Head Accesories'
+    } 
+  },
+
+      { name: "6-Eyes",
+      options:{
+        displayName:'Eyes'
+      } 
+     },
+      { name: "7-Clothes",
+      options:{
+        displayName:'Clothes'
+      } 
+     }
+    ],
+  },
+  {
+    growEditionSizeTo: 2500, //NFTs con head accesorios y cualquier piel (este es el numero que hay que configurar)
+    layersOrder: [
+      { 
+        name: "1-Background",
+        options:{
+          displayName:'Background'
+        } 
+    },
+      { 
+      name: "2-Skin",
+      options:{
+        displayName:'Skin'
+      } 
+    
+    },
+      {
+        name:"3-Hair",
+      options:{
+        displayName:'Hair'
+      } 
+    
+    },
+    
+
+      { name:"4-Mouth",
+      options:{
+        displayName:'Mouth'
+      } 
+    },
+    {
+    name:"5-Head Accesories",
+    options:{
+      displayName:'Head Accesories'
+    } 
+  
+  },
+      { name: "6-Eyes",
+      options:{
+        displayName:'Eyes'
+      } 
+
+     },
+      { name: "7-Clothes",
+      options:{
+        displayName:'Clothes'
+      } 
+     }
+    ],
+  },
 ];
 
 
