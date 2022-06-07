@@ -13,7 +13,7 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 
 // Layer configuration
-const totalSupply=200;
+const totalSupply=10;
 
 //Skin
 const SkinEuropean=44/100; //porcentaje
@@ -343,7 +343,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://TESTWEBSITE.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://theboringelon.com", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -354,12 +354,12 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'polygon'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'ETTest';
-const CONTRACT_SYMBOL = 'ET';
+const CONTRACT_NAME = 'ETTest2';
+const CONTRACT_SYMBOL = 'ET2';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x2bf227192ac958C58341Ff1F83E64557c9a45FB9';
 const TREASURY_ADDRESS = '0x2bf227192ac958C58341Ff1F83E64557c9a45FB9';
-const MAX_SUPPLY = 2; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 10; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 1; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
@@ -381,7 +381,7 @@ let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually inclu
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 const GENERIC_DESCRIPTION = "Description test"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafybeifq5vjv5hoecsnyn3bablvyj3khohxhttu5iu4mje3v3tmtgj42ay"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafkreiet6oq7yh4hg3rbaf7kbt7jmviuembega27fqw2fnvtvaqmbw4s4e"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
