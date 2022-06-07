@@ -12,11 +12,34 @@ const description = "Test2";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 
+// Layer configuration
+const totalSupply=200;
+
+//Skin
+const SkinEuropean=44/100; //porcentaje
+const SkinWhite=47/100;
+const SkinRobot=4/100;
+const SkinZombie=4/100;
+const SkinGold=1/100;
+
+
+//Hair + head accesories
+
+
+
+const HairBrownOnlyEnteroOnlyNoAccesories=20/100 ; //ojos especiales 20%
+const HairEnteroNoAccesories= 20/100 ; //ojos normales 20%
+const HairBrownOnlyEnteroAccesories= 20/100 ; // ojos normales 20%
+const HairEnteroAccesories= 10/100; // ojos normales 10%
+const HairBrownRecortadoAccesories= 20/100; //-->ojos normales 20%
+const HairRecortadoAccesories= 10/100; //ojos normales 10%
+
+
 
 const layerConfigurations = [
   
   {
-    growEditionSizeTo: 1000, //NFTs con skin europea, con pelo, sin head accesories.
+    growEditionSizeTo: HairBrownOnlyEnteroOnlyNoAccesories * totalSupply, 
     layersOrder: [
       { 
         name: "1-Background",
@@ -25,14 +48,14 @@ const layerConfigurations = [
         } 
     },
       { 
-      name: "2.1-Skin",
+      name: "2-Skin",
       options:{
         displayName:'Skin'
       } 
     
     },
       {
-        name:"3-Hair",
+        name:"3.2-BrownHair",
       options:{
         displayName:'Hair'
       } 
@@ -44,7 +67,7 @@ const layerConfigurations = [
       } 
     },
 
-      { name: "6-Eyes",
+      { name: "6.1-Eyes_special",
       options:{
         displayName:'Eyes'
       } 
@@ -59,7 +82,7 @@ const layerConfigurations = [
   },
   
   {
-growEditionSizeTo: 1000, //NFTs con skin europea, head accesories, y pelo con patillas solo (recortar 3-hair)
+growEditionSizeTo:HairEnteroNoAccesories * totalSupply, 
     layersOrder: [
       { 
         name: "1-Background",
@@ -68,7 +91,7 @@ growEditionSizeTo: 1000, //NFTs con skin europea, head accesories, y pelo con pa
         } 
     },
       { 
-      name: "2.1-Skin",
+      name: "2-Skin",
       options:{
         displayName:'Skin'
       } 
@@ -86,13 +109,8 @@ growEditionSizeTo: 1000, //NFTs con skin europea, head accesories, y pelo con pa
         displayName:'Mouth'
       } 
     },
-    { name:"5-Head Accesories",
-    options:{
-      displayName:'Head Accesories'
-    } 
-  },
 
-      { name: "6-Eyes",
+      { name: "6.1-Eyes_special",
       options:{
         displayName:'Eyes'
       } 
@@ -105,7 +123,59 @@ growEditionSizeTo: 1000, //NFTs con skin europea, head accesories, y pelo con pa
     ],
   },
   {
-    growEditionSizeTo: 2500, //NFTs con head accesorios y cualquier piel (este es el numero que hay que configurar)
+    growEditionSizeTo: HairBrownOnlyEnteroAccesories * totalSupply, 
+    layersOrder: [
+      { 
+        name: "1-Background",
+        options:{
+          displayName:'Background'
+        } 
+    },
+      { 
+      name: "2-Skin",
+      options:{
+        displayName:'Skin'
+      } 
+    
+    },
+      {
+        name:"3.2-BrownHair",
+      options:{
+        displayName:'Hair'
+      } 
+    
+    },
+    
+
+      { name:"4-Mouth",
+      options:{
+        displayName:'Mouth'
+      } 
+    },
+    {
+    name:"5-Head_Accesories",
+    options:{
+      displayName:'Head Accesories'
+    } 
+  
+  },
+      { name: "6-Eyes_normal",
+      options:{
+        displayName:'Eyes'
+      } 
+
+     },
+      { name: "7-Clothes",
+      options:{
+        displayName:'Clothes'
+      } 
+     }
+    ],
+  },
+
+
+  {
+    growEditionSizeTo: HairEnteroAccesories * totalSupply, 
     layersOrder: [
       { 
         name: "1-Background",
@@ -135,13 +205,13 @@ growEditionSizeTo: 1000, //NFTs con skin europea, head accesories, y pelo con pa
       } 
     },
     {
-    name:"5-Head Accesories",
+    name:"5-Head_Accesories",
     options:{
       displayName:'Head Accesories'
     } 
   
   },
-      { name: "6-Eyes",
+      { name: "6-Eyes_normal",
       options:{
         displayName:'Eyes'
       } 
@@ -154,6 +224,111 @@ growEditionSizeTo: 1000, //NFTs con skin europea, head accesories, y pelo con pa
      }
     ],
   },
+  {
+    growEditionSizeTo: HairBrownRecortadoAccesories * totalSupply, 
+    layersOrder: [
+      { 
+        name: "1-Background",
+        options:{
+          displayName:'Background'
+        } 
+    },
+      { 
+      name: "2-Skin",
+      options:{
+        displayName:'Skin'
+      } 
+    
+    },
+      {
+        name:"3.3-BrownHairCut",
+      options:{
+        displayName:'Hair'
+      } 
+    
+    },
+    
+
+      { name:"4-Mouth",
+      options:{
+        displayName:'Mouth'
+      } 
+    },
+    {
+    name:"5.1-Head_for_haircut",
+    options:{
+      displayName:'Head Accesories'
+    } 
+  
+  },
+      { name: "6-Eyes_normal",
+      options:{
+        displayName:'Eyes'
+      } 
+
+     },
+      { name: "7-Clothes",
+      options:{
+        displayName:'Clothes'
+      } 
+     }
+    ],
+  },
+
+
+  {
+    growEditionSizeTo:totalSupply, //HairRecortadoAccesories
+    layersOrder: [
+      { 
+        name: "1-Background",
+        options:{
+          displayName:'Background'
+        } 
+    },
+      { 
+      name: "2-Skin",
+      options:{
+        displayName:'Skin'
+      } 
+    
+    },
+      {
+        name:"3.1-Hair_cut",
+      options:{
+        displayName:'Hair'
+      } 
+    
+    },
+    
+
+      { name:"4-Mouth",
+      options:{
+        displayName:'Mouth'
+      } 
+    },
+    {
+    name:"5.1-Head_for_haircut",
+    options:{
+      displayName:'Head Accesories'
+    } 
+  
+  },
+      { name: "6-Eyes_normal",
+      options:{
+        displayName:'Eyes'
+      } 
+
+     },
+      { name: "7-Clothes",
+      options:{
+        displayName:'Clothes'
+      } 
+     }
+    ],
+  },
+
+
+
 ];
 
 
