@@ -2,23 +2,25 @@ let accounts;
 
 // METAMASK CONNECTION
 window.addEventListener("DOMContentLoaded", async () => {
-  const MINT_LINK = "darling-donut-189c45.netlify.app";
+  
   const welcomeH1 = document.getElementById("welcomeH1");
   const welcomeH2 = document.getElementById("welcomeH2");
   const welcomeP = document.getElementById("welcomeP");
-  
+
+
+  const $menu = $('.dropdown');
+
+
   welcomeH1.innerText = welcome_h1;
   welcomeH2.innerText = welcome_h2;
   welcomeP.innerHTML = welcome_p;
 
   if (window.ethereum) {
     window.web3 = new Web3(window.ethereum);
-    console.log("connected");
 
     checkChain();
   } else if (window.web3) {
     window.web3 = new Web3(window.web3.currentProvider);
-    console.log("gg");
 
   }
 
@@ -26,7 +28,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     updateConnectStatus()
 
   }
-  
+
   if (window.web3) {
     // Check if User is already connected by retrieving the accounts
     await window.web3.eth.getAccounts().then(async (addr) => {
@@ -57,12 +59,20 @@ window.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
+
+
+
 const updateConnectStatus = async () => {
   const onboarding = new MetaMaskOnboarding();
-  const onboardButton = document.getElementById("connectWallet");
+  const onboardButton = document.getElementById("connectWallet"); //modifying
+
+
+  
   const onboardButtonConnected = document.getElementById("WalletConnected");
+
   const notConnected = document.querySelector('.not-connected');
   const spinner = document.getElementById("spinner");
+  
   if (!window.ethereum) {
     console.log("pas de metamask");
           // HIDE SPINNER
@@ -71,7 +81,7 @@ const updateConnectStatus = async () => {
     notConnected.classList.remove('hidden');
     notConnected.classList.add('show-not-connected');
 
-    onboardButton.innerText = "Go to Metamask 🦊";
+    onboardButton.innerText = "Install Metamask 🦊";
     onboardButton.onclick = () => {
     onboardButton.innerText = "Connecting...";
     onboardButton.disabled = true;
@@ -83,6 +93,8 @@ const updateConnectStatus = async () => {
    else if (accounts && accounts.length > 0) {
     onboardButtonConnected.classList.remove('hidden');
     onboardButtonConnected.innerText = `🟢 Connected as 0x..${accounts[0].slice(-4)}`;
+    $menu.removeClass('is-active');
+
     window.address = accounts[0];
     onboardButtonConnected.disabled = true;
     onboarding.stopOnboarding();
@@ -93,9 +105,10 @@ const updateConnectStatus = async () => {
     window.contract = new web3.eth.Contract(abi, contractAddress);
     loadInfo();
   } else {
-    onboardButtonConnected.classList.add('hidden');
+    //menuconnetwallet.classList.add('hidden'); //cerramos menu
 
-    onboardButton.innerText = "Connect Wallet 🦊";
+
+    onboardButton.innerText = "🦊 Metamask";
     
     // HIDE SPINNER
     spinner.classList.add('hidden');
@@ -109,6 +122,8 @@ const updateConnectStatus = async () => {
         .then(function (accts) {
           onboardButtonConnected.classList.remove('hidden');
           onboardButtonConnected.innerText = `🟢 Connected as 0x..${accts[0].slice(-4)}`;
+          $menu.removeClass('is-active');
+
           notConnected.classList.remove('show-not-connected');
           notConnected.classList.add('hidden');
           // SHOW SPINNER
@@ -187,6 +202,9 @@ async function loadInfo() {
   const mintButton = document.getElementById("mintButton");
   const spinner = document.getElementById("spinner");
 
+
+
+
   let startTime = "";
   if (publicMintActive) {
     mainHeading.innerText = h1_public_mint;
@@ -258,6 +276,7 @@ async function loadInfo() {
   pricePerMint.innerText = `${price} ${priceType}`;
   maxPerMint.innerText = `${info.deploymentConfig.tokensPerMint}`;
   totalSupply.innerText = `${info.deploymentConfig.maxSupply}`;
+
   mintInput.setAttribute("max", info.deploymentConfig.tokensPerMint);
 
   // MINT INPUT

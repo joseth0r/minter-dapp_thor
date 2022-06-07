@@ -1,9 +1,10 @@
 const contractAddress = "0xB9fDB6708A545232b03353A3dBF2E2A177d0C084"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
-const MINT_LINK = "https://darling-donut-189c45.netlify.app/";
 const welcome_h1 = "0/3500";
 const welcome_h2 = "MINTED";
-const welcome_p = '';
+const welcome_p = 'Click the "CONNECT WALLET" Button to access the minting process.';
+const changenetwork = 'Change the network to Polygon to mint';
+
 const h1_presale_coming_soon = "The Boring Elon NFT Drop Coming Soon!!";
 const h1_presale_mint = "WHITELIST MINTING";
 const h1_public_mint = "PUBLIC MINTING";
