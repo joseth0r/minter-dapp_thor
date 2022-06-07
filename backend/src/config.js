@@ -118,7 +118,7 @@ try {
     CONTRACT_ADDRESS = contractData.contract_address;
   }
 } catch (error) {
-  // Do nothing, falling back to manual contract address
+  // Do nothing, falling back to manual contract address test
 }
 // END NFTPort Info
 //
