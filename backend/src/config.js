@@ -7,39 +7,14 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Test";
-const description = "Test2";
+const namePrefix = "Yeeee";
+const description = "Remember to replace this description";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
-
-// Layer configuration
-const totalSupply=10;
-
-//Skin
-const SkinEuropean=44/100; //porcentaje
-const SkinWhite=47/100;
-const SkinRobot=4/100;
-const SkinZombie=4/100;
-const SkinGold=1/100;
-
-
-//Hair + head accesories
-
-
-
-const HairBrownOnlyEnteroOnlyNoAccesories=20/100 ; //ojos especiales 20%
-const HairEnteroNoAccesories= 20/100 ; //ojos normales 20%
-const HairBrownOnlyEnteroAccesories= 20/100 ; // ojos normales 20%
-const HairEnteroAccesories= 10/100; // ojos normales 10%
-const HairBrownRecortadoAccesories= 20/100; //-->ojos normales 20%
-const HairRecortadoAccesories= 10/100; //ojos normales 10%
-
-
-
+// If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
-  
   {
-    growEditionSizeTo: HairBrownOnlyEnteroOnlyNoAccesories * totalSupply, 
+    growEditionSizeTo: 5,
     layersOrder: [
       { 
         name: "1-Background",
@@ -77,262 +52,12 @@ const layerConfigurations = [
       options:{
         displayName:'Clothes'
       } 
-     }
-    ],
-  },
-  
-  {
-growEditionSizeTo:HairEnteroNoAccesories * totalSupply, 
-    layersOrder: [
-      { 
-        name: "1-Background",
-        options:{
-          displayName:'Background'
-        } 
-    },
-      { 
-      name: "2-Skin",
-      options:{
-        displayName:'Skin'
-      } 
-    
-    },
-      {
-        name:"3-Hair",
-      options:{
-        displayName:'Hair'
-      } 
-    
-    },
-      { name:"4-Mouth",
-      options:{
-        displayName:'Mouth'
-      } 
-    },
-
-      { name: "6.1-Eyes_special",
-      options:{
-        displayName:'Eyes'
-      } 
      },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
-     }
     ],
   },
-  {
-    growEditionSizeTo: HairBrownOnlyEnteroAccesories * totalSupply, 
-    layersOrder: [
-      { 
-        name: "1-Background",
-        options:{
-          displayName:'Background'
-        } 
-    },
-      { 
-      name: "2-Skin",
-      options:{
-        displayName:'Skin'
-      } 
-    
-    },
-      {
-        name:"3.2-BrownHair",
-      options:{
-        displayName:'Hair'
-      } 
-    
-    },
-    
-
-      { name:"4-Mouth",
-      options:{
-        displayName:'Mouth'
-      } 
-    },
-    {
-    name:"5-Head_Accesories",
-    options:{
-      displayName:'Head Accesories'
-    } 
-  
-  },
-      { name: "6-Eyes_normal",
-      options:{
-        displayName:'Eyes'
-      } 
-
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
-     }
-    ],
-  },
-
-
-  {
-    growEditionSizeTo: HairEnteroAccesories * totalSupply, 
-    layersOrder: [
-      { 
-        name: "1-Background",
-        options:{
-          displayName:'Background'
-        } 
-    },
-      { 
-      name: "2-Skin",
-      options:{
-        displayName:'Skin'
-      } 
-    
-    },
-      {
-        name:"3-Hair",
-      options:{
-        displayName:'Hair'
-      } 
-    
-    },
-    
-
-      { name:"4-Mouth",
-      options:{
-        displayName:'Mouth'
-      } 
-    },
-    {
-    name:"5-Head_Accesories",
-    options:{
-      displayName:'Head Accesories'
-    } 
-  
-  },
-      { name: "6-Eyes_normal",
-      options:{
-        displayName:'Eyes'
-      } 
-
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
-     }
-    ],
-  },
-  {
-    growEditionSizeTo: HairBrownRecortadoAccesories * totalSupply, 
-    layersOrder: [
-      { 
-        name: "1-Background",
-        options:{
-          displayName:'Background'
-        } 
-    },
-      { 
-      name: "2-Skin",
-      options:{
-        displayName:'Skin'
-      } 
-    
-    },
-      {
-        name:"3.3-BrownHairCut",
-      options:{
-        displayName:'Hair'
-      } 
-    
-    },
-    
-
-      { name:"4-Mouth",
-      options:{
-        displayName:'Mouth'
-      } 
-    },
-    {
-    name:"5.1-Head_for_haircut",
-    options:{
-      displayName:'Head Accesories'
-    } 
-  
-  },
-      { name: "6-Eyes_normal",
-      options:{
-        displayName:'Eyes'
-      } 
-
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
-     }
-    ],
-  },
-
-
-  {
-    growEditionSizeTo:totalSupply, //HairRecortadoAccesories
-    layersOrder: [
-      { 
-        name: "1-Background",
-        options:{
-          displayName:'Background'
-        } 
-    },
-      { 
-      name: "2-Skin",
-      options:{
-        displayName:'Skin'
-      } 
-    
-    },
-      {
-        name:"3.1-Hair_cut",
-      options:{
-        displayName:'Hair'
-      } 
-    
-    },
-    
-
-      { name:"4-Mouth",
-      options:{
-        displayName:'Mouth'
-      } 
-    },
-    {
-    name:"5.1-Head_for_haircut",
-    options:{
-      displayName:'Head Accesories'
-    } 
-  
-  },
-      { name: "6-Eyes_normal",
-      options:{
-        displayName:'Eyes'
-      } 
-
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
-     }
-    ],
-  },
-
-
-
 ];
 
-
-const shuffleLayerConfigurations = true; // IF true, groups will be mixed in final NFT mint
+const shuffleLayerConfigurations = true;
 
 const debugLogs = false;
 
@@ -343,7 +68,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://theboringelon.com", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -354,25 +79,25 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'polygon'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'ETTest2222321321';
-const CONTRACT_SYMBOL = 'ET22321';
+const CONTRACT_NAME = 'CRYPTOPUNKStest';
+const CONTRACT_SYMBOL = 'CPtest';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x2bf227192ac958C58341Ff1F83E64557c9a45FB9';
 const TREASURY_ADDRESS = '0x2bf227192ac958C58341Ff1F83E64557c9a45FB9';
-const MAX_SUPPLY = 10; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 5; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 1; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 2; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-07-03T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-06-20T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-07-04T14:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
-const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%, 1000 bps=10%
+const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x2bf227192ac958C58341Ff1F83E64557c9a45FB9"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = ["0x2bf227192ac958C58341Ff1F83E64557c9a45FB9"]; // only update if you want to manually set the whitelisted addresses ("0xd32Ca2af8c52a06C61Dfd2C7c09bF10CC2CceF1F", "0xd32Ca2af8c52a06C61Dfd2C7c09bF10CC2CceF1F")
+const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
@@ -380,8 +105,8 @@ let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually inclu
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "Description test"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafkreiet6oq7yh4hg3rbaf7kbt7jmviuembega27fqw2fnvtvaqmbw4s4e"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_DESCRIPTION = "REPLACE THIS"; // Replace with what you want the generic descriptions to say.
+const GENERIC_IMAGE = "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
