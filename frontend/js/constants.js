@@ -3,7 +3,7 @@ const chain = 'polygon'; // rinkeby or polygon
 const welcome_h1 = "0/3500";
 const welcome_h2 = "MINTED";
 const welcome_p = 'Click the "CONNECT WALLET" Button to access the minting process.';
-const changenetwork = 'Change the network to Polygon to mint';
+const changenetwork = 'Change the network to Polygon to mint.';
 
 const h1_presale_coming_soon = "The Boring Elon NFT Drop Coming Soon!!";
 const h1_presale_mint = "WHITELIST MINTING";
