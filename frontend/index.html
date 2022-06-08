@@ -75,19 +75,23 @@ $(window).scroll(function() {
 </script>
 
 <script>
-
+    var media_query = 'screen and (min-width: 1024px)';
+    var matched = window.matchMedia(media_query).matches;
 document.addEventListener("DOMContentLoaded", () => {
-var video = document.getElementById("mainvideo");
-if ( video.readyState === 4 ) {
-    // it's loaded
 
-  $("#main_nav").show(1000);
+    // it's loaded
+    if(matched){
+      $("#main_nav").show(1000);
   $("#main_nav2").show(1000);
+
+    }
+
+
 
   $("#mainlogo").show(500);
   $("#bottom_main").show(5000);
 
-};
+
 
 
 
