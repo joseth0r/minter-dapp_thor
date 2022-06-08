@@ -462,6 +462,14 @@
     visibility: visible;*/
   }
 
+  .is--visible {
+    opacity: 1;
+    /*pointer-events: auto;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;*/
+  }
+
+
 .l-header-new #background
 {
     position:absolute;

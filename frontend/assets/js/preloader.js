@@ -1,5 +1,7 @@
 
 
+
+/*
 document.body.classList.add('no-scroll');
 $(window).load(function() {
 	
@@ -28,4 +30,4 @@ $(window).load(function() {
         }, 700);	  
     }, 700);	
 
-});
+});*/

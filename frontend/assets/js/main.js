@@ -253,3 +253,28 @@ $('.togglemenu').on('click', () => {
   $menu.toggleClass('is-active');
   
 });
+
+
+
+
+/*     NAV Y LOGO HIDDEN WITH OPACITY EN VEZ DE PRELOADER      */
+
+
+
+
+$(window).load(function() {
+  var headingDiv= document.getElementById("main_nav");
+  var mainLogo= document.getElementById("mainlogo");
+
+	headingDiv.removeClass('hidden');
+    headingDiv.addClass('is--visible');
+
+    mainLogo.removeClass('hidden');
+    mainLogo.addClass('is--visible');
+                
+
+
+  
+
+
+});
