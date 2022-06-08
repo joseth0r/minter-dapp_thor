@@ -40,10 +40,10 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 
 
-  updateConnectStatus();
+  //updateConnectStatus();
 
 
-
+/*
   if (window.web3) {
     // Check if User is already connected by retrieving the accounts
     console.log("already connected");
@@ -53,7 +53,25 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
 
   }
+  */
+  //esto es el fallo
 
+
+
+  
+  if (window.ethereum) {
+    window.web3 = new Web3(window.ethereum);
+    checkChain();
+  } else if (window.web3) {
+    window.web3 = new Web3(window.web3.currentProvider);
+  }
+
+  if (window.web3) {
+    // Check if User is already connected by retrieving the accounts
+    await window.web3.eth.getAccounts().then(async (addr) => {
+      accounts = addr;
+    });
+  }
 
   const splide = new Splide(".splide", {
     type: "loop",
@@ -279,7 +297,7 @@ async function loadInfo() {
   const mainHeading = document.getElementById("mainHeading");
   const subHeading = document.getElementById("subHeading");
   const mainText = document.getElementById("mainText");
-  const actionButton = document.getElementById("actionButton");
+  //const actionButton = document.getElementById("actionButton");
   const mintContainer = document.getElementById("mintContainer");
   const mintButton = document.getElementById("mintButton");
   const spinner = document.getElementById("spinner");
@@ -291,7 +309,7 @@ async function loadInfo() {
   if (publicMintActive) {
     mainHeading.innerText = h1_public_mint;
     mainText.innerText = p_public_mint;
-    actionButton.classList.add('hidden');
+    //actionButton.classList.add('hidden');
     mintButton.innerText = button_public_mint;
     mintContainer.classList.remove('hidden');
     setTotalPrice();
@@ -448,7 +466,18 @@ async function mint() {
           countdownContainer.classList.add('hidden');
           mintedContainer.classList.remove('hidden');
         }
-        console.log("Minuted successfully!", `Transaction Hash: ${mintTransaction.transactionHash}`);
+
+        if(chain === 'polygon') {
+          const url = `https://polygonscan.com/tx/${mintTransaction.transactionHash}`;
+          const mintedContainer = document.querySelector('.minted-container');
+          const countdownContainer = document.querySelector('.countdown');
+          const mintedTxnBtn = document.getElementById("mintedTxnBtn");
+          mintedTxnBtn.href = url;
+          countdownContainer.classList.add('hidden');
+          mintedContainer.classList.remove('hidden');
+        }
+
+        console.log("Minted successfully!", `Transaction Hash: ${mintTransaction.transactionHash}`);
       } else {
         const mainText = document.getElementById("mainText");
         mainText.innerText = mint_failed;
@@ -485,7 +514,7 @@ async function mint() {
           countdownContainer.classList.add('hidden');
           mintedContainer.classList.remove('hidden');
         }
-        console.log("Minuted successfully!", `Transaction Hash: ${presaleMintTransaction.transactionHash}`);
+        console.log("Minted successfully!", `Transaction Hash: ${presaleMintTransaction.transactionHash}`);
       } else {
         const mainText = document.getElementById("mainText");
         mainText.innerText = mint_failed;
