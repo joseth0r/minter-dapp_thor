@@ -314,17 +314,17 @@ async function loadInfo() {
       const whitelisted = await contract.methods.isWhitelisted(window.address, merkleJson).call();
       if(!whitelisted) {
         mainText.innerText = p_presale_mint_not_whitelisted;
-        actionButton.innerText = button_presale_mint_not_whitelisted;
+        //actionButton.innerText = button_presale_mint_not_whitelisted;
       } else {
         mainText.innerText = p_presale_mint_whitelisted;
-        actionButton.classList.add('hidden');
+        //actionButton.classList.add('hidden');
         mintButton.innerText = button_presale_mint_whitelisted;
         mintContainer.classList.remove('hidden');
       }
     } catch(e) {
       // console.log(e);
       mainText.innerText = p_presale_mint_already_minted;
-      actionButton.innerText = button_presale_already_minted;
+      //actionButton.innerText = button_presale_already_minted;
     }
     setTotalPrice();
   } else {
@@ -332,7 +332,7 @@ async function loadInfo() {
     mainHeading.innerText = h1_presale_coming_soon;
     subHeading.innerText = h2_presale_coming_soon;
     mainText.innerText = p_presale_coming_soon;
-    actionButton.innerText = button_presale_coming_soon;
+    //actionButton.innerText = button_presale_coming_soon;
   }
 
   const clockdiv = document.getElementById("countdown");
