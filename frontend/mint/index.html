@@ -57,16 +57,30 @@ data-wf-site="61a8ac3236206e592ee28933">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
-<script>
 
+
+
+<script>
+  var media_query = 'screen and (min-width: 1024px)';
+  var matched = window.matchMedia(media_query).matches;
 document.addEventListener("DOMContentLoaded", () => {
+
+  // it's loaded
+  if(matched){
+    $("#main_nav").show(1000);
+$("#main_nav2").show(1000);
+
+  }
   $(".logoheader").addClass('is--visible');
-  $("#main_nav").show(1000);
-  $("#main_nav2").show(1000);
+
+
+
+
+
 });
 
-</script>
 
+</script>
 
 <script>
 
