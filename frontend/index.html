@@ -74,8 +74,27 @@ $(window).scroll(function() {
 });
 </script>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+var video = document.getElementById("mainvideo");
+if ( video.readyState === 4 ) {
+    // it's loaded
+
+  $("#main_nav").show(1000);
+  $("#main_nav2").show(1000);
+
+  $("#mainlogo").show(500);
+  $("#bottom_main").show(5000);
+
+};
 
 
+
+});
+
+
+</script>
 
 <style type="text/css">
 .marquee-container {
@@ -379,8 +398,8 @@ overflow: visible;
             </div>
           
         <nav
-          class="header-button flex w-full flex-1 items-center justify-between uppercase duration-500 opacity-1 translate-y-0">
-          <div id="main_nav">
+          class=" header-button flex w-full flex-1 items-center justify-between uppercase duration-500 opacity-1 translate-y-0" >
+          <div class="hidden" id="main_nav" >
           <div class="nav_menu header-font" id="nav-menu ">
           <ul class="nav_list m-0 flex space-x-4 lg:space-x-5">
             <li ><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="#home">Home</a></li>
@@ -392,7 +411,8 @@ overflow: visible;
           </ul>
         </div>
       </div>
-          <div class="flex items-start space-x-4 lg:space-x-5 h-3" id="main_nav">
+      <div class="hidden" id="main_nav2">
+          <div class="flex items-start space-x-4 lg:space-x-5 h-3"  >
             <ul class="nav_list m-0 flex space-x-6">
               <li class="text-white/70  lg:block">TBE:</li>
               <li><a class="no-underline desktop-nav-highlight text-white text-white/70" href="howtomint.pdf"  target="_blank" rel="noopener noreferrer" >How to Mint</a></li>
@@ -418,6 +438,7 @@ class="dropdown relative w-full lg:w-auto mt-14 mb-8 lg:mb-0 text-white lg:-mt-3
   
 
 </div>
+</div>
           <!---->
           </div>
         </nav>
@@ -441,10 +462,10 @@ class="dropdown relative w-full lg:w-auto mt-14 mb-8 lg:mb-0 text-white lg:-mt-3
 
 
         <div class="bg">  
-            <video class="vw-center mainvideo" autoplay="" muted="" playsinline="" loop="" src="./assets/img/tunnel3.mp4" ></video>
+            <video id="mainvideo" class="vw-center mainvideo" autoplay="" muted="" playsinline="" loop="" src="./assets/img/tunnel3.mp4" ></video>
 
-
-    <div class="left-0 z-20 h-screen w-full duration-500 fixed top-0 pointer-events-none">
+<div class="hidden" id="bottom_main">
+    <div class=" left-0 z-20 h-screen w-full duration-500 fixed top-0 pointer-events-none">
       <div
         class="flex flex-col items-center justify-center duration-500  absolute w-full variable-top -translate-y-full -mt-6 translate-y-0 opacity-100">
 
@@ -452,7 +473,7 @@ class="dropdown relative w-full lg:w-auto mt-14 mb-8 lg:mb-0 text-white lg:-mt-3
         <div class="scroll-down-wrap no-border relative ">
            <a href="#" class="section-down-arrow  ">
             <svg class="nectar-scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
-              <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
+              <path class="nectar-scroll-icon-path" fill="none"  stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
               </path>
             </svg>
           </a>
@@ -460,12 +481,14 @@ class="dropdown relative w-full lg:w-auto mt-14 mb-8 lg:mb-0 text-white lg:-mt-3
         <span data-text="scroll to explore" class=" effect-shine cta-small mt-4"></span>
       </div>
       </div>
+    </div>
       <!---->
      
 
 
 <!--testt-->
-<div class=" vw-center absolute flex w-full lg:w-[65%] flex-col " id="mainlogo">
+<div class="hidden" id="mainlogo">
+<div class=" vw-center absolute flex w-full lg:w-[65%] flex-col " >
       <img class="" src="./assets/img/logo.png">
        <!--logo v2 con transicion-->
        <!--<svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" viewBox="-300 -300 940.11 920.22">
@@ -506,6 +529,7 @@ class="dropdown relative w-full lg:w-auto mt-14 mb-8 lg:mb-0 text-white lg:-mt-3
       
       
      
+</div>
 </div>
 <!--testfinish-->
 

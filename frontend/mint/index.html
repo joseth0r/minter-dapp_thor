@@ -59,26 +59,16 @@ data-wf-site="61a8ac3236206e592ee28933">
 
 <script>
 
-
-
-$(window).load(function() {
-	
-
+document.addEventListener("DOMContentLoaded", () => {
   $(".logoheader").addClass('is--visible');
-console.log("joder")
-               
- 
- });
+  $("#main_nav").show(1000);
+  $("#main_nav2").show(1000);
+});
 
 </script>
 
 
 <script>
-
-
-
-
-
 
 $(window).scroll(function() {
 
@@ -819,30 +809,31 @@ overflow: visible;
               
   
 <!-- -->
-        <nav
-          class="header-button flex w-full flex-1 items-center justify-between uppercase duration-500 opacity-1 translate-y-0">
-          <div id="main_nav">
-          <div class="nav_menu header-font" id="nav-menu ">
-          <ul class="nav_list m-0 flex space-x-4 lg:space-x-5">
-            <li ><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="../">Home</a></li>
-            <li ><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="../#about">About</a></li>
-            <li ><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="../#roadmap">Roadmap</a></li>
-            <li ><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="../#team">Team</a></li>
-            <li><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="../#faq">Faq</a></li>
 
-          </ul>
-        </div>
-      </div>
-          <div class="flex items-start space-x-4 lg:space-x-5 h-3" id="main_nav">
-            <ul class="nav_list m-0 flex space-x-6">
-              <li class="text-white/70  lg:block">TBE:</li>
-              <li><a class="no-underline desktop-nav-highlight text-white text-white/70" href="../howtomint.pdf"  target="_blank" rel="noopener noreferrer" >How to Mint</a></li>
 
+            <nav
+            class=" header-button flex w-full flex-1 items-center justify-between uppercase duration-500 opacity-1 translate-y-0" >
+            <div class="hidden" id="main_nav" >
+            <div class="nav_menu header-font" id="nav-menu ">
+            <ul class="nav_list m-0 flex space-x-4 lg:space-x-5">
+              <li ><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="../">Home</a></li>
+              <li ><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="../#about">About</a></li>
+              <li ><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="../#roadmap">Roadmap</a></li>
+              <li ><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="../#team">Team</a></li>
+              <li><a class="nav_link no-underline desktop-nav-highlight text-white text-white/70" href="../#faq">Faq</a></li>
             </ul>
-            <div><a href="/mint" class="mintbutton no-underline desktop-nav-highlight text-white " alt="Click to mint" >MINT</a></div>
-
-
-     
+          </div>
+        </div>
+        <div class="hidden" id="main_nav2">
+            <div class="flex items-start space-x-4 lg:space-x-5 h-3"  >
+              <ul class="nav_list m-0 flex space-x-6">
+                <li class="text-white/70  lg:block">TBE:</li>
+                <li><a class="no-underline desktop-nav-highlight text-white text-white/70" href="../howtomint.pdf"  target="_blank" rel="noopener noreferrer" >How to Mint</a></li>
+  
+              </ul>
+              <div><a href="/mint" class="mintbutton no-underline desktop-nav-highlight text-white " alt="Click to mint" >MINT</a></div>
+  
+       
 <!--connectwallet-->
             <div
             class="dropdown relative w-full lg:w-auto mt-14 mb-8 lg:mb-0 text-white lg:-mt-3 flex flex-col justify-start text-center border-white border rounded-sm" >

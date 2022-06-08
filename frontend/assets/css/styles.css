@@ -1062,6 +1062,11 @@ body::-webkit-scrollbar-track {
   #main_nav{
     display:none;
   }
+
+  #main_nav2{
+    display:none;
+  }
+
 }
 
 @media screen and (min-width: 1024px) { 
