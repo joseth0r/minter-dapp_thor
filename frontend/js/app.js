@@ -73,18 +73,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  const splide = new Splide(".splide", {
-    type: "loop",
-    arrows: false,
-    perMove: 3,
-    pagination: false,
-    autoplay: true,
-    direction: 'ttb',
-    height: "calc(100vh - 90px)",
-    width: '30vw',
-    autoHeight: true,
-  });
-  splide.mount();
 
   updateConnectStatus();
   if (MetaMaskOnboarding.isMetaMaskInstalled()) {
@@ -111,7 +99,6 @@ const updateConnectStatus = async () => {
 
 
 
-console.log("tpppm");
 
 
   const notConnected = document.querySelector('.not-connected');
@@ -155,6 +142,7 @@ console.log("tpppm");
 
     window.address = accounts[0];
     onboardButtonConnected.disabled = true;
+    onboardButtonConnectedM.disabled = true;
 
     onboarding.stopOnboarding();
     notConnected.classList.remove('show-not-connected');
@@ -218,7 +206,7 @@ console.log("tpppm");
           spinner.classList.remove('hidden');
           onboardButtonConnected.disabled = true;
 
-          onboardButtonConnected.disabled = true;
+          onboardButtonConnectedM.disabled = true;
           window.address = accts[0];
           accounts = accts;
           window.contract = new web3.eth.Contract(abi, contractAddress);
@@ -250,7 +238,7 @@ async function checkChain() {
       changenetworkP.classList.remove('hidden');
       changenetworkP.innerText = "Change the network to Polygon to mint please.";
 
-      console.log('change network broooo');
+      console.log('change network pls');
         // This error code indicates that the chain has not been added to MetaMask.
       if (err.code === 4902) {
         try {
@@ -282,7 +270,6 @@ async function checkChain() {
           updateConnectStatus();
         } catch (err) {
           console.log(err);
-          console.log('change network broooo22');
 
         }
       }
@@ -507,6 +494,15 @@ async function mint() {
       if(presaleMintTransaction) {
         if(chain === 'rinkeby') {
           const url = `https://rinkeby.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
+          const mintedContainer = document.querySelector('.minted-container');
+          const countdownContainer = document.querySelector('.countdown');
+          const mintedTxnBtn = document.getElementById("mintedTxnBtn");
+          mintedTxnBtn.href = url;
+          countdownContainer.classList.add('hidden');
+          mintedContainer.classList.remove('hidden');
+        }
+        if(chain === 'polygon') {
+          const url = `https://polygonscan.com/tx/${presaleMintTransaction.transactionHash}`;
           const mintedContainer = document.querySelector('.minted-container');
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
