@@ -308,7 +308,7 @@ async function loadInfo() {
     try {
       // CHECK IF WHITELISTED
       const merkleData = await fetch(
-        `./.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}` //EEEEEE
+        `../.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}` //EEEEEE
       );
       const merkleJson = await merkleData.json();
       const whitelisted = await contract.methods.isWhitelisted(window.address, merkleJson).call();
@@ -485,7 +485,7 @@ async function mint() {
     // PRE-SALE MINTING
     try {
       const merkleData = await fetch(
-        `./.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}` //EEEEEE
+        `../.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}` //EEEEEE
       );
       const merkleJson = await merkleData.json();
       const presaleMintTransaction = await contract.methods
