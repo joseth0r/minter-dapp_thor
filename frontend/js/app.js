@@ -314,6 +314,7 @@ async function loadInfo() {
       const whitelisted = await contract.methods.isWhitelisted(window.address, merkleJson).call();
       if(!whitelisted) {
         mainText.innerText = p_presale_mint_not_whitelisted;
+        actionButton.classList.remove('hidden');
         actionButton.innerText = button_presale_mint_not_whitelisted;
         actionButton.href=whitelistlink;
       } else {
@@ -325,6 +326,7 @@ async function loadInfo() {
     } catch(e) {
       // console.log(e);
       mainText.innerText = p_presale_mint_already_minted;
+      actionButton.classList.remove('hidden');
       actionButton.innerText = button_presale_already_minted;
       actionButton.href=discordLink;
     }
@@ -334,6 +336,7 @@ async function loadInfo() {
     mainHeading.innerText = h1_presale_coming_soon;
     subHeading.innerText = h2_presale_coming_soon;
     mainText.innerText = p_presale_coming_soon;
+    actionButton.classList.remove('hidden');
     actionButton.innerText = button_presale_coming_soon;
   }
 
