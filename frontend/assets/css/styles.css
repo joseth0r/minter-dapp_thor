@@ -135,7 +135,7 @@
   font-family: sans-serif;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(-80deg, rgba(163, 153, 21, 0.9) 15%, rgb(176, 169, 169) 30%,  hsla(0, 0%, 100%, .7) 45%);
+  background-image: linear-gradient(-80deg, rgba(198, 31, 22, 0.9) 15%, rgb(176, 169, 169) 30%,  hsla(0, 0%, 100%, .7) 45%);
   background-size: 300%;
   background-blend-mode: hard-light;
   animation: shine 6s linear infinite;
