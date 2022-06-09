@@ -12,13 +12,14 @@ const h2_presale_coming_soon = "Whitelist Minting Countdown";
 const h2_presale_mint = "Public Minting Countdown";
 const p_presale_coming_soon = "We are working hard to launch the NFT Collection. Stay tuned for updates.";
 const p_presale_mint_not_whitelisted = "You are not whitelisted for the pre-sale.";
-const p_presale_mint_whitelisted = "You're on the whitelist for the pre-sale";
+const p_presale_mint_whitelisted = "You're on the whitelist for the pre-sale.";
 const p_presale_mint_already_minted = "You've already claimed your whitelist mint. Thank you!";
 const p_public_mint = "";
 const button_presale_coming_soon = "Get on the Whitelist";
-const button_presale_mint_whitelisted = "MINT";
+const button_presale_mint_whitelisted = "WL MINT";
 const button_presale_mint_not_whitelisted = "Get on the Whitelist";
-const button_presale_already_minted = "Join The Community";
+const button_presale_already_minted = "Join Private Discord";
+const discordLink="https://discord.gg/";
 const button_public_mint = "MINT";
 const mint_failed = "Minting failed. Please try again.";
 
