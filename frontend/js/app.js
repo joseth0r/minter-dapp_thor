@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   //const welcomeH2 = document.getElementById("welcomeH2");
   const welcomeP = document.getElementById("welcomeP");
   const changenetworkP = document.getElementById("changenetworkP");
+  const changenetworkPtext = document.getElementById("changenetworkPtext");
 
 
   const $menu = $('.dropdown');
@@ -104,6 +105,7 @@ const updateConnectStatus = async () => {
   const notConnected = document.querySelector('.not-connected');
   const spinner = document.getElementById("spinner");
   const changenetworkP = document.getElementById("changenetworkP");
+  const changenetworkPtext = document.getElementById("changenetworkPtext");
 
   if (!window.ethereum) {
     console.log("pas de metamask");
@@ -219,6 +221,7 @@ const updateConnectStatus = async () => {
 
 async function checkChain() {
   const changenetworkP = document.getElementById("changenetworkP");
+  const changenetworkPtext = document.getElementById("changenetworkPtext");
 
   let chainId = 0;
   if(chain === 'rinkeby') {
@@ -236,7 +239,10 @@ async function checkChain() {
     } catch (err) {
       //changenetworkP.innerHTML=changenetwork;
       changenetworkP.classList.remove('hidden');
-      changenetworkP.innerText = "Change the network to Polygon to mint please.";
+      changenetworkP.innerText = "Change the network to Polygon to mint please";
+      changenetworkPtext.classList.remove('hidden');
+
+      changenetworkPtext.innerText="Refresh the page when you change the network.";
 
       console.log('change network pls');
         // This error code indicates that the chain has not been added to MetaMask.
