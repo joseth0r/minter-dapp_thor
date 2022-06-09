@@ -289,9 +289,11 @@ section {
 }
 .countdown .clock-item {
   list-style: none;
-  width: 70px;
+  /*width: 70px;*/
   height: auto;
 }
+
+/*
 .countdown .clock-item .count-number {
   background: var(--accent-color);
   color: var(--font-color);
@@ -304,7 +306,34 @@ section {
   text-align: center;
   line-height: 1;
   border-radius: 4px 4px 0 0;
+}*/
+.countdown li  { /* modified*/
+
+display: inline-block;
+color: #fff;
+font-size: 1rem;
+list-style-type: none;
+padding: 1rem;
+text-transform: uppercase;
+font-family: Colinda;
+text-align: center;
+width: 100%;
 }
+.countdown li span {
+  display: block;
+  font-size: 2.6rem;
+}
+
+.count-number{
+
+
+}
+
+
+
+
+
+/*
 .countdown .clock-item .count-text {
   background: var(--btn-bg-color);
   font-family: var(--font-secondary);
@@ -317,7 +346,7 @@ section {
   line-height: 1;
   border-radius: 0 0 4px 4px;
 }
-
+*/
 .countdown h1 {
   text-shadow: 2px 2px 0 var(--accent-color);
   margin: 1rem 0;
@@ -661,10 +690,10 @@ svg:hover path#plus_hover{opacity:1}
     width: 100%;
   }
   .countdown .clock-item .count-number {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
-  .countdown .clock-item .count-text {
-    font-size: 1rem;
+  .count-text {
+    font-size: 0.5rem;
   }
 
   .countdown h2 {
