@@ -308,13 +308,14 @@ async function loadInfo() {
     try {
       // CHECK IF WHITELISTED
       const merkleData = await fetch(
-        `../.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}` //EEEEEE
+        `../.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}` //works
       );
       const merkleJson = await merkleData.json();
       const whitelisted = await contract.methods.isWhitelisted(window.address, merkleJson).call();
       if(!whitelisted) {
         mainText.innerText = p_presale_mint_not_whitelisted;
         actionButton.innerText = button_presale_mint_not_whitelisted;
+        actionButton.href=whitelistlink;
       } else {
         mainText.innerText = p_presale_mint_whitelisted;
         actionButton.classList.add('hidden');

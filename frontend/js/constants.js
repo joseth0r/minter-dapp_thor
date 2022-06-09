@@ -18,6 +18,7 @@ const p_public_mint = "";
 const button_presale_coming_soon = "Get on the Whitelist";
 const button_presale_mint_whitelisted = "WL MINT";
 const button_presale_mint_not_whitelisted = "Get on the Whitelist";
+const whitelistlink="https://google form";
 const button_presale_already_minted = "Join Private Discord";
 const discordLink="https://discord.gg/";
 const button_public_mint = "MINT";
