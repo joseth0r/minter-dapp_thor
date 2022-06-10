@@ -860,18 +860,26 @@ overflow: visible;
       </div>
     </header>
 
-    <form name="contact" netlify>
+    <form name="contact" method="POST" data-netlify="true">
       <p>
-        <label>Name <input type="text" name="name" /></label>
+        <label>Your Name: <input type="text" name="name" /></label>
       </p>
       <p>
-        <label>Email <input type="email" name="email" /></label>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Your Role: <select name="role[]" multiple>
+          <option value="leader">Leader</option>
+          <option value="follower">Follower</option>
+        </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
       </p>
       <p>
         <button type="submit">Send</button>
       </p>
     </form>
-
 
 <!--========== FOOTER2 otherside ==========-->
 <footer class="relative z-30 h-auto w-screen pt-12 md:pt-8 font-cta text-gray-light md:bg-transparent md:w-full px-0">
