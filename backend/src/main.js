@@ -113,7 +113,7 @@ const saveImage = (_editionCount) => {
     canvas.toBuffer("image/png")
   );
 };
-
+/*
 const genColor = () => {
   let hue = Math.floor(Math.random() * 360);
   let pastel = `hsl(${hue}, 100%, ${background.brightness})`;
@@ -124,7 +124,7 @@ const drawBackground = () => {
   ctx.fillStyle = background.static ? background.default : genColor();
   ctx.fillRect(0, 0, format.width, format.height);
 };
-
+*/
 const addMetadata = (_dna, _edition) => {
   let dateTime = Date.now();
   let tempMetadata = {
@@ -376,9 +376,10 @@ const startCreating = async () => {
             );
             hashlipsGiffer.start();
           }
+          /*
           if (background.generate) {
             drawBackground();
-          }
+          }*/
           renderObjectArray.forEach((renderObject, index) => {
             drawElement(
               renderObject,
