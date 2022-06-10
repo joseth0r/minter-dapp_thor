@@ -859,28 +859,36 @@ overflow: visible;
         </nav>
       </div>
     </header>
-
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>
+    <div class="w-full  justify-center md:justify-end animate-fade-up pt-32 md:pt-44">
+      <div class="space-y-4 lg:space-y-5 mt-16 lg:mt-16">
+        <div class="wl-container animate-fade-up" style="opacity: 0;">
+    <form  name="contact" method="POST" data-netlify="true">
+      <p class="mb-3  ">
+        <label>Name: <input type="text" name="name" /></label>
       </p>
-      <p>
+      <p class="mb-3  ">
+        <label>ETH Address: <input type="ethaddress" name="ethaddress" /></label>
+      </p>
+      <p class="mb-3  ">
         <label>Your Email: <input type="email" name="email" /></label>
       </p>
+<!--
       <p>
         <label>Your Role: <select name="role[]" multiple>
           <option value="leader">Leader</option>
           <option value="follower">Follower</option>
         </select></label>
-      </p>
-      <p>
+      </p>-->
+      <!--<p>
         <label>Message: <textarea name="message"></textarea></label>
-      </p>
+      </p>-->
       <p>
-        <button type="submit">Send</button>
+        <button class="items-center" type="submit">Send</button>
       </p>
     </form>
-
+</div>
+</div>
+</div>
 <!--========== FOOTER2 otherside ==========-->
 <footer class="relative z-30 h-auto w-screen pt-12 md:pt-8 font-cta text-gray-light md:bg-transparent md:w-full px-0">
 <div class="justify-center items-center">

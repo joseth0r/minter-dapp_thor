@@ -2045,3 +2045,20 @@ strong {
 }
 
 
+/*form wl */
+
+.wl-container {
+  margin: 0 auto; 
+  width:600px;
+  text-align: center;
+
+}
+form {
+display:inline-block;
+
+}
+
+form label{
+  text-align: center;
+
+}
