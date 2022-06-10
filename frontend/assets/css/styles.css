@@ -2053,3 +2053,11 @@ strong {
 
 }
 }
+
+
+/* footer */
+@media (min-width:768px) {
+.sm\:w-full {
+  width: 100%
+}
+}
