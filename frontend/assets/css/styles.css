@@ -2046,10 +2046,10 @@ strong {
 
 
 /*form wl */
-
-.wl-container {
+@media (min-width:1280px) {
+.md\:wl-container {
   margin: 0 auto; 
-  width:600px;
+  width:750px;
 
 }
-
+}
