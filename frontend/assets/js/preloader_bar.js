@@ -1,10 +1,15 @@
 document.body.classList.add('no-scroll');
 
 var width = 100,
-    perfData = window.performance.timing, // The PerformanceTiming interface represents timing-related performance information for the given page.
+    perfData = performance.now(), // The PerformanceTiming interface represents timing-related performance information for the given page.
     EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
     time = parseInt((EstimatedTime/100)%60)*100;
+//time=5000;
 
+
+
+
+	
 // Loadbar Animation
 $(".loadbar").animate({
   width: width + "%"
