@@ -3,8 +3,8 @@ document.body.classList.add('no-scroll');
 var width = 100,
     perfData = performance.now(), // The PerformanceTiming interface represents timing-related performance information for the given page.
     EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
-    time = parseInt((EstimatedTime/100)%60)*100;
-//time=5000;
+    //time = parseInt((EstimatedTime/100)%60)*100;
+time=5000;
 
 
 
