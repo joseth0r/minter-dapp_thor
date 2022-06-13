@@ -1,0 +1,106 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+
+
+.percentage{
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+}
+
+.loading {
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    left: 44%;
+  }
+
+ 
+  .loader{
+    height: 10px;
+    max-width: 100%;
+    font-weight: bold;
+    position: absolute; 
+    top: 45%; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    margin-left : 20%;
+    margin-right : 20%;
+
+  }
+  .loader:after,
+  .percentage:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .trackbar {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.99;
+  }
+  
+  .loadbar {
+    width: 0%;
+    height: 100%;
+    background: #ffffff;
+    /*box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.7);*/
+    /* Stripes Background Gradient */
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+    animation: flicker 5s infinite;
+    overflow: hidden;
+  }
+  
+  .glow {
+    width: 0%;
+    height: 0%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px 10px #000000;
+    position: absolute;
+    bottom: -5px;
+    animation: animation 5s infinite;
+  }
+  
+  @keyframes animation {
+    10% {
+      opacity: 0.9;
+    }
+    30% {
+      opacity: 0.86;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    80% {
+      opacity: 0.75;
+    }
+  }
+  

@@ -37,7 +37,7 @@ data-wf-site="61a8ac3236206e592ee28933">
     <link href="https://nivenranchhod.github.io/portfolio/tesla-range-calculator/tesla-range-calc-styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/teslagiveaway.css" />
 
-    <link rel="stylesheet" href="assets/css/preloader.css" />
+    <link rel="stylesheet" href="assets/css/preloaderbar.css" />
     <link rel="stylesheet" href="assets/css/logov2.css" />
     <link rel="stylesheet" href="assets/css/otherside.css" />
 
@@ -54,9 +54,11 @@ data-wf-site="61a8ac3236206e592ee28933">
 <!-- SCRIPTS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
-
-
+<!--preloader-->
+<script>
+  new WOW().init();
+</script>
+<!---->
 <script>
 $(window).scroll(function() {
 
@@ -200,6 +202,20 @@ overflow: visible;
 }
 </style>
   <body>
+<!-- PRELOADER bar -->
+<div class="preloader-wrap wow" id="preloader">
+  <!--<span class="loading">Loading Please Wait ...</span>-->
+  <div class="percentage " id="precent"></div>
+  <div class="loader">
+    <div class="trackbar">
+      <div class="loadbar"></div>
+    </div>
+    <div class="glow"></div>
+  </div>
+</div>
+
+
+
 
 <!-- PRELOADER -->
 <!--
@@ -2622,6 +2638,8 @@ class="dropdown relative w-full lg:w-auto mt-14 mb-8 lg:mb-0 text-white lg:-mt-3
 
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
 
+<!--preloader bnar-->
+<script src="assets/js/preloader_bar.js"></script>
 
                     <!--mint-->
 
