@@ -2,9 +2,7 @@
 
 
 <!DOCTYPE html>
-
 <html class="cspio">
-
 <head>
 
 	<meta charset="utf-8">
@@ -268,7 +266,6 @@
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 	<!-- Modernizr -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -303,45 +300,16 @@
                 probably nothing.
                 Sign up to stay updated.</div>			    				
 			
-			<form id="form" target="_self" onsubmit="" action="javascript: postToGoogle_Email()">
+			<form name="email_comingsoon" method="POST" data-netlify="true">
 				<div id="cspio-field-wrapper">
 					<div class="row">
 						<div class="col-md-12 seperate"><div class="input-group">
-
-							<input id="email" name="EMAIL" class="form-control input-lg form-el" type="email" placeholder="Email" required/>
-<!--
-							<fieldset>
-								<label>Text</label>
-								<textarea id="feed" name="feed"></textarea>
-							  </fieldset>-->
-
-
-
+							<input id="cspio-email" name="EMAIL" class="form-control input-lg form-el" type="email" placeholder="Email" required/>
 					<span class="input-group-btn"><button id="cspio-subscribe-btn" type="submit" class="btn btn-lg btn-primary form-el noglow">NOTIFY ME</button></span></div></div>
 					</div>
 				</div>
 			</form>
-		
-		<!---->
-			<!--<form id="form" target="_self" onsubmit="" action="javascript: postToGoogle_Email()">
-			  <fieldset>
-				<label>Question 1</label>
-				<input id="qs1_op_1" type="radio" value="Yes" name="qs1" />
-				<input id="qs1_op_2" type="radio" value="No" name="qs1" />
-			  </fieldset>
 			
-			  <fieldset>
-				<label>Text</label>
-				<textarea id="feed" name="feed"></textarea>
-			  </fieldset>
-			  <div style="width: 100%; display: block; float: right;">
-				<button id="send" type="submit">
-				  Send
-				</button>
-			  </div>
-			</form>-->
-		  
-		  
 			<span  class="text-gray cta-small">no spam, no bs, ever.
             </span>
 			    						    			    								    			    			    				
@@ -380,44 +348,6 @@
 		);
 	</script>
 
-<script>
-	function postToGoogle_Email() {
-    var field1 = $('#email').val();
-  
-    $.ajax({
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSc2zQBZK4A8VRqRAMbzLEWk6qMRf-Bjmiek0Gmxl6xfdwd5Lg/formResponse",
-      
-      data: {
-        "entry.136507163": field1
-      },
-      type: "POST",
-      dataType: "xml",
-      statusCode: {
-        0: function() {
-			alert("Email Form Sent!");
-			location.reload();
-
-        },
-        200: function() {
-			alert("Email Form Sent!");
-			location.reload();
-
-        }
-      }
-    });
-  }
-  
-  /* 
-  $(document).ready(function() {
-    $('#form').submit(function() {
-      postToGoogle();
-      return false;
-    });
-    
-  });
-  */
-  
-</script>
 	</body>
 </html>
 
