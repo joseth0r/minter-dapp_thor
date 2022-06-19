@@ -13,7 +13,7 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 
 // Layer configuration
-const totalSupply=10;
+const totalSupply=100;
 
 //Skin
 const SkinEuropean=44/100; //porcentaje
@@ -27,19 +27,45 @@ const SkinGold=1/100;
 
 
 
-const HairBrownOnlyEnteroOnlyNoAccesories=20/100 ; //ojos especiales 20%
-const HairEnteroNoAccesories= 20/100 ; //ojos normales 20%
-const HairBrownOnlyEnteroAccesories= 20/100 ; // ojos normales 20%
-const HairEnteroAccesories= 10/100; // ojos normales 10%
-const HairBrownRecortadoAccesories= 20/100; //-->ojos normales 20%
-const HairRecortadoAccesories= 10/100; //ojos normales 10%
+const HairBrownOnlyEnteroOnlyNoAccesoriesOjosNormales=20/100 *totalSupply;  //20%
+
+const HairEnteroColoresNoAccesoriesOjosNormales= HairBrownOnlyEnteroOnlyNoAccesoriesOjosNormales + 10/100 *totalSupply;  //10%
+console.log(HairEnteroColoresNoAccesoriesOjosNormales)
+
+const HairBrownOnlyEnteroNoAccesoriesOjosEspeciales=  HairEnteroColoresNoAccesoriesOjosNormales + 10/100  * totalSupply; //10%
+console.log(HairBrownOnlyEnteroNoAccesoriesOjosEspeciales)
+
+
+const HairEnteroColoresNoAccesoriesOjosEspeciales= HairBrownOnlyEnteroNoAccesoriesOjosEspeciales + 20/100  * totalSupply; //20%
+console.log(HairEnteroColoresNoAccesoriesOjosEspeciales)
+
+
+// pelo entero: 60 %
+
+const HairBrownOnlyEnteroAccesoriesOjosNormales=HairEnteroColoresNoAccesoriesOjosEspeciales +  15/100  * totalSupply; //20%
+
+const HairEnteroColoresAccesoriesOjosNormales= HairBrownOnlyEnteroAccesoriesOjosNormales + 5/100  * totalSupply; //5%
+
+
+const HairBrownRecortadoAccesoriesOjosNormales=  HairEnteroColoresAccesoriesOjosNormales +15/100  * totalSupply; //20%
+console.log(HairBrownRecortadoAccesoriesOjosNormales)
+
+
+const HairRecortadoColoresAccesoriesOjosNormales= HairBrownRecortadoAccesoriesOjosNormales + 5/100  * totalSupply; //10%
+console.log(HairRecortadoColoresAccesoriesOjosNormales)
+
+//accesorios: 40%
+
+
+
+
 
 
 
 const layerConfigurations = [
   
   {
-    growEditionSizeTo: HairBrownOnlyEnteroOnlyNoAccesories * totalSupply, 
+    growEditionSizeTo: HairBrownOnlyEnteroOnlyNoAccesoriesOjosNormales,  
     layersOrder: [
       { 
         name: "1-Background",
@@ -67,7 +93,7 @@ const layerConfigurations = [
       } 
     },
 
-      { name: "6.1-Eyes_special",
+      { name: "6-Eyes_normal",
       options:{
         displayName:'Eyes'
       } 
@@ -82,7 +108,7 @@ const layerConfigurations = [
   },
   
   {
-growEditionSizeTo:HairEnteroNoAccesories * totalSupply, 
+growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales, 
     layersOrder: [
       { 
         name: "1-Background",
@@ -110,7 +136,7 @@ growEditionSizeTo:HairEnteroNoAccesories * totalSupply,
       } 
     },
 
-      { name: "6.1-Eyes_special",
+      { name: "6-Eyes_normal",
       options:{
         displayName:'Eyes'
       } 
@@ -123,7 +149,96 @@ growEditionSizeTo:HairEnteroNoAccesories * totalSupply,
     ],
   },
   {
-    growEditionSizeTo: HairBrownOnlyEnteroAccesories * totalSupply, 
+    growEditionSizeTo: HairBrownOnlyEnteroNoAccesoriesOjosEspeciales, 
+    layersOrder: [
+      { 
+        name: "1-Background",
+        options:{
+          displayName:'Background'
+        } 
+    },
+      { 
+      name: "2-Skin",
+      options:{
+        displayName:'Skin'
+      } 
+    
+    },
+      {
+        name:"3.2-BrownHair",
+      options:{
+        displayName:'Hair'
+      } 
+    
+    },
+    
+
+      { name:"4-Mouth",
+      options:{
+        displayName:'Mouth'
+      } 
+    },
+      { name: "6.1-Eyes_special",
+      options:{
+        displayName:'Eyes'
+      } 
+
+     },
+      { name: "7-Clothes",
+      options:{
+        displayName:'Clothes'
+      } 
+     }
+    ],
+  },
+
+
+  {
+    growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosEspeciales, 
+    layersOrder: [
+      { 
+        name: "1-Background",
+        options:{
+          displayName:'Background'
+        } 
+    },
+      { 
+      name: "2-Skin",
+      options:{
+        displayName:'Skin'
+      } 
+    
+    },
+      {
+        name:"3-Hair",
+      options:{
+        displayName:'Hair'
+      } 
+    
+    },
+    
+
+      { name:"4-Mouth",
+      options:{
+        displayName:'Mouth'
+      } 
+    },
+
+      { name: "6.1-Eyes_special",
+      options:{
+        displayName:'Eyes'
+      } 
+
+     },
+      { name: "7-Clothes",
+      options:{
+        displayName:'Clothes'
+      } 
+     }
+    ],
+  },
+  {
+    growEditionSizeTo: HairBrownOnlyEnteroAccesoriesOjosNormales, 
     layersOrder: [
       { 
         name: "1-Background",
@@ -173,9 +288,9 @@ growEditionSizeTo:HairEnteroNoAccesories * totalSupply,
     ],
   },
 
-
+  
   {
-    growEditionSizeTo: HairEnteroAccesories * totalSupply, 
+    growEditionSizeTo: HairEnteroColoresAccesoriesOjosNormales, 
     layersOrder: [
       { 
         name: "1-Background",
@@ -224,8 +339,10 @@ growEditionSizeTo:HairEnteroNoAccesories * totalSupply,
      }
     ],
   },
+
+
   {
-    growEditionSizeTo: HairBrownRecortadoAccesories * totalSupply, 
+    growEditionSizeTo: HairBrownRecortadoAccesoriesOjosNormales, 
     layersOrder: [
       { 
         name: "1-Background",
@@ -276,8 +393,9 @@ growEditionSizeTo:HairEnteroNoAccesories * totalSupply,
   },
 
 
+
   {
-    growEditionSizeTo:totalSupply, //HairRecortadoAccesories
+    growEditionSizeTo:HairRecortadoColoresAccesoriesOjosNormales   , 
     layersOrder: [
       { 
         name: "1-Background",
@@ -332,7 +450,7 @@ growEditionSizeTo:HairEnteroNoAccesories * totalSupply,
 ];
 
 
-const shuffleLayerConfigurations = true; // IF true, groups will be mixed in final NFT mint
+const shuffleLayerConfigurations = false; // IF true, groups will be mixed in final NFT mint
 
 const debugLogs = false;
 
@@ -359,7 +477,7 @@ const CONTRACT_SYMBOL = 'ET22321';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x2bf227192ac958C58341Ff1F83E64557c9a45FB9';
 const TREASURY_ADDRESS = '0x2bf227192ac958C58341Ff1F83E64557c9a45FB9';
-const MAX_SUPPLY = 10; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 100; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 1; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
