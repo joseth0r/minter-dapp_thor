@@ -7,13 +7,13 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Test";
-const description = "Description";
+const namePrefix = "Elon";
+const description = "tbe test";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 
 // Layer configuration
-const totalSupply=1000;
+const totalSupply=10;
 
 //Skin
 const SkinEuropean=44/100; //porcentaje
