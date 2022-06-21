@@ -13,7 +13,7 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 
 // Layer configuration
-const totalSupply=100;
+const totalSupply=1000;
 
 //Skin
 const SkinEuropean=44/100; //porcentaje
@@ -80,6 +80,12 @@ const layerConfigurations = [
       } 
     
     },
+    { name: "7-Clothes",
+    options:{
+      displayName:'Clothes'
+    } 
+   },
+
       {
         name:"3.2-BrownHair",
       options:{
@@ -98,11 +104,6 @@ const layerConfigurations = [
         displayName:'Eyes'
       } 
 
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
      }
     ],
   },
@@ -123,6 +124,12 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
       } 
     
     },
+    { name: "7-Clothes",
+    options:{
+      displayName:'Clothes'
+    } 
+   },
+
       {
         name:"3-Hair",
       options:{
@@ -140,12 +147,8 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
       options:{
         displayName:'Eyes'
       } 
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
      }
+   
     ],
   },
   {
@@ -164,6 +167,11 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
       } 
     
     },
+    { name: "7-Clothes",
+    options:{
+      displayName:'Clothes'
+    } 
+   },
       {
         name:"3.2-BrownHair",
       options:{
@@ -183,12 +191,8 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
         displayName:'Eyes'
       } 
 
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
      }
+    
     ],
   },
 
@@ -209,6 +213,12 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
       } 
     
     },
+    { name: "7-Clothes",
+    options:{
+      displayName:'Clothes'
+    } 
+   },
+
       {
         name:"3-Hair",
       options:{
@@ -229,11 +239,6 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
         displayName:'Eyes'
       } 
 
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
      }
     ],
   },
@@ -253,6 +258,11 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
       } 
     
     },
+    { name: "7-Clothes",
+    options:{
+      displayName:'Clothes'
+    } 
+   },
       {
         name:"3.2-BrownHair",
       options:{
@@ -279,12 +289,8 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
         displayName:'Eyes'
       } 
 
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
      }
+
     ],
   },
 
@@ -305,6 +311,13 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
       } 
     
     },
+
+    { name: "7-Clothes",
+    options:{
+      displayName:'Clothes'
+    } 
+   },
+
       {
         name:"3-Hair",
       options:{
@@ -331,11 +344,6 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
         displayName:'Eyes'
       } 
 
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
      }
     ],
   },
@@ -357,6 +365,12 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
       } 
     
     },
+    { name: "7-Clothes",
+    options:{
+      displayName:'Clothes'
+    } 
+   },
+
       {
         name:"3.3-BrownHairCut",
       options:{
@@ -383,11 +397,6 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
         displayName:'Eyes'
       } 
 
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
      }
     ],
   },
@@ -410,6 +419,13 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
       } 
     
     },
+
+    { name: "7-Clothes",
+    options:{
+      displayName:'Clothes'
+    } 
+   },
+
       {
         name:"3.1-Hair_cut",
       options:{
@@ -436,11 +452,6 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
         displayName:'Eyes'
       } 
 
-     },
-      { name: "7-Clothes",
-      options:{
-        displayName:'Clothes'
-      } 
      }
     ],
   },
@@ -450,7 +461,7 @@ growEditionSizeTo: HairEnteroColoresNoAccesoriesOjosNormales,
 ];
 
 
-const shuffleLayerConfigurations = false; // IF true, groups will be mixed in final NFT mint
+const shuffleLayerConfigurations = true; // IF true, groups will be mixed in final NFT mint
 
 const debugLogs = false;
 
@@ -468,24 +479,24 @@ const extraMetadata = {
 
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
-const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'polygon'; // only rinkeby or polygon
+const LIMIT = 10; // Your API key rate limit
+const CHAIN = 'ethereum'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'test';
-const CONTRACT_SYMBOL = 'ET22321';
+const CONTRACT_NAME = 'TBE TEST';
+const CONTRACT_SYMBOL = 'TBE2';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x2bf227192ac958C58341Ff1F83E64557c9a45FB9';
 const TREASURY_ADDRESS = '0x2bf227192ac958C58341Ff1F83E64557c9a45FB9';
-const MAX_SUPPLY = 100; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 10; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 1; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-06-04T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-06-23T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-06-03T14:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-06-18T14:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%, 1000 bps=10%
 const ROYALTY_ADDRESS = "0x2bf227192ac958C58341Ff1F83E64557c9a45FB9"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
