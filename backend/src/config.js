@@ -492,7 +492,7 @@ const MAX_SUPPLY = 10; // The maximum number of NFTs that can be minted. CANNOT 
 const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
-const team_reserve = 200; // Number of NFTS from the previous collection
+const TEAM_RESERVE = 200; // Number of NFTS from the previous collection
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PUBLIC_MINT_START_DATE = "2022-06-23T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
@@ -628,6 +628,7 @@ module.exports = {
   MAX_SUPPLY,
   MINT_PRICE,
   TOKENS_PER_MINT,
+  TEAM_RESERVE,
   PRESALE_MINT_START_DATE,
   PUBLIC_MINT_START_DATE,
   BASE_URI,
